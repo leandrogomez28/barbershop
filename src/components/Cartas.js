@@ -9,6 +9,8 @@ function Cartas (){
         <div className="container">
         <input type="radio" name="dot" id="one"/>
         <input type="radio" name="dot" id="two"/>
+        <div className="titulo">Andrew Neil</div>
+        <div className="subtitulo">Andrew Neil</div>
         <div className="main-card">
           <div className="cards">
             <div className="card">
@@ -32,7 +34,7 @@ function Cartas (){
             <div className="card">
              <div className="content">
                <div className="img">
-                <img src="images/img2.jpg" alt=""/>
+                <img />
                </div>
                <div className="details">
                  <div className="name">Jasmine Carter</div>
@@ -49,7 +51,7 @@ function Cartas (){
             <div className="card">
              <div className="content">
                <div className="img">
-                <img src="images/img3.jpg" alt=""/>
+                <img />
                </div>
                <div className="details">
                  <div className="name">Justin Chung</div>
@@ -68,7 +70,7 @@ function Cartas (){
             <div className="card">
              <div className="content">
                <div className="img">
-                 <img src="images/img4.jpg" alt=""/>
+                 <img />
                </div>
                <div className="details">
                  <div className="name">Appolo Reef</div>
@@ -85,7 +87,7 @@ function Cartas (){
             <div className="card">
              <div className="content">
                <div className="img">
-                 <img src="images/img5.jpg" alt=""/>
+                 <img />
                </div>
                <div className="details">
                  <div className="name">Adrina Calvo</div>
@@ -102,7 +104,7 @@ function Cartas (){
             <div className="card">
              <div className="content">
                <div className="img">
-                <img src="images/img6.jpeg" alt=""/>
+                <img />
                </div>
                <div className="details">
                  <div className="name">Nicole Lewis</div>
