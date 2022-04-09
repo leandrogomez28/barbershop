@@ -6,30 +6,16 @@ body{
     display: flex;
     min-height: 100vh;
     align-items: center;
-    justify-content: center;
-    /* background: #050505; */
+    justify-content:center;
     position: relative;
-background:url(./imagenes/humo.webp);
+    background:url(./imagenes/humo\ \(1\).png);
     background-size: contain;
-    background-position: left;
+    background-position-x: -90px;
     background-repeat: no-repeat; 
     z-index: -3;
     
   }
-  /* body::before{
-    content: '';
-    position: absolute;
-    width: 100%;
-    background: #0f0d0d;
-    clip-path: inset(47% 0 0 0);
-    z-index: -1;
-    height: 100%;
-  } */
-  /* ::selection{
-    background:	#FF676D;
-    color: #fff;
-  } */
-
+  
  
   .container{
     max-width: 1189px;
@@ -62,7 +48,10 @@ background:url(./imagenes/humo.webp);
     background: #fff;
     border-radius: 12px;
     padding: 30px;
-    height: 433px;
+    /* height: 433px; */
+    background:url(./imagenes/fondocarta.jpg);
+    background-size: cover;
+    background-position-x: 80px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
     transition: all 0.4s ease;
     margin-left: 5%;
@@ -80,28 +69,30 @@ background:url(./imagenes/humo.webp);
     margin-top: 30%;
   }
   .cards .card .content .img{
-    height: 130px;
-    width: 130px;
-    border-radius: 50%;
-    padding: 3px;
-    background: #020101;
+    height: 250px;
+    width: 250px;
+    /* border-radius: 50%; */
+   padding: 3px;
+    /* background: #020101; */
     margin-bottom: 14px;
-  }
-  .card .content .img img{
+  } 
+  /* .card .content .img img{
     height: 100%;
     width: 100%;
     border: 3px solid #ffff;
     border-radius: 50%;
     object-fit: cover;
-  }
+  } */
   .card .content .name{
+    /* margin-top: 74px; */
     font-size: 30px;
+    
     /* font-weight: 100; */
     font-family: 'Rye', cursive;
   }
   .card .content .job{
     font-size: 20px;
-    color: #181714;
+    color:  #d5ad4c;
     font-weight: 600;
     font-family: 'Trocchi', serif;
   }
