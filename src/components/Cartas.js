@@ -1,6 +1,6 @@
 import React from "react";
 import "./Cards.css"
-
+import {FaFacebook} from"react-icons/fa";
 
 function Cartas (){
     return(
@@ -11,6 +11,7 @@ function Cartas (){
         <input type="radio" name="dot" id="two"/>
         <div className="titulo">Andrew Neil</div>
         <div className="subtitulo">Andrew Neil</div>
+       
         <div className="main-card">
           <div className="cards">
             <div className="card">
@@ -24,7 +25,7 @@ function Cartas (){
                  <div className="job">Price</div>
                </div>
                <div className="media-icons">
-                 <a href="#"><i className="fab fa-facebook-f"></i></a>
+                 <a href="#"><FaFacebook style={{ fontSize:"2.5em"}}/></a>
                  <a href="#"><i className="fab fa-twitter"></i></a>
                  <a href="#"><i className="fab fa-instagram"></i></a>
                  <a href="#"><i className="fab fa-youtube"></i></a>
@@ -41,7 +42,7 @@ function Cartas (){
                  <div className="job">Price</div>
                </div>
                <div className="media-icons">
-                 <a href="#"><i className="fab fa-facebook-f"></i></a>
+               <a href="#"><i style={{ fontSize:"2.5em"}}><FaFacebook/></i></a>
                  <a href="#"><i className="fab fa-twitter"></i></a>
                  <a href="#"><i className="fab fa-instagram"></i></a>
                  <a href="#"><i className="fab fa-youtube"></i></a>
@@ -58,7 +59,7 @@ function Cartas (){
                  <div className="job">Price</div>
                </div>
                <div className="media-icons">
-                 <a href="#"><i className="fab fa-facebook-f"></i></a>
+               <a href="#"><i style={{ fontSize:"2.5em"}}><FaFacebook/></i></a>
                  <a href="#"><i className="fab fa-twitter"></i></a>
                  <a href="#"><i className="fab fa-instagram"></i></a>
                  <a href="#"><i className="fab fa-youtube"></i></a>
@@ -77,7 +78,7 @@ function Cartas (){
                  <div className="job">Price</div>
                </div>
                <div className="media-icons">
-                 <a href="#"><i className="fab fa-facebook-f"></i></a>
+               <a href="#"><i style={{ fontSize:"2.5em"}}><FaFacebook/></i></a>
                  <a href="#"><i className="fab fa-twitter"></i></a>
                  <a href="#"><i className="fab fa-instagram"></i></a>
                  <a href="#"><i className="fab fa-youtube"></i></a>
@@ -94,7 +95,7 @@ function Cartas (){
                  <div className="job">Price</div>
                </div>
                <div className="media-icons">
-                 <a href="#"><i className="fab fa-facebook-f"></i></a>
+               <a href="#"><i style={{ fontSize:"2.5em"}}><FaFacebook/></i></a>
                  <a href="#"><i className="fab fa-twitter"></i></a>
                  <a href="#"><i className="fab fa-instagram"></i></a>
                  <a href="#"><i className="fab fa-youtube"></i></a>
@@ -111,7 +112,7 @@ function Cartas (){
                  <div className="job">Price</div>
                </div>
                <div className="media-icons">
-                 <a href="#"><i className="fab fa-facebook-f"></i></a>
+               <a href="#"><i style={{ fontSize:"2.5em"}}><FaFacebook/></i></a>
                  <a href="#"><i className="fab fa-twitter"></i></a>
                  <a href="#"><i className="fab fa-instagram"></i></a>
                  <a href="#"><i className="fab fa-youtube"></i></a>

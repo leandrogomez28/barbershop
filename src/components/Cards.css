@@ -116,6 +116,7 @@ body{
   .card .content .media-icons{
     margin-top: 10px;
     display: flex;
+    color: #000;
   
   }
   .media-icons a{
@@ -133,8 +134,7 @@ body{
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
   }
   .media-icons a:hover{
-    color: #f8f1f2;
-    background-color: rgba(21, 20, 20, 0.101);
+    background: #000;
     border-color: #d5ad4c;
   }
    .container .button{
