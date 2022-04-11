@@ -1,6 +1,7 @@
 import React from "react";
 import "./Producto.css";
 import imagen from "../imagenes/fondocarta.jpg";
+import { FaFacebookSquare } from "react-icons/fa";
 
 function Producto() {
   return (
@@ -9,7 +10,7 @@ function Producto() {
 <div className="carta-container">
       <div className="carta">
         <div className="carta-header">
-          <img src={imagen} />
+          {/* <img src={imagen} /> */}
           <div>
             <p> Nombre</p>
             <p>@Nombre</p>
@@ -18,10 +19,13 @@ function Producto() {
         <div className="carta-body">
           <img src={imagen} />
         </div>
+
         <div className="carta-footer">
-          <i className="fas fa-heart"></i>
-          <i className="fas fa-comment"></i>
-          <i className="fas fa-bookmark"></i>
+        
+          <i>hegliyg;fe <br/>
+              vwudfuywd
+          </i>
+         
         </div>
     </div>   
        
@@ -30,7 +34,7 @@ function Producto() {
       <div className="carta-container">
       <div className="carta">
         <div className="carta-header">
-          <img src={imagen} />
+          {/* <img src={imagen} /> */}
           <div>
             <p> Nombre</p>
             <p>@Nombre</p>
