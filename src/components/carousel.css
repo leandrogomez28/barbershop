@@ -1,0 +1,56 @@
+
+.carousel-img{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.carousel-img div{
+    height: 50%;
+    width: 50%;
+    padding: 1em;
+    object-fit: cover;
+}
+
+.carousel-img img{
+    filter: saturate(200%);
+    filter: grayscale(35%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.carousel-foot{
+    display:flex;
+    justify-content: space-around;
+}
+.carousel-img img:hover{
+    filter: brightness(50%);
+   cursor: pointer;
+    background-color: black;
+    transition: 2s;
+   
+    
+}
+
+.carousel-foot div{
+
+width: 30%;
+padding: 0.5em;
+filter: saturate(200%);
+filter: grayscale(35%);
+object-fit: cover;
+}
+
+.carousel-foot img:hover{
+    filter: brightness(80%);
+    filter: blur(1px);
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+
+
+
+
