@@ -9,8 +9,8 @@ import SignUp from './components/SignUp';
 function App() {
   return (
     <div className="App">
-      {/* <Titulo/>
-      <Carrousel/> */}
+      <Titulo/>
+      <Carrousel/>
       <SignUp/>
     </div>
   );
