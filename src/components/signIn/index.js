@@ -1,5 +1,7 @@
 import React from "react";
 import './signIn.css'
+import Facebook from "./Facebook/index"
+import Google from "./Google/index"
 
 export default function SingIn(params) {
     return (
@@ -11,8 +13,12 @@ export default function SingIn(params) {
                 <div>
                     <h1 className="h1">CCS.ESTILOS</h1>
                     <h4>Ingrese a su cuenta</h4></div>
-                <div>Facebook</div>
-                <div>google</div>
+                <div>
+                    <Facebook></Facebook>
+                </div>
+                <div>
+                    <Google></Google>
+                    </div>
                 <div className="sign">
                 <hr className="hr1"></hr>
                   <span>or</span>  
