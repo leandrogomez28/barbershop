@@ -4,7 +4,7 @@ import {FaFacebook} from"react-icons/fa";
 
 function Cartas (){
     return(
-        
+       
         <div className="body">
         <div className="container">
         <input type="radio" name="dot" id="one"/>
@@ -26,9 +26,7 @@ function Cartas (){
                </div>
                <div className="media-icons">
                  <a href="#"><FaFacebook style={{ fontSize:"2.5em"}}/></a>
-                 <a href="#"><i className="fab fa-twitter"></i></a>
-                 <a href="#"><i className="fab fa-instagram"></i></a>
-                 <a href="#"><i className="fab fa-youtube"></i></a>
+                
                </div>
              </div>
             </div>
@@ -128,6 +126,10 @@ function Cartas (){
       </div>
 
         </div>
+
+    
+        
+ 
     );
 }
 
