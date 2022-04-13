@@ -44,13 +44,16 @@ opacity: 0.7;
    margin-bottom: 30px;
    text-align: center;
 }
-hr{
+.hr2{
     width: 16%;
     color: #d6ae4c;
     opacity: unset;
     
 }
-.hr{
+.hr1{
+    width: 16%;
+    color: #d6ae4c;
+    opacity: unset;
     margin-left: 30%;
 }
 span{

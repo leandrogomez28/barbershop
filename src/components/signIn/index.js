@@ -14,9 +14,9 @@ export default function SingIn(params) {
                 <div>Facebook</div>
                 <div>google</div>
                 <div className="sign">
-                <hr className="hr"></hr>
+                <hr className="hr1"></hr>
                   <span>or</span>  
-                <hr></hr>
+                <hr className="hr2"></hr>
                 </div>
                 
                 <form >
