@@ -27,7 +27,7 @@
         position: relative;
         max-width: 250px;
         max-height: 350px;
-        box-shadow: 0 40px 60px -6px rgb(197, 195, 187);
+        box-shadow: 0 30px 30px -6px rgb(197, 195, 187);
       }
       
       .card-title {
