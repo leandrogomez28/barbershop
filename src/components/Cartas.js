@@ -5,12 +5,12 @@ import {FaFacebook} from"react-icons/fa";
 function Cartas (){
     return(
         
-        <div className="body">
-        <div className="container">
+        <div className="carousel-prod">
+        <div className="container-prod">
         <input type="radio" name="dot" id="one"/>
         <input type="radio" name="dot" id="two"/>
-        <div className="titulo">Andrew Neil</div>
-        <div className="subtitulo">Andrew Neil</div>
+        <div className="titulo-prod">Andrew Neil</div>
+        <div className="subtitulo-prod">Andrew Neil</div>
        
         <div className="main-card">
           <div className="cards">

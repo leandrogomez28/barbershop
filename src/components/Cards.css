@@ -2,7 +2,7 @@
 /* titulos */
 @import url('https://fonts.googleapis.com/css2?family=Rye&family=Trocchi&display=swap');
 /* subtitulos */
-body{
+.carousel-prod{ 
     display: flex;
     min-height: 100vh;
     align-items: center;
@@ -17,7 +17,7 @@ body{
   }
   
  
-  .container{
+  .container-prod{
     max-width: 1350px;
     width: 100%;
     overflow: hidden;
@@ -29,21 +29,21 @@ body{
     background-repeat: no-repeat;  */
     
   }
-  .titulo{
+  .titulo-prod{
     font-size: 500%;
     /* font-weight: 100; */
     text-align: center;
     font-family: 'Rye', cursive;
     
   }
-  .subtitulo{
+  .subtitulo-prod{
     font-size: 30px;
     /* font-weight: 100; */
     text-align: center;
     font-family: 'Rye', cursive;
     margin-bottom: 30px;
   }
-  .container .main-card{
+  .container-prod .main-card{
     display: flex;
     justify-content: space-evenly;
     width: 200%;
@@ -52,7 +52,7 @@ body{
   #two:checked ~ .main-card{
     margin-left: -100%;
   }
-  .container .main-card .cards{
+  .container-prod .main-card .cards{
     width: 50%;
     display: flex;
     flex-wrap: nowrap;
@@ -137,7 +137,7 @@ body{
     background: #000;
     border-color: #d5ad4c;
   }
-   .container .button{
+   .container-prod .button{
     width: 100%;
     display: flex;
     justify-content: center;
