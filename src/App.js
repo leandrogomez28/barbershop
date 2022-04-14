@@ -15,6 +15,8 @@ import Estilistas from './components/Estilistas.js'
 // import ValesGift from './components/ValesGift.js'
 
 
+import ServicesCards from './components/ServicesCards.js'
+
 
 function App() {
   return (
@@ -28,6 +30,7 @@ function App() {
       {/* <Estilyst/> Es no se va a usar */}
       {/* <ValesGift/> */}
       <Estilistas/>
+      <ServicesCards/>
  </div>
 
 
