@@ -12,7 +12,7 @@ function ServicesCards() {
             <div className='cards-services'>
                 <div className='cards-title'>
                     <h1>LO QUE HACEMOS</h1>
-                    <h3>Somos un referente de la versatilidad en Barbería, tanto de la vieja escuela como de las últimas tendencias en estilo.</h3>
+                    <h3>Somos un referente de la versatilidad en Barbería, tanto de la vieja escuela como de las últimas tendencias.</h3>
                     <h3>Nuestros profesionales te ayudarán a lucir elegante y seguro, y lo más importante con estilo.</h3>
                 </div>
                 <div className="cards">
