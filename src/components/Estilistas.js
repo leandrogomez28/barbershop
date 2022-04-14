@@ -23,10 +23,10 @@ function Estilista(){
     </a>
 
     {/* <!-- the username --> */}
-    <h1>George Darkos</h1>
+    <h1>Eder Aponte</h1>
 
     {/* <!-- and role or location --> */}
-    <h2>- Full Stack Web Developer -</h2>
+    <h2>- Barber Masters -</h2>
 
   </header>
 
@@ -82,10 +82,10 @@ function Estilista(){
     </a>
 
     {/* <!-- the username --> */}
-    <h1>George Darkos</h1>
+    <h1>Tomas Martinez</h1>
 
     {/* <!-- and role or location --> */}
-    <h2>- Full Stack Web Developer -</h2>
+    <h2>- Barber Pro -</h2>
 
   </header>
 
