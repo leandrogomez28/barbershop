@@ -108,21 +108,19 @@ function FooterPage() {
                             <a href="http://freevision.me">FreeVision</a>
                             </div>
                             <div id="social-icons">
-<a href="http://www.facebook.com/#" target="_blank" className="symbol-facebook">
+<a href="http://www.facebook.com/#" target="_blank" className="bi bi-facebook">
     <span className="tooltip symbol" title=""></span></a>
-    <a href="http://www.twitter.com/#" target="_blank" className="symbol-twitter">
+    <a href="http://www.twitter.com/#" target="_blank" className="bi bi-twitter">
         <span className="tooltip symbol" title=""></span></a>
-        <a href="http://instagram.com/#" target="_blank" className="symbol-instagram">
+        <a href="http://instagram.com/#" target="_blank" className="bi bi-instagram">
             <span className="tooltip symbol" title=""></span></a>
-            <a href="http://www.vimeo.com/#" target="_blank" className="symbol-vimeo">
+            <a href="http://www.vimeo.com/#" target="_blank" className="bi bi-vimeo">
                 <span className="tooltip symbol" title=""></span></a>
-                <a href="http://www.linkedin.com/#" target="_blank" className="symbol-linkedin">
+                <a href="http://www.linkedin.com/#" target="_blank" className="bi bi-linkedin">
                     <span className="tooltip symbol" title=""></span></a>
-                    <a href="http://plus.google.com/#" target="_blank" className="symbol-googleplus">
-                        <span className="tooltip symbol" title=""></span></a>
-                        <a href="http://pinterest.com/#" target="_blank" className="symbol-pinterest">
+                        <a href="http://pinterest.com/#" target="_blank" className="bi bi-pinterest">
                             <span className="tooltip symbol" title=""></span></a>
-                            <a href="mailto:#" target="_self" className="symbol-email">
+                            <a href="mailto:#" target="_self" className="bi bi-envelope-fill">
                                 <span className="tooltip symbol" title=""></span></a>
                                 </div>
                     </div>
