@@ -1,6 +1,6 @@
 import React from "react";
 import FacebookLogin from 'react-facebook-login';
-import './face.css'
+// import './face.css'
 // import {TiSocialFacebookCircular} from 'react-icons/lib/ti/social-facebook-circular';
 import { TiSocialFacebookCircular } from 'react-icons/ti';
 

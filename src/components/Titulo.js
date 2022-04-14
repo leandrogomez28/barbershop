@@ -9,7 +9,7 @@ function Titulo(){
     return(
        <div>
            
-           <div className="titulo">
+           <div className="title">
                 <h2>
                     <span className="blur">C</span>
                     <span className="blur">C</span>

@@ -1,5 +1,5 @@
 import React from "react";
-import "./estilistas.css"
+// import "./estilistas.css"
 import modelo1 from '../components/Imagen1/modelo1.jpg'
 import facebook from '../components/Imagen1/facebook.png'
 import twitter from '../components/Imagen1/twitter.png'

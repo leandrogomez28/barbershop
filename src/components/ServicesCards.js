@@ -8,7 +8,7 @@ import Corte2 from "./ImgServices/Corte2.jpg"
 
 function ServicesCards() {
     return (
-        <div>
+        <div className='fondo'>
             <div className='cards-services'>
                 <div className='cards-title'>
                     <h1>LO QUE HACEMOS</h1>
