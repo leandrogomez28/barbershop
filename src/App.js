@@ -1,7 +1,7 @@
 import React from "react"
-// import Cartas from './components/Cartas';
+import Cartas from './components/Cartas';
 import Producto from './components/CartasProducto/Producto'
-// import Prueba from "./components/Prueba";
+
 function App() {
   return (
     

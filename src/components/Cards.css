@@ -9,11 +9,12 @@
     justify-content:center;
     position: relative;
     background:url(./imagenes/humo\ \(1\).png);
+    /* background:url(./imagenes/humo.jpg); */
     background-size: contain;
     background-position-x: -90px;
     background-repeat: no-repeat; 
-    z-index: -3;
-    
+    z-index: 3;
+    /* background: #000; */
   }
   
  
@@ -22,11 +23,13 @@
     width: 100%;
     overflow: hidden;
     padding: 80px 0;
-    /* */
-    /* background:url(./imagenes/fondocarta.jpg);
-    background-size: contain;
-    background-position-x: 900px;
-    background-repeat: no-repeat;  */
+    /* background:url(./imagenes/humo.webp);
+    z-index: -1;
+    
+    /* background:url(./imagenes/fondocarta.jpg); */
+    /* background-size: contain; */
+    /* background-position-x: -200px; */
+    /* background-repeat: no-repeat;   */
     
   }
   .titulo-prod{
@@ -182,3 +185,12 @@
       width: 100%;
     }
   }
+
+
+.figure{
+  position: relative;
+  width: 600%;
+  margin: 0;
+  left: 0;
+  animation: 20s slider infinite;
+}
