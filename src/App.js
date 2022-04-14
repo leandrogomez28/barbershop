@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Gallery from './components/Gallery';
-// import Cartas from './components/Cartas';
+ import Cartas from './components/Cartas';
 import Producto from './components/CartasProducto/Producto'
 // import Prueba from "./components/Prueba";
 
