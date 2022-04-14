@@ -1,0 +1,120 @@
+.general{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    background-color: rgb(18, 17, 17) ;
+    background-image: url("https://shaver.freevision.me/wp-content/uploads/2016/06/shutterstock_247562731-compressor.jpg");
+    background-size: cover;
+}
+    
+.titulo{
+    
+    width: 99%;
+    color: whitesmoke;
+}
+.titulo > h1 {
+    color: #d6ae4c !important;
+}
+.formulario{
+    width: 50%;
+}
+ input {
+    background-color: transparent !important;
+    border: none !important;
+    border-bottom: 3px solid !important;
+    border-color: whitesmoke !important;
+    color: whitesmoke !important;
+    
+}
+input::placeholder {
+    /* color: whitesmoke !important; */
+  }
+textarea {
+    background-color: transparent !important;
+    border: none !important;
+    border-bottom: 3px solid !important;
+    border-color: whitesmoke !important;
+    color: whitesmoke !important;
+    height: 200px !important;
+}
+label{
+    /* color: whitesmoke !important; */
+}
+.contactarnos{
+    width: 50%;
+    padding: 10px;
+    color: whitesmoke;
+    text-align: left;
+}
+.row{
+    margin: 10px;
+}
+.row > h5 {
+    margin-bottom: 40px;
+}
+.col{
+    margin-bottom: 30px;
+}
+.col-12{
+    margin-bottom: 30px;
+}
+
+.col > input {
+    padding-bottom: 10px;
+}
+.col > p{
+    font-size: 1rem; 
+    margin-bottom: 0px;  
+}
+.iconos{
+    display: flex;
+    flex-direction: column;
+    font-size: xx-large;
+}
+.iconosText  {
+    display: flex;
+    margin-top: 30px;
+    font-size: 4rem;
+    
+}
+.iconosText > p , a {
+    font-size: 1rem;
+    margin-left: 20px;
+    padding-top: 15px;
+}
+.iconosText >  a {
+    color: #d6ae4c;
+}
+.icono{
+    border: solid;
+    border-radius: 40px;
+    padding: 10px;
+}
+h5{
+    display: flex;
+    color: whitesmoke;
+}
+.envio{
+    display: flex;
+    margin-top: 20px;
+    
+    
+}
+.envio > button {
+    border-radius: 30px;
+    color: #d6ae4c;
+    background-color: black;
+    border-color: #d6ae4c !important;
+    border: solid 5px;
+    width: 100px;
+    height: 50px;
+    
+}
+.prueba{
+    border-top-style: solid;
+    border-top-width: 2px;
+    border-top-color: #d6ae4c;
+    width: 60px;
+    max-width: 60px;
+    left: 0;
+}
