@@ -121,7 +121,7 @@ function FooterPage() {
                         <a href="http://pinterest.com/#" target="_blank" className="bi bi-pinterest">
                             <span className="tooltip symbol" title=""></span></a>
                             <a href="mailto:#" target="_self" className="bi bi-envelope-fill">
-                                <span className="tooltip symbol" title=""></span></a>
+                                <span className="tooltip symbol" title=""></span></a> 
                                 </div>
                     </div>
                     
