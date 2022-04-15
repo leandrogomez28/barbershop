@@ -19,6 +19,7 @@ import Estilistas from './components/Estilistas.js'
 import Testimonials from './components/Testimonial'
 
 import ServicesCards from './components/ServicesCards.js'
+import FooterPage from './components/FooterPage.js'
 
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
       <Testimonials/>
       <SingIn/>
       <Contactos></Contactos>
+      <FooterPage/>
     </div>
 
 
