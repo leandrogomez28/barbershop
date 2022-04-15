@@ -2,7 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 // import './App.css';
 import Contactos from './components/contactos/index'
-import SingIn from './components/signIn';
+import SingIn from './components/signIn/SignIn';
 import Gallery from './components/Gallery';
 import Cartas from './components/Cartas';
 import Producto from './components/CartasProducto/Producto'
@@ -15,8 +15,8 @@ import SignUp from './components/SignUp';
 
 import Estilistas from './components/Estilistas.js'
 // import Estilyst from './components/Estilyst.js'   esta no se va a usar
-// import ValesGift from './components/ValesGift.js'
-
+ import ValesGift from './components/ValesGift.js'
+import Testimonials from './components/Testimonial'
 
 import ServicesCards from './components/ServicesCards.js'
 
@@ -25,17 +25,18 @@ function App() {
   return (
     <div className="App">
 
-      {/* <Titulo /> */}
-      {/* <Carrousel /> */}
-      {/* <SignUp /> */}
+      <Titulo />
+      <Carrousel />
+      <SignUp />
       <Cartas />
-      {/* <Producto /> */}
+      <Producto />
       {/* <Estilyst/> Es no se va a usar */}
-      {/* <ValesGift/> */}
-      {/* <Estilistas /> */}
+      <ValesGift/>
+      <Estilistas />
       <ServicesCards />
-      {/* <SingIn></SingIn> */}
-      {/* <Contactos></Contactos> */}
+      <Testimonials/>
+      <SingIn/>
+      <Contactos></Contactos>
     </div>
 
 

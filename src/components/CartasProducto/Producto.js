@@ -1,5 +1,5 @@
 import React from "react";
-// import "./Producto.css";
+import "./Producto.css";
 import imagen from "../imagenes/fondocarta.jpg";
 import { FaFacebookSquare } from "react-icons/fa";
 

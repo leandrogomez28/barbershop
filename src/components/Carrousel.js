@@ -3,7 +3,7 @@ import Barber from '../imagenes/barber.jpeg'
 import Barber2 from '../imagenes/barber2.jpg'
 import Barber3 from '../imagenes/barber3.jpg'
 import Barber4 from '../imagenes/barber4.jpg'
-// import './carousel.css' 
+import './carousel.css' 
 
 function Carrousel() {
 

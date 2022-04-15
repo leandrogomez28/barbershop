@@ -1,5 +1,5 @@
 import React from "react";
-// import "./barberos.css"
+import "./barberos.css"
 import facebook from '../components/Imagen1/facebook.png'
 import twitter from '../components/Imagen1/twitter.png'
 import whatsapp from '../components/Imagen1/whatsapp.png'

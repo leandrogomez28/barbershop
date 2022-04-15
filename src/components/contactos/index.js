@@ -1,5 +1,5 @@
 import React from "react";
-// import './contacto.css'
+import './contacto.css'
 
 import { FiPhoneCall, FiMail } from "react-icons/fi";
 import { RiMapPin2Line } from "react-icons/ri";
