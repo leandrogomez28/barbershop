@@ -5,59 +5,54 @@ import { FaFacebookSquare } from "react-icons/fa";
 
 function Producto() {
   return (
-<>
-<div className="contenedor ">
-<div className="carta-container">
-      <div className="carta">
-        <div className="carta-header">
-          {/* <img src={imagen} /> */}
-          <div>
-            <p> Nombre</p>
-            <p>@Nombre</p>
+
+    <div className="contenedor ">
+      
+      <div className="carta-container">
+        <div className="carta">
+          <div className="carta-header">
+            {/* <img src={imagen} /> */}
+            <div>
+              <p> Nombre</p>
+              <p>@Nombre</p>
+            </div>
+          </div>
+          <div className="carta-body">
+            <img src={imagen} />
+          </div>
+
+          <div className="carta-footer">
+
+            <i>hegliyg;fe <br />
+              vwudfuywd
+            </i>
+
           </div>
         </div>
-        <div className="carta-body">
-          <img src={imagen} />
-        </div>
 
-        <div className="carta-footer">
-        
-          <i>hegliyg;fe <br/>
-              vwudfuywd
-          </i>
-         
-        </div>
-    </div>   
-       
       </div>
 
       <div className="carta-container">
-      <div className="carta">
-        <div className="carta-header">
-          {/* <img src={imagen} /> */}
-          <div>
-            <p> Nombre</p>
-            <p>@Nombre</p>
+        <div className="carta">
+          <div className="carta-header">
+            {/* <img src={imagen} /> */}
+            <div>
+              <p> Nombre</p>
+              <p>@Nombre</p>
+            </div>
+          </div>
+          <div className="carta-body">
+            <img src={imagen} />
+          </div>
+          <div className="carta-footer">
+            <i className="fas fa-heart"></i>
+            <i className="fas fa-comment"></i>
+            <i className="fas fa-bookmark"></i>
           </div>
         </div>
-        <div className="carta-body">
-          <img src={imagen} />
-        </div>
-        <div className="carta-footer">
-          <i className="fas fa-heart"></i>
-          <i className="fas fa-comment"></i>
-          <i className="fas fa-bookmark"></i>
-        </div>
-    </div>   
-       
+
       </div>
-
-</div>
-
-
-
-
-     
+      
      {/* <ul className="cards">
   <li>
     <a href="" className="card">
@@ -129,7 +124,14 @@ function Producto() {
 
      
     
-    </>
+
+    </div>
+
+
+
+
+     
+    
   );
 }
 

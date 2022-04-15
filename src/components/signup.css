@@ -92,3 +92,89 @@ p {
     border: calc(0.06887vw + 0.67769px) solid #4c69ba;
   
 }
+
+/*-----------------------------------------*/
+
+.generals-signUp {
+    display: flex;
+    background-image: url("https://www.beautymarket.es/peluqueria/fotos/13996_notbmp2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 80vh;
+    
+    
+}
+.generals:before{
+content: "";
+width: 100%;
+min-height: 80vh;
+position: absolute;
+top: 0; 
+background: linear-gradient(90deg, #6d6d6d, #000000, black);
+opacity: 0.7;
+
+}
+.derecha-signUp{
+    
+    width: 50%;  
+
+}
+.derecha-signUp > img {
+    width: 100%;
+    
+}
+.izquierda-signUp{
+    width: 50%;   
+    color: whitesmoke;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+.izquierda-signUp .sign{
+    display: flex;
+}
+.izquierda-signUp .inputSign{
+   width: 40% !important;
+   margin-left: 30%;
+   margin-bottom: 30px;
+   text-align: center;
+   
+}
+.izquierda-signUp .hr2{
+    width: 16%;
+    color: #d6ae4c;
+    opacity: unset;
+    
+}
+.izquierda-signUp .hr1{
+    width: 16%;
+    color: #d6ae4c;
+    opacity: unset;
+    margin-left: 30%;
+}
+.izquierda-signUpspan{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.izquierda-signUp .send{
+    border-radius: 30px;
+    color: #d6ae4c;
+    background-color: black;
+    border-color: #d6ae4c !important;
+    border: solid 5px;
+}
+.izquierda-signUp .send:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #d6ae4c;
+}
+.izquierda-signUp .h1{
+    color:#d6ae4c !important;
+    margin-top: 30px;
+    
+}
+.cabeza-titulo{
+text-shadow: 0 0 10px black;
+}
+

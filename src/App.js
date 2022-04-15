@@ -1,11 +1,11 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 // import './App.css';
 import Contactos from './components/contactos/index'
 import SingIn from './components/signIn/SignIn';
 import Gallery from './components/Gallery';
-import Cartas from './components/Cartas';
-import Producto from './components/CartasProducto/Producto'
+import Cartas from './components/Cartas.js';
+import Producto from './components/CartasProducto/Producto.js'
 // import Prueba from "./components/Prueba";
 
 import Carrousel from './components/Carrousel'
@@ -20,11 +20,13 @@ import Testimonials from './components/Testimonial'
 
 import ServicesCards from './components/ServicesCards.js'
 import FooterPage from './components/FooterPage.js'
+import Navbar from './components/Navbar'
 
 
 function App() {
   return (
     <div className="App">
+      <Navbar/>
 
       <Titulo />
       <Carrousel />

@@ -16,7 +16,7 @@ body {
 .barber{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-width: 940px;
+width: 80%;
 gap: 15px;
 margin: auto;
 justify-items: center;
@@ -26,7 +26,7 @@ padding: 30px;
 }
 header img {
   border-radius: 50%;
-  margin: 20px auto;
+  margin: 5px auto;
   display: block;
   width: 200px;
   border: 5px solid black;
@@ -43,7 +43,7 @@ aside {
   background: #E5E4E2;
   background-size: cover;
   overflow: hidden;
-  box-shadow: 0 0 100px 10px  #CBA135;
+  box-shadow: 0 0 10px  #000000;
   transition: all ease 0.3s;
 }
 
@@ -53,7 +53,7 @@ aside:hover {
   border-radius: 5px;
   height: 480px;
   width: 350px;
-  box-shadow: 0 0 70px 10px #CBA135;
+  box-shadow: 0 0 10px #ffffff;
 }
 
 aside:hover header img {
@@ -74,7 +74,7 @@ header h1 {
   font-size: 30px;
   line-height: 25px;
   display: inline-block;
-  padding: 8px;
+  padding: 20px;
   transition: all ease 0.250s;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;

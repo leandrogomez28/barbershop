@@ -125,7 +125,9 @@ function Cartas (){
           <label for="one" className=" active one"></label>
           <label for="two" className="two"></label>
         </div>
+        
       </div>
+      
 
         </div>
     );

@@ -9,7 +9,7 @@ function Navbar() {
         <>
 
 
-            <nav>
+            <nav className='nav-barber fixed'>
                 <ul>
                     <li>
                         <div className="home-icon bg-dark opacity-75">

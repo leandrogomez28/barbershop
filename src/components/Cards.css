@@ -9,10 +9,7 @@
     justify-content:center;
     position: relative;
     background:url(./imagenes/humo\ \(1\).png);
-    background-size: contain;
-    background-position-x: -90px;
-    background-repeat: no-repeat; 
-    z-index: -3;
+  
     
   }
   

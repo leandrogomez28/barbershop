@@ -1,15 +1,10 @@
   @import url('https://fonts.googleapis.com/css2?family=Rye&family=Trocchi&display=swap');
 
-.content-slider {
-   
-  object-position: 0%;
-  width: 120%;
-    height:100%;
-    opacity: 0.8;
-    filter: alpha(opacity=60);
+.content-slider {      
     background-image: url("https://blog.agendapro.com/hubfs/barberos%20famosos.jpg");
-    background-repeat: no-repeat;
-    margin-top: 3em;
+    background-size: cover;
+    
+   
 
    
     

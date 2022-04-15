@@ -6,7 +6,7 @@ import './Testimonial.css'
 function Carrousel() {
     return (
         
-         <div class="content-slider col-12">
+         <div class="content-slider ">
              <div className='content-text'>
                  <h1>Testimonios</h1>
                  {/* <img src={Logo} alt=" "/> */}

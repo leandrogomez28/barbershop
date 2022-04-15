@@ -1,38 +1,16 @@
-
-
-  *,*:before,*:after {
-	box-sizing: border-box;
-}
-
 :after {
 	content: "";
 }
 
-section {
-  position: relative;
-  left: 100px;
-}
 
-h1 { 
-  margin:80px 0 10px 0;
-  font-size: 52px;
-  font-family: 'Montserrat', sans-serif;
-  text-transform: uppercase;
-  text-shadow: 1px 1px 0px #DC143C,
-	2px 2px 0px #DC143C,
-	3px 3px 0px #DC143C,
-	4px 4px 0px #DC143C;
-}
 
-h2 {
-  font-size: 24px;
-}
 
-body {
+
+.nav-barber{
    padding: 100px 0; 
- background: rgb(243, 246, 247); 
+ 
   color: white;
-  max-width:30px;
+
 	font-family: 'Montserrat', sans-serif;
 	font-size: 14px;
   line-height:1.4;
@@ -47,8 +25,9 @@ nav {
 	background: transparent;
 }
 
-nav ul {
+.nav-barber ul {
 	text-align: center;
+	padding-left: 0;
 }
 
 nav ul li {
@@ -92,6 +71,7 @@ nav ul li:nth-child(4):after {
 
 nav ul li:hover {
 	transform: translateX(-70px);
+	
 }
 
 nav ul li:hover:after {
