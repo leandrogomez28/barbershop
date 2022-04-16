@@ -66,6 +66,8 @@ span{
     background-color: black;
     border-color: #d6ae4c !important;
     border: solid 5px;
+    width: 45%;
+    height: 40px;
 }
 .h1{
     color:#d6ae4c !important;

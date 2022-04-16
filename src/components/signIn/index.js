@@ -28,7 +28,7 @@ export default function SingIn(params) {
                 <form >
                     <input type="email" className="form-control inputSign" placeholder="EMAIL (REQUERIDO)" aria-label="email" />
                     <input type="password" className="form-control inputSign" placeholder="PASSWORD (REQUERIDO)" aria-label="email" />
-                    <button className="send" type="send">Ingresar</button>
+                    <button className="send" type="send">Iniciar sesión</button>
                 </form>
             </div>
         </div>
