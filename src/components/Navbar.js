@@ -8,6 +8,7 @@ function Navbar() {
     return (
         <>
 
+<<<<<<< HEAD
 
             <nav className='nav-barber fixed'>
                 <ul>
@@ -45,6 +46,18 @@ function Navbar() {
                 </ul>
             </nav>
 
+=======
+            <details>
+                <summary></summary>
+                <nav class="menu">
+                    <a href="#link">Inicio</a>
+                    <a href="#link">Sobre Nosotros</a>
+                    <a href="#link">Servicios</a>
+                    <a href="#link">Productos</a>
+                    <a href="#link">Contacto</a>
+                </nav>
+            </details>
+>>>>>>> origin/KairaAbreu
 
 
 

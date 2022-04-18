@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useEffect } from 'react';
 import { actionType } from './reducer';
 import { useStateValue } from './StateProvider';
@@ -25,6 +26,11 @@ import ServicesCards from './components/ServicesCards.js'
 import FooterPage from './components/FooterPage.js'
 import Navbar from './components/Navbar'
 import axios from 'axios';
+=======
+import React from 'react';
+import ServicesCards from './components/ServicesCards';
+import Navbar from './components/Navbar';
+>>>>>>> origin/KairaAbreu
 
 
 function App() {
@@ -38,6 +44,7 @@ function App() {
 
   return (
     <div className="App">
+<<<<<<< HEAD
       <Navbar/>
 
       <Titulo />
@@ -54,6 +61,11 @@ function App() {
       <SingIn/>
       <Contactos></Contactos>
       <FooterPage/>
+=======
+      {/* <ServicesCards/> */}
+      <Navbar/>
+   
+>>>>>>> origin/KairaAbreu
     </div>
 
 
