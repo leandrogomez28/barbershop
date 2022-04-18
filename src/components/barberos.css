@@ -99,7 +99,8 @@ header h2 {
 
 .profile-bio {
   font-family: 'Romanesco', cursive;
-  margin-top: 15px;
+  /* margin-top: 10px; */
+  text-align: justify;
   padding: 0px 20px 10px 20px !important;
   transition: all linear 1.5s;
   color: black;
