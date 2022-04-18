@@ -1,4 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { actionType } from './reducer';
+import { useStateValue } from './StateProvider';
+
 
 // import './App.css';
 import Contactos from './components/contactos/index'
@@ -7,7 +10,7 @@ import Gallery from './components/Gallery';
 import Cartas from './components/Cartas.js';
 import Producto from './components/CartasProducto/Producto.js'
 // import Prueba from "./components/Prueba";
-
+import Carrousel2 from './components/CartasProducto/Cariusel2'
 import Carrousel from './components/Carrousel'
 import Titulo from './components/Titulo';
 import SignUp from './components/SignUp';
@@ -21,15 +24,25 @@ import Testimonials from './components/Testimonial'
 import ServicesCards from './components/ServicesCards.js'
 import FooterPage from './components/FooterPage.js'
 import Navbar from './components/Navbar'
+import axios from 'axios';
 
 
 function App() {
+  const [{ servicios }, dispatch] = useStateValue()
+
+
+  useEffect(() => {
+    axios.get("http://localhost:4000/api/datos")
+      .then(response => console.log(response))
+    }, [])
+
   return (
     <div className="App">
       <Navbar/>
 
       <Titulo />
       <Carrousel />
+      <Carrousel2/>
       <SignUp />
       <Cartas />
       <Producto />
