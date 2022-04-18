@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Mostrarcards.css"
+// import "./Mostrarcards.css"
 import imagenprueba from "../imagenes/productos general/activador.png"
 
 function Mostrarcards () {

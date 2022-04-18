@@ -7,7 +7,7 @@ function Titulo(){
 
 
     return(
-       <div>
+       <div className="contenedor-1">
            
            <div className="title">
                 <h2>

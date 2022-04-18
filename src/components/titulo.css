@@ -6,7 +6,7 @@
     height: 93px;
     background-image: url(https://shaver.freevision.me/wp-content/themes/shaver/images/assets/top_row_ripped.png);
 }
-.title {
+.contenedor-1 .title {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,7 +18,7 @@
     box-shadow: inset 0 0 30px black;
 }
 
-.title h2 {
+.contenedor-1 .title h2 {
      /* color: transparent; */
     font-size: 10vw;
     font-family: 'Rye', cursive;
@@ -26,7 +26,7 @@
 }
 
 
-.title h2 span{
+.contenedor-1 .title h2 span{
     animation: animate 4s linear infinite;
 }
 

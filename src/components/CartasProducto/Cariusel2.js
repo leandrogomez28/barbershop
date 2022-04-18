@@ -4,10 +4,10 @@ import "./Cariusel2.css"
 function Cariusel2  () {
   return (
 <>
-<body>
-<div class="container">
+
+<div class="container-2">
   <div class="card">
-    <h3 class="title">Card 1</h3>
+    <h3 class="title-2">Card 1</h3>
     <div class="bar">
       <div class="emptybar"></div>
       <div class="filledbar"></div>
@@ -19,7 +19,7 @@ function Cariusel2  () {
     </div>
   </div>
   <div class="card">
-    <h3 class="title">Card 2</h3>
+    <h3 class="title-2">Card 2</h3>
     <div class="bar">
       <div class="emptybar"></div>
       <div class="filledbar"></div>
@@ -31,7 +31,7 @@ function Cariusel2  () {
     </div>
   </div>
   <div class="card">
-    <h3 class="title">Card 3</h3>
+    <h3 class="title-2">Card 3</h3>
     <div class="bar">
       <div class="emptybar"></div>
       <div class="filledbar"></div>
@@ -43,7 +43,7 @@ function Cariusel2  () {
     </div>
   </div>
   <div class="card">
-    <h3 class="title">Card 4</h3>
+    <h3 class="title-2">Card 4</h3>
     <div class="bar">
       <div class="emptybar"></div>
       <div class="filledbar"></div>
@@ -55,7 +55,7 @@ function Cariusel2  () {
     </div>
   </div>
 </div>
-</body>
+
 </>
 
   )
