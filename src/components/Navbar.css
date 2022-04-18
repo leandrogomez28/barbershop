@@ -90,12 +90,12 @@
 	filter: brightness(200%);
   }
   details::before {
-	
+	content: "MENU";
 	color: var(--secoColor);
 	position: absolute;
 	margin-left: 80px;
 	padding: 10px 10px;
-	opacity: 0.4;
+	/* opacity: 0.4; */
   }
   details[open]::before {
 	animation: fadeMe 300ms linear forwards;
