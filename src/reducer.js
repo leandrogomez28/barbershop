@@ -1,6 +1,7 @@
 export const initialState = {
     barberos:[],
     servicios:[],
+    productos:[],
   
     user:null,
     
@@ -9,6 +10,7 @@ export const initialState = {
 export const actionType={
     BARBEROSDB:"BARBEROSDB",
     SERVICIOSDB:"SERVICIOSDB",
+    PRODUCTOSDB:"PRODUCTOSDB",
     
     USER:"USER",
     
@@ -23,6 +25,18 @@ const reducer=(state,action)=> {
                 servicios:action.servicios,
                
             }
+            case "BARBEROSDB":
+                return{
+                    ...state,
+                    barberos:action.barberos,
+                   
+                }
+                case "PRODUCTOSDB":
+                    return{
+                        ...state,
+                        productos:action.productos,
+                       
+                    }
 
             case "USER":
                 return{

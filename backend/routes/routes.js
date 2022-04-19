@@ -1,14 +1,16 @@
 const Router= require("express").Router();
 
+
 const barberosController = require("../controllers/datosControllers");
-const {ObtenerServicios,ObtenerDatos}= barberosController
+const {ObtenerServicios,ObtenerDatos,ObtenerProductos}= barberosController
 
 const usersControllers=require("../controllers/usersControllers") 
 const {newUser,verifyEmail,accesoUsuario,cerrarSesion,verificarToken}=usersControllers 
 
 const validator=require("../controllers/validator") 
 
-
+Router.route("/productos")
+.get(ObtenerProductos)
 
 Router.route("/barberos")
 .get(ObtenerDatos)
