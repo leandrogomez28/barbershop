@@ -350,6 +350,7 @@ button:nth-child(2) {
   border-left: 1px solid #0000008c;
   border-right: 1px solid #0000008c;
 }
+
 button:nth-child(2):hover {
   border-left: 1px solid #0000008c;
   border-right: 1px solid #0000008c;
