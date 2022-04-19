@@ -3,6 +3,8 @@ const Barberos = require("../models/barberos.js");
 
 const Servicios = require("../models/servicios.js")
 
+const Productos = require('../models/productos.js')
+
 
 
 
@@ -40,6 +42,26 @@ const barberosController = {
         }
         res.json({
             response:error?"ERROR":{servicios},
+            success:error ? false:true,
+            error:error
+
+        })
+
+    },
+
+    ObtenerProductos: async (req, res) => {
+        let productos
+        let error = null
+        try {
+
+            productos = await Productos.find()
+
+        } catch (err) {
+            error = err
+            console.log(error)
+        }
+        res.json({
+            response:error?"ERROR":{productos},
             success:error ? false:true,
             error:error
 

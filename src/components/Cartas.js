@@ -1,6 +1,9 @@
-import React from "react";
+import React,{useEffect} from "react";
 import "./Cards.css"
-// import "./CartasProducto/Cariusel2"
+
+import { actionType } from '../reducer';
+import { useStateValue } from '../StateProvider';
+import axios from 'axios';
 
 import { FaFacebook } from "react-icons/fa";
 
@@ -8,6 +11,24 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
 function Cartas() {
+  const [{ productos }, dispatch] = useStateValue()
+
+
+  useEffect(() => {
+    axios.get("http://localhost:4000/api/productos")
+    .then(response => {
+      dispatch({
+        type: actionType.PRODUCTOSDB,
+        productos: response.data.response.productos
+      })
+
+    })
+}, [])
+
+const mejoresProductos=productos.slice(0,10)
+
+console.log(mejoresProductos)
+
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -33,10 +54,12 @@ function Cartas() {
       <div className="product-mas">
 
         <Carousel responsive={responsive} draggable={true} className=' '>
+        {mejoresProductos?.map(item =>
           <div className="card-carousel p-3">
-
+         
             <div className="card">
-              <img src="https://i.imgur.com/oYiTqum.jpg" class="card__image" alt="" />
+
+              <img src={process.env.PUBLIC_URL +`/productosGeneral/${item.imagen}`} className="card__image " />
               <div class="card__overlay">
                 <div class="card__header">
                   <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
@@ -49,93 +72,9 @@ function Cartas() {
                 <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
               </div>
             </div>
+          
           </div >
-          <div className="card-carousel p-3">
-
-            <div className="card">
-              <img src="https://i.imgur.com/oYiTqum.jpg" class="card__image" alt="" />
-              <div class="card__overlay">
-                <div class="card__header">
-                  <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
-                  <img class="card__thumb" src="https://i.imgur.com/7D7I6dI.png" alt="" />
-                  <div class="card__header-text">
-                    <h3 class="card__title">Jessica Parker</h3>
-                    <span class="card__status">1 hour ago</span>
-                  </div>
-                </div>
-                <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
-              </div>
-            </div>
-          </div >
-          <div className="card-carousel p-3">
-
-            <div className="card">
-              <img src="https://i.imgur.com/oYiTqum.jpg" class="card__image" alt="" />
-              <div class="card__overlay">
-                <div class="card__header">
-                  <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
-                  <img class="card__thumb" src="https://i.imgur.com/7D7I6dI.png" alt="" />
-                  <div class="card__header-text">
-                    <h3 class="card__title">Jessica Parker</h3>
-                    <span class="card__status">1 hour ago</span>
-                  </div>
-                </div>
-                <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
-              </div>
-            </div>
-          </div >
-          <div className="card-carousel p-3">
-
-            <div className="card">
-              <img src="https://i.imgur.com/oYiTqum.jpg" class="card__image" alt="" />
-              <div class="card__overlay">
-                <div class="card__header">
-                  <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
-                  <img class="card__thumb" src="https://i.imgur.com/7D7I6dI.png" alt="" />
-                  <div class="card__header-text">
-                    <h3 class="card__title">Jessica Parker</h3>
-                    <span class="card__status">1 hour ago</span>
-                  </div>
-                </div>
-                <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
-              </div>
-            </div>
-          </div >
-          <div className="card-carousel p-3">
-
-            <div className="card">
-              <img src="https://i.imgur.com/oYiTqum.jpg" class="card__image" alt="" />
-              <div class="card__overlay">
-                <div class="card__header">
-                  <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
-                  <img class="card__thumb" src="https://i.imgur.com/7D7I6dI.png" alt="" />
-                  <div class="card__header-text">
-                    <h3 class="card__title">Jessica Parker</h3>
-                    <span class="card__status">1 hour ago</span>
-                  </div>
-                </div>
-                <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
-              </div>
-            </div>
-          </div >
-          <div className="card-carousel p-3">
-
-            <div className="card">
-              <img src="https://i.imgur.com/oYiTqum.jpg" class="card__image" alt="" />
-              <div class="card__overlay">
-                <div class="card__header">
-                  <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
-                  <img class="card__thumb" src="https://i.imgur.com/7D7I6dI.png" alt="" />
-                  <div class="card__header-text">
-                    <h3 class="card__title">Jessica Parker</h3>
-                    <span class="card__status">1 hour ago</span>
-                  </div>
-                </div>
-                <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
-              </div>
-            </div>
-          </div >
-
+      )}
 
 
 
