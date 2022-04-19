@@ -4,6 +4,7 @@ import facebook from "../components/Imagen1/facebook.png";
 import twitter from "../components/Imagen1/twitter.png";
 import whatsapp from "../components/Imagen1/whatsapp.png";
 import instagram from "../components/Imagen1/instagram.png";
+import LikesBarber from "./LikesBarber";
 
 function Estilista() {
   return (
@@ -30,7 +31,7 @@ function Estilista() {
               <span class="bn39span">Button</span>
             </a>
           </div>
-          
+
           <p>
             Emprendedor y visionario con vasta experiencia en el ramo de la
             barbería, con una audaz y llamativa propuesta en Buenos Aires de un
@@ -46,6 +47,7 @@ function Estilista() {
             <a href="https://twitter.com/tutsplus">
               <img src={twitter} />
             </a>
+           
           </li>
 
           {/* <!-- envato – use this one to link to your marketplace profile --> */}
