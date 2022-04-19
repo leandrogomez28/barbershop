@@ -9,8 +9,8 @@ function App() {
     <div>
       {/* <Cartas/>
       <Producto/> */}
-{/* <Mostrar/> */}
-<Cariusel2/>
+<Mostrar/>
+{/* <Cariusel2/> */}
 </div>
   );
 }
