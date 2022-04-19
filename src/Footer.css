@@ -1,3 +1,24 @@
+.bottomed{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1em;
+}
+
+.flecha{
+    display: flex;
+}
+.replaced-svg{
+    width: 4em;
+}
+
+.caption{
+    position: relative;
+    top:-9em;
+}
+
 #footer-widget-bar {
     width: 100%;
 }
@@ -65,7 +86,7 @@
 }
 
 #footer-widget-bar.container.left-right.section {
-    padding-top: 91px;
+    
     width: 50%;
     float: left;
     font-weight: 700;
@@ -75,7 +96,7 @@
 #footer-widget-bar.container.section {
     /*width: 75%;*/
     position: relative;
-    padding: 40px 20px 5px 20px;
+    
     margin: 0 auto;
     text-align: center;
 }
@@ -121,7 +142,7 @@
 }
 
 #footer-widget-bar>.container.left-right>section {
-    padding-top: 91px;
+    
     width: 50%;
     float: left;
     font-weight: 700;
@@ -131,13 +152,13 @@
 #footer-widget-bar>.container>section {
     width: 75%;
     position: relative;
-    padding: 40px 20px 5px 20px;
+   
     margin: 0 auto;
     text-align: center;
 }
 /*----------------------------------------*/
 .widget-area{
-    padding-top: 91px;
+   
     width: 50%;
     float: left;
     font-weight: 700;
@@ -147,7 +168,7 @@
 .container {
     width: 75%;
     position: relative;
-    padding: 40px 20px 5px 20px;
+    padding: 1em;
     margin: 0 auto;
     text-align: center;
 }
@@ -161,7 +182,7 @@
 }
 .widget-area{
 
-        padding-top: 91px;
+        
         width: 50%;
         float: left;
         font-weight: 700;
