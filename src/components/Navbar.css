@@ -91,7 +91,8 @@
 	border-bottom: none;
   }
   .menu2 a:hover {
-	filter: brightness(200%);
+	filter: brightness(60%);
+  text-shadow: 0 0 10px rgb(42, 41, 41);
   }
   details::before {
 	content: "MENU";
