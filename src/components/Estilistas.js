@@ -34,8 +34,8 @@ function Estilista(){
   <div class="profile-bio">
 
     <p>Hello there!</p>
-    <p>I am a full stack web developer. I mainly work with PHP, HTML, CSS, JS and WordPress.
-      <br />I also play well with Photoshop, Corel Draw, After Effects and other cool stuff.</p>
+    <p>Emprendedor y visionario con vasta experiencia en el ramo de la barbería, con una audaz y llamativa propuesta en Buenos Aires 
+      de un estilo neoclásico que resalta su gran maestría y versatilidad en tijera y navajas para trabajar el cabello y la barba.</p>
 
   </div>
 
@@ -93,8 +93,9 @@ function Estilista(){
   <div class="profile-bio">
 
     <p>Hello there!</p>
-    <p>I am a full stack web developer. I mainly work with PHP, HTML, CSS, JS and WordPress.
-      <br />I also play well with Photoshop, Corel Draw, After Effects and other cool stuff.</p>
+    <p>Amplia formación y experiencia es reconocido como uno de los mejores y más famosos referentes en Caracas y ahora en Buenos Aires.
+     Es especialista en cortes urbanos y siempre está a la vanguardia con los estilos más trendy.
+     </p>
 
   </div>
 
