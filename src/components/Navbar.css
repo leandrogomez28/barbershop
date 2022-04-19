@@ -51,7 +51,7 @@
   summary::-webkit-details-marker {
 	display: none;
   }
-  details[open] .menu {
+  details[open] .menu2 {
 	animation-name: menuAnim;
   }
   details[open] summary::before {
@@ -62,7 +62,7 @@
   details[open] summary::after {
 	content: "";
   }
-  .menu {
+  .menu2 {
 	height: 0;
 	width: fit-content;
 	border-radius: var(--cornerRad);
@@ -75,7 +75,7 @@
 	overflow: hidden;
 	animation: closeMenu 300ms ease-in-out forwards;
   }
-  .menu a {
+  .menu2 a {
 	padding: 12px 24px;
 	margin: 0 16px;
 	color: var(--secoColor);
@@ -84,13 +84,13 @@
 	text-align: center;
 	transition: filter 200ms linear 0s;
   }
-  .menu a:nth-of-type(1) {
+  .menu2 a:nth-of-type(1) {
 	padding-top: 24px;
   }
-  .menu a:nth-last-of-type(1) {
+  .menu2 a:nth-last-of-type(1) {
 	border-bottom: none;
   }
-  .menu a:hover {
+  .menu2 a:hover {
 	filter: brightness(200%);
   }
   details::before {
