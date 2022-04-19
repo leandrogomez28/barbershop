@@ -2,7 +2,7 @@ import React from "react";
 import "./Cards.css"
 // import "./CartasProducto/Cariusel2"
 
-import { FaFacebook } from "react-icons/fa";
+
 
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
