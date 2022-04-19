@@ -92,7 +92,9 @@ function Estilista(){
   {/* <!-- bit of a bio; who are you? --> */}
   <div class="profile-bio">
 
-    <p>Hello there!</p>
+        <div>
+            <a class="bn39" href="/"><span class="bn39span">Button</span></a>
+        </div>
     <p>Amplia formación y experiencia es reconocido como uno de los mejores y más famosos referentes en Caracas y ahora en Buenos Aires.
      Es especialista en cortes urbanos y siempre está a la vanguardia con los estilos más trendy.
      </p>
