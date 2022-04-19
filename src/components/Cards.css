@@ -18,6 +18,9 @@
     z-index: 3;
     /* background: #000; */
   }
+  .contenido-card  .content{
+    height: 20em;
+  }
   
  
   .container-prod{

@@ -1,5 +1,6 @@
 import React from "react";
 import './titulo.css'
+import Logo from '../imagenes/LogoBarbershop.png'
 
 
 
@@ -8,6 +9,11 @@ function Titulo(){
 
     return(
        <div className="contenedor-1">
+           <div className="d-flex justify-content-center">
+           <img src={Logo} className='logo' alt="..." />
+
+               
+           </div>
            
            <div className="title">
                 <h2>
@@ -25,7 +31,7 @@ function Titulo(){
                 </h2>
            </div>
            
-           <div class="ozy_rret"></div>
+        
        </div>
 
     )

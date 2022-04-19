@@ -1,7 +1,9 @@
-<<<<<<< HEAD
 import React, { useEffect } from 'react';
 import { actionType } from './reducer';
 import { useStateValue } from './StateProvider';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Home from './pages/Home.js'
+
 
 
 // import './App.css';
@@ -19,18 +21,13 @@ import SignUp from './components/SignUp';
 
 import Estilistas from './components/Estilistas.js'
 // import Estilyst from './components/Estilyst.js'   esta no se va a usar
- import ValesGift from './components/ValesGift.js'
+import ValesGift from './components/ValesGift.js'
 import Testimonials from './components/Testimonial'
 
 import ServicesCards from './components/ServicesCards.js'
 import FooterPage from './components/FooterPage.js'
 import Navbar from './components/Navbar'
 import axios from 'axios';
-=======
-import React from 'react';
-import ServicesCards from './components/ServicesCards';
-import Navbar from './components/Navbar';
->>>>>>> origin/KairaAbreu
 
 
 function App() {
@@ -40,33 +37,21 @@ function App() {
   useEffect(() => {
     axios.get("http://localhost:4000/api/datos")
       .then(response => console.log(response))
-    }, [])
+  }, [])
 
   return (
-    <div className="App">
-<<<<<<< HEAD
-      <Navbar/>
 
-      <Titulo />
-      <Carrousel />
-      <Carrousel2/>
-      <SignUp />
-      <Cartas />
-      <Producto />
-      {/* <Estilyst/> Es no se va a usar */}
-      <ValesGift/>
-      <Estilistas />
-      <ServicesCards />
-      <Testimonials/>
-      <SingIn/>
-      <Contactos></Contactos>
-      <FooterPage/>
-=======
-      {/* <ServicesCards/> */}
-      <Navbar/>
-   
->>>>>>> origin/KairaAbreu
-    </div>
+    <BrowserRouter>
+
+      <Navbar />
+      <Routes>
+
+      <Route path='/' element={<Home/>} />
+      
+      </Routes>
+      <FooterPage />
+
+    </BrowserRouter>
 
 
 
