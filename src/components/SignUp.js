@@ -159,10 +159,10 @@ function SignUp() {
 					   </div>
 					   
 					   <form >
-						   <input type="text" className="form-control inputSign " placeholder="NOMBRE (REQUERIDO)"  />
-						   <input type="text" className="form-control inputSign " placeholder="APELLIDO (REQUERIDO)"  />
-						   <input type="email" className="form-control inputSign " placeholder="EMAIL (REQUERIDO)"  />
-						<input type="password" className="form-control inputSign " placeholder="PASSWORD (REQUERIDO)"  />
+						   <input type="text" className="form-control inputSign bg-dark" placeholder="NOMBRE (REQUERIDO)"  />
+						   <input type="text" className="form-control inputSign bg-dark" placeholder="APELLIDO (REQUERIDO)"  />
+						   <input type="email" className="form-control inputSign bg-dark " placeholder="EMAIL (REQUERIDO)"  />
+						<input type="password" className="form-control inputSign bg-dark" placeholder="PASSWORD (REQUERIDO)"  />
 		
 						<button className="send" type="send">Registrarse</button>
 					   </form>

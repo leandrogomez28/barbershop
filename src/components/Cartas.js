@@ -1,136 +1,157 @@
 import React from "react";
 import "./Cards.css"
-import {FaFacebook} from"react-icons/fa";
+// import "./CartasProducto/Cariusel2"
 
-function Cartas (){
-    return(
-        
-        <div className="carousel-prod">
-        <div className="container-prod">
-        <input type="radio" name="dot" id="one"/>
-        <input type="radio" name="dot" id="two"/>
-        <div className="titulo-prod">Andrew Neil</div>
-        <div className="subtitulo-prod">Andrew Neil</div>
-       
-        <div className="main-card">
-          <div className="cards">
+import { FaFacebook } from "react-icons/fa";
+
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
+
+function Cartas() {
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1
+    }
+  };
+  return (
+    <div>
+      <div className="ozy_rreb"></div>
+      <div className="product-mas">
+
+        <Carousel responsive={responsive} draggable={true} className=' '>
+          <div className="card-carousel p-3">
+
             <div className="card">
-             <div className="content">
-               <div className="img">
-                <img />
-                {/* llamar foto */}
-               </div>
-               <div className="details">
-                 <div className="name">Andrew Neil</div>
-                 <div className="job">Price</div>
-               </div>
-               <div className="media-icons">
-                 <a href="#"><FaFacebook style={{ fontSize:"2.5em"}}/></a>
-                 <a href="#"><i className="fab fa-twitter"></i></a>
-                 <a href="#"><i className="fab fa-instagram"></i></a>
-                 <a href="#"><i className="fab fa-youtube"></i></a>
-               </div>
-             </div>
+              <img src="https://i.imgur.com/oYiTqum.jpg" class="card__image" alt="" />
+              <div class="card__overlay">
+                <div class="card__header">
+                  <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
+                  <img class="card__thumb" src="https://i.imgur.com/7D7I6dI.png" alt="" />
+                  <div class="card__header-text">
+                    <h3 class="card__title">Jessica Parker</h3>
+                    <span class="card__status">1 hour ago</span>
+                  </div>
+                </div>
+                <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
+              </div>
             </div>
+          </div >
+          <div className="card-carousel p-3">
+
             <div className="card">
-             <div className="content">
-               <div className="img">
-                <img />
-               </div>
-               <div className="details">
-                 <div className="name">Jasmine Carter</div>
-                 <div className="job">Price</div>
-               </div>
-               <div className="media-icons">
-               <a href="#"><i style={{ fontSize:"2.5em"}}><FaFacebook/></i></a>
-                 <a href="#"><i className="fab fa-twitter"></i></a>
-                 <a href="#"><i className="fab fa-instagram"></i></a>
-                 <a href="#"><i className="fab fa-youtube"></i></a>
-               </div>
-             </div>
+              <img src="https://i.imgur.com/oYiTqum.jpg" class="card__image" alt="" />
+              <div class="card__overlay">
+                <div class="card__header">
+                  <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
+                  <img class="card__thumb" src="https://i.imgur.com/7D7I6dI.png" alt="" />
+                  <div class="card__header-text">
+                    <h3 class="card__title">Jessica Parker</h3>
+                    <span class="card__status">1 hour ago</span>
+                  </div>
+                </div>
+                <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
+              </div>
             </div>
+          </div >
+          <div className="card-carousel p-3">
+
             <div className="card">
-             <div className="content">
-               <div className="img">
-                <img />
-               </div>
-               <div className="details">
-                 <div className="name">Justin Chung</div>
-                 <div className="job">Price</div>
-               </div>
-               <div className="media-icons">
-               <a href="#"><i style={{ fontSize:"2.5em"}}><FaFacebook/></i></a>
-                 <a href="#"><i className="fab fa-twitter"></i></a>
-                 <a href="#"><i className="fab fa-instagram"></i></a>
-                 <a href="#"><i className="fab fa-youtube"></i></a>
-               </div>
-             </div>
+              <img src="https://i.imgur.com/oYiTqum.jpg" class="card__image" alt="" />
+              <div class="card__overlay">
+                <div class="card__header">
+                  <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
+                  <img class="card__thumb" src="https://i.imgur.com/7D7I6dI.png" alt="" />
+                  <div class="card__header-text">
+                    <h3 class="card__title">Jessica Parker</h3>
+                    <span class="card__status">1 hour ago</span>
+                  </div>
+                </div>
+                <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
+              </div>
             </div>
-          </div>
-          <div className="cards">
+          </div >
+          <div className="card-carousel p-3">
+
             <div className="card">
-             <div className="content">
-               <div className="img">
-                 <img />
-               </div>
-               <div className="details">
-                 <div className="name">Appolo Reef</div>
-                 <div className="job">Price</div>
-               </div>
-               <div className="media-icons">
-               <a href="#"><i style={{ fontSize:"2.5em"}}><FaFacebook/></i></a>
-                 <a href="#"><i className="fab fa-twitter"></i></a>
-                 <a href="#"><i className="fab fa-instagram"></i></a>
-                 <a href="#"><i className="fab fa-youtube"></i></a>
-               </div>
-             </div>
+              <img src="https://i.imgur.com/oYiTqum.jpg" class="card__image" alt="" />
+              <div class="card__overlay">
+                <div class="card__header">
+                  <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
+                  <img class="card__thumb" src="https://i.imgur.com/7D7I6dI.png" alt="" />
+                  <div class="card__header-text">
+                    <h3 class="card__title">Jessica Parker</h3>
+                    <span class="card__status">1 hour ago</span>
+                  </div>
+                </div>
+                <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
+              </div>
             </div>
+          </div >
+          <div className="card-carousel p-3">
+
             <div className="card">
-             <div className="content">
-               <div className="img">
-                 <img />
-               </div>
-               <div className="details">
-                 <div className="name">Adrina Calvo</div>
-                 <div className="job">Price</div>
-               </div>
-               <div className="media-icons">
-               <a href="#"><i style={{ fontSize:"2.5em"}}><FaFacebook/></i></a>
-                 <a href="#"><i className="fab fa-twitter"></i></a>
-                 <a href="#"><i className="fab fa-instagram"></i></a>
-                 <a href="#"><i className="fab fa-youtube"></i></a>
-               </div>
-             </div>
+              <img src="https://i.imgur.com/oYiTqum.jpg" class="card__image" alt="" />
+              <div class="card__overlay">
+                <div class="card__header">
+                  <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
+                  <img class="card__thumb" src="https://i.imgur.com/7D7I6dI.png" alt="" />
+                  <div class="card__header-text">
+                    <h3 class="card__title">Jessica Parker</h3>
+                    <span class="card__status">1 hour ago</span>
+                  </div>
+                </div>
+                <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
+              </div>
             </div>
+          </div >
+          <div className="card-carousel p-3">
+
             <div className="card">
-             <div className="content">
-               <div className="img">
-                <img />
-               </div>
-               <div className="details">
-                 <div className="name">Nicole Lewis</div>
-                 <div className="job">Price</div>
-               </div>
-               <div className="media-icons">
-               <a href="#"><i style={{ fontSize:"2.5em"}}><FaFacebook/></i></a>
-                 <a href="#"><i className="fab fa-twitter"></i></a>
-                 <a href="#"><i className="fab fa-instagram"></i></a>
-                 <a href="#"><i className="fab fa-youtube"></i></a>
-               </div>
-             </div>
+              <img src="https://i.imgur.com/oYiTqum.jpg" class="card__image" alt="" />
+              <div class="card__overlay">
+                <div class="card__header">
+                  <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
+                  <img class="card__thumb" src="https://i.imgur.com/7D7I6dI.png" alt="" />
+                  <div class="card__header-text">
+                    <h3 class="card__title">Jessica Parker</h3>
+                    <span class="card__status">1 hour ago</span>
+                  </div>
+                </div>
+                <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
+              </div>
             </div>
-          </div>
-        </div>
-        <div className="button">
-          <label for="one" className=" active one"></label>
-          <label for="two" className="two"></label>
-        </div>
-        
+          </div >
+
+
+
+
+        </Carousel>
+
+
       </div>
-      
+      <div className="ozy_rret"></div>
 
-        </div>
-    );
+
+
+
+    </div>
+
+
+  );
 }
 
 export default Cartas;
