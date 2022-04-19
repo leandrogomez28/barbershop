@@ -6,6 +6,7 @@ import Estilistas from "../components/Estilistas";
 import Producto from "../components/CartasProducto/Producto";
 import Cartas from "../components/Cartas";
 import Contactos from "../components/contactos"
+import Calendario from '../components/Calendario'
 
 function Home(){
 
@@ -18,6 +19,7 @@ function Home(){
             <Carrousel/>
             <Cartas/>
             <Contactos/>
+            <Calendario/>
    </div>
         
     )
