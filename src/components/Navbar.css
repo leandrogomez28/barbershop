@@ -10,30 +10,32 @@
 	font-size: 20px;
   }
   details {
-	margin: 40px;
-	position: absolute;
-	top: 1em;
+	background: white;
+    margin: 40px;
+    position: absolute;
+    top: 1em;
+    padding: 1em;
   }
   summary {
 	writing-mode: vertical-lr;
-	text-align: center;
-	padding: 12px 10px;
-	width: 23px;
-	height: 17px;
-	background-color: var(--primColor);
-	border: 2px solid var(--secoColor);
-	border-radius: var(--cornerRad);
-	color: var(--secoColor);
-	cursor: pointer;
-	user-select: none;
-	outline: none;
-	transition: transform 200ms ease-in-out 0s;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    background-color: var(--primColor);
+    border: 2px solid var(--secoColor);
+    border-radius: var(--cornerRad);
+    color: var(--secoColor);
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+    outline: none;
+    transition: transform 200ms ease-in-out 0s;
   }
   summary::before,
   summary::after {
-	position: absolute;
-    top: 4px;
-    left: -4px;
+    position: absolute;
+    top: 25px;
+    left: 20px;
   }
   summary::before {
 	content: "";
@@ -54,8 +56,8 @@
   }
   details[open] summary::before {
 	content: "X";
-	position: absolute;
-    top: 7px;
+    position: absolute;
+    top: 28px;
   }
   details[open] summary::after {
 	content: "";
@@ -93,11 +95,14 @@
   }
   details::before {
 	content: "MENU";
-	color: var(--secoColor);
-	position: absolute;
-	margin-left: 80px;
-	padding: 10px 10px;
-	/* opacity: 0.4; */
+    color: var(--secoColor);
+    position: absolute;
+    top: 0em;
+    margin-left: 40px;
+    /* opacity: 0.4; */
+    /* font-size: 1em; */
+    background-color: white;
+    padding: 1em;
   }
   details[open]::before {
 	animation: fadeMe 300ms linear forwards;

@@ -1,6 +1,7 @@
 
 import React from 'react';
 import "./Navbar.css";
+import { Link as LinkRouter } from 'react-router-dom';
 
 
 
@@ -11,11 +12,11 @@ function Navbar() {
             <details>
                 <summary></summary>
                 <nav class="menu">
-                    <a href="#link">Inicio</a>
-                    <a href="#link">Sobre Nosotros</a>
-                    <a href="#link">Servicios</a>
-                    <a href="#link">Productos</a>
-                    <a href="#link">Contacto</a>
+                <LinkRouter to='/'>Inicio</LinkRouter>
+                <LinkRouter to='/productos'>Productos</LinkRouter>
+                <LinkRouter to='/signup'>Registro</LinkRouter>
+                <LinkRouter to='/signin'>SignIn</LinkRouter>
+                <LinkRouter to='/servicios'>inicio</LinkRouter>
                 </nav>
             </details>
 
