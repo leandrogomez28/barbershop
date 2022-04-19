@@ -131,6 +131,10 @@ header h2 {
 
 .profile-bio {
   font-family: 'Romanesco', cursive;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   /* margin-top: 10px; */
   text-align: justify;
   padding: 0px 20px 10px 20px !important;
