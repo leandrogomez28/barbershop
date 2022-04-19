@@ -5,10 +5,12 @@ import imagenprueba from "../imagenes/productos general/activador.png";
 import { GiMustache } from "react-icons/gi";
 function Mostrarcards() {
   return (
-    
+
     <div className="fondomostrar" >
       {/* galeria */}
-      <div className="div"></div>
+      <div className="div">
+        
+      </div>
       {/* titulo */}
       <div className="encabezado">
         <h1 className="titulo">MEN’S PRODUCTS </h1>
