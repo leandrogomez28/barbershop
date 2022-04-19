@@ -9,6 +9,7 @@ function Navbar() {
         <>
 
             <details>
+                
                 <summary></summary>
                 <nav class="menu">
                     <a href="#link">Inicio</a>
