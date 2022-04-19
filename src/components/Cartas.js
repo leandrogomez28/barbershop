@@ -55,7 +55,7 @@ console.log(mejoresProductos)
 
         <Carousel responsive={responsive} draggable={true} className=' '>
         {mejoresProductos?.map(item =>
-          <div className="card-carousel p-3">
+          <div className="card-carousel ">
          
             <div className="card">
 
@@ -63,13 +63,20 @@ console.log(mejoresProductos)
               <div class="card__overlay">
                 <div class="card__header">
                   <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
-                  <img class="card__thumb" src="https://i.imgur.com/7D7I6dI.png" alt="" />
-                  <div class="card__header-text">
-                    <h3 class="card__title">Jessica Parker</h3>
-                    <span class="card__status">1 hour ago</span>
+                  
+                  <div class="card__header-text ">
+                  <h3 class="card__title">{item.nombre}</h3>
+                    <span class="card__status">{item.precio}</span>
                   </div>
                 </div>
-                <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
+                
+                <div class="control card__description">
+            {/* <!-- Start Button buying --> */}
+            <button class="btn">
+              <span class="buy">Buy Now</span>
+            </button>
+            {/* <!-- End Button buying --> */}
+          </div>
               </div>
             </div>
           
