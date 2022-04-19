@@ -6,25 +6,7 @@ import { GiMustache } from "react-icons/gi";
 function Mostrarcards() {
   return (
     
-    <div className="fondomostrar" >
-      {/* galeria */}
-      <div className="div"></div>
-      {/* titulo */}
-      <div className="encabezado">
-        <h1 className="titulo">MEN’S PRODUCTS </h1>
-        <h4 className="subtitulo1">
-          Evolucionar el arte del aseo masculino a través de productos de
-          primera calidad <br /> totalmente naturales y utilitarios.{" "}
-        </h4>
-        {/* linea  */}
-        <div className="espacio">
-          <div className="titulo-promo">
-            <h2 className="titulo-promo2">
-              <GiMustache style={{ fontSize: "2.5em", marginBottom: "20px" }} />
-            </h2>
-          </div>
-        </div>
-      </div>
+     <> 
       {/* producto */}
       <div className="contieneCartas">
         <div id="wrapper">
@@ -47,32 +29,25 @@ function Mostrarcards() {
           </div>
         </div>
       </div>
+      {/* titulo */}
+      <div className="encabezado">
+        <h1 className="titulo">MEN’S PRODUCTS </h1>
+        <h4 className="subtitulo1">
+          Evolucionar el arte del aseo masculino a través de productos de
+          primera calidad <br /> totalmente naturales y utilitarios.{" "}
+        </h4>
+        {/* linea  */}
+        <div className="espacio">
+          <div className="titulo-promo">
+            <h2 className="titulo-promo2">
+              <GiMustache style={{ fontSize: "2.5em", marginBottom: "20px" }} />
+            </h2>
+          </div>
+        </div>
+      </div>
 
-      {/* <div class="slider"> carousel  comentado 
-    <div class="slide-track">
-        <div class="slide"></div>
-        <div class="slide"></div>
-        <div class="slide"></div>
-        <div class="slide"></div>
-        <div class="slide"></div>
-        <div class="slide"></div>
-        <div class="slide"></div>
-        <div class="slide"></div>
-        <div class="slide"></div>
-        <div class="slide"></div>
-        <div class="slide"></div>
-        <div class="slide"></div>
-        <div class="slide"></div>
-        <div class="slide"></div>
-        <div class="slide"></div>
-        <div class="slide"></div>
-        <div class="slide"></div>
-        <div class="slide"></div>
-    </div>
-</div>
-
-     */}
-    </div>
+      
+    </>
   );
 }
 

@@ -11,22 +11,7 @@ function Mostrarcards() {
       <div className="div">
         
       </div>
-      {/* titulo */}
-      <div className="encabezado">
-        <h1 className="titulo">MEN’S PRODUCTS </h1>
-        <h4 className="subtitulo1">
-          Evolucionar el arte del aseo masculino a través de productos de
-          primera calidad <br /> totalmente naturales y utilitarios.{" "}
-        </h4>
-        {/* linea  */}
-        <div className="espacio">
-          <div className="titulo-promo">
-            <h2 className="titulo-promo2">
-              <GiMustache style={{ fontSize: "2.5em", marginBottom: "20px" }} />
-            </h2>
-          </div>
-        </div>
-      </div>
+     
       {/* producto */}
       <div className="contieneCartas">
         <div id="wrapper">
@@ -46,6 +31,23 @@ function Mostrarcards() {
               <span class="buy-mostrar">Buy Now</span>
             </button>
             {/* <!-- End Button buying --> */}
+          </div>
+        </div>
+      </div>
+
+       {/* titulo */}
+       <div className="encabezado">
+        <h1 className="titulo">MEN’S PRODUCTS </h1>
+        <h4 className="subtitulo1">
+          Evolucionar el arte del aseo masculino a través de productos de
+          primera calidad <br /> totalmente naturales y utilitarios.{" "}
+        </h4>
+        {/* linea  */}
+        <div className="espacio">
+          <div className="titulo-promo">
+            <h2 className="titulo-promo2">
+              <GiMustache style={{ fontSize: "2.5em", marginBottom: "20px" }} />
+            </h2>
           </div>
         </div>
       </div>
