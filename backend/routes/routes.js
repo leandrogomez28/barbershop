@@ -1,5 +1,6 @@
 const Router= require("express").Router();
 
+const passport=require("../config/passport")
 
 const barberosController = require("../controllers/datosControllers");
 const {ObtenerServicios,ObtenerDatos,ObtenerProductos}= barberosController
@@ -10,7 +11,7 @@ const {newUser,verifyEmail,accesoUsuario,cerrarSesion,verificarToken}=usersContr
 const validator=require("../controllers/validator") 
 
 Router.route("/productos")
-.get(ObtenerProductos)
+.get(ObtenerProductos) 
 
 
 
@@ -31,6 +32,10 @@ Router.route("/signin")
 
 Router.route("/signout")
 .post(cerrarSesion)
+
+Router.route("/signintoken")
+.get(passport.authenticate("jwt",{session:false}),verificarToken)
+
 
 
 

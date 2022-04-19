@@ -4,11 +4,12 @@ import { useStateValue } from './StateProvider';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home.js'
 import Mostrarcards from './pages/Mostrarcards';
-
+import SignUp from './components/signUp/SignUp'
+import SignIn from './components/signIn/SignIn';
 
 // import './App.css';
 import Contactos from './components/contactos/index'
-import SingIn from './components/signIn/SignIn';
+
 import Gallery from './components/Gallery';
 import Cartas from './components/Cartas.js';
 import Producto from './components/CartasProducto/Producto.js'
@@ -40,6 +41,26 @@ function App() {
   useEffect(() => {
     axios.get("http://localhost:4000/api/datos")
       .then(response => console.log(response))
+      if (localStorage.getItem("token") !== null) {
+        const token = localStorage.getItem("token")
+        const user = axios.get("http://localhost:4000/api/signintoken", {
+          headers: {
+            "Authorization": "Bearer " + token
+          }
+        })
+  
+        .then(user=>{
+        if (user.data.success) {
+          dispatch({
+            type: actionType.USER,
+            user: user.data.respuesta
+          })
+        } else {
+          localStorage.removeItem("token")
+        }
+      })
+    }
+    
   }, [])
 
   return (
@@ -51,6 +72,8 @@ function App() {
 
       <Route path='/' element={<Home/>} />
       <Route path='/productos' element={<Mostrarcards/>} />
+      <Route path='/signup' element={<SignUp/>} />
+      <Route path='/signin' element={<SignIn/>} />
 
       
       </Routes>

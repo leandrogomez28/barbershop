@@ -7,7 +7,7 @@ import Producto from "../components/CartasProducto/Producto";
 import Cartas from "../components/Cartas";
 import Contactos from "../components/contactos"
 import Calendario from '../components/Calendario'
-import SingUp from '../components/signUp/SignUp'
+
 import SignIn from '../components/signIn/SignIn'
 import IconLogeo from '../components/iconLogeo/index'
 import LikesBarber from "../components/LikesBarber";
@@ -25,8 +25,8 @@ function Home(){
             <Cartas/>
             <Carrousel/>
             <Contactos/>
-            <SingUp></SingUp>
-            <SignIn></SignIn>
+            
+            
             <IconLogeo></IconLogeo>
 
             <Calendario/>

@@ -1,0 +1,13 @@
+.nav-link{
+    position: fixed;
+    top: 1em;
+    right: 1em;
+    font-size: 3em;
+}
+
+.logueado{
+    position: fixed;
+    top: 1em;
+    right: 1em;
+    height: 2em;
+}

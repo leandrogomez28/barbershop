@@ -2,6 +2,9 @@ import React from "react";
 import { useStateValue } from "../../StateProvider";
 import axios from "axios";
 import { actionType } from "../../reducer";
+import {FaUserCircle} from 'react-icons/fa'
+import './logo.css'
+import Logo from '../../imagenes/logout.png'
 
 export default function IconLogeo(params) {
     const [{ user }, dispatch] = useStateValue()
@@ -30,8 +33,8 @@ export default function IconLogeo(params) {
             <div className="nav-link active hover-underline-animation" aria-current="page" to="/singIn">Sing Out </div> */}
 
             {
-                !user ?<div className="nav-link active hover-underline-animation" aria-current="page" >Sing In </div>:
-                <div className="nav-link active hover-underline-animation" aria-current="page" onClick={cerrarSesion}>Sing Out </div>
+                !user ?<div className="nav-link active hover-underline-animation" aria-current="page" ><FaUserCircle/></div>:
+                <div className="nav-link active hover-underline-animation logueado" aria-current="page" onClick={cerrarSesion}><img src={Logo}/> </div>
             }
 
         </div>
