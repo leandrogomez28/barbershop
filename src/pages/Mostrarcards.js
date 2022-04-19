@@ -1,6 +1,6 @@
 import React from "react";
-import "./Mostrarcards.css";
-import imagenprueba from "../imagenes/productos general/activador.png";
+import "../components/Mostrarcards.css";
+import imagenprueba from "../imagenes/barber.jpeg";
 
 import { GiMustache } from "react-icons/gi";
 function Mostrarcards() {

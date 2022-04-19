@@ -1,6 +1,6 @@
 import React,{useEffect} from "react";
 import "./Cards.css"
-
+import { Link as LinkRouter } from 'react-router-dom';
 import { actionType } from '../reducer';
 import { useStateValue } from '../StateProvider';
 import axios from 'axios';
@@ -73,7 +73,7 @@ console.log(mejoresProductos)
                 <div class="control card__description">
             {/* <!-- Start Button buying --> */}
             <button class="btn">
-              <span class="buy">Buy Now</span>
+              <span class="buy"><LinkRouter to='/productos'>Buy Now</LinkRouter></span>
             </button>
             {/* <!-- End Button buying --> */}
           </div>

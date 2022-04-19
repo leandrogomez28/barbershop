@@ -3,7 +3,7 @@ import { actionType } from './reducer';
 import { useStateValue } from './StateProvider';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home.js'
-
+import Mostrarcards from './pages/Mostrarcards';
 
 
 // import './App.css';
@@ -30,6 +30,7 @@ import Navbar from './components/Navbar'
 import axios from 'axios';
 
 
+
 function App() {
   const [{ servicios }, dispatch] = useStateValue()
 
@@ -49,6 +50,8 @@ function App() {
       <Routes>
 
       <Route path='/' element={<Home/>} />
+      <Route path='/productos' element={<Mostrarcards/>} />
+
       
       </Routes>
       <FooterPage />
