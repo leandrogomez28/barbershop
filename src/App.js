@@ -16,7 +16,7 @@ import Producto from './components/CartasProducto/Producto.js'
 import Carrousel2 from './components/CartasProducto/Cariusel2'
 import Carrousel from './components/Carrousel'
 import Titulo from './components/Titulo';
-import SignUp from './components/SignUp';
+
 
 
 import Estilistas from './components/Estilistas.js'

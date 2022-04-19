@@ -5,64 +5,66 @@ import { FaUserAlt } from 'react-icons/fa';
 import { FaPaperPlane } from 'react-icons/fa';
 import { FaLock } from 'react-icons/fa';
 import { FaCheck } from 'react-icons/fa';
-// import axios from "axios";
-// import swal from 'sweetalert';
+import axios from "axios";
+import swal from 'sweetalert';
 
 // import Google from "../components/signUpGoogle";
 // import Facebook from "../components/signUpFacebook";
-import Facebook from "./signIn/Facebook/index"
-import Google from "./signIn/Google/index"
+import Facebook from "./Facebook/index"
+import Google from "./Google/index"
 
 
 function SignUp() {
 
 
-	// async function newUser(event) {
-	// 	event.preventDefault()
+	async function newUser(event) {
+		event.preventDefault()
 
-	// 	const newUser = {
-	// 		firstname: event.target[0].value,
-	// 		lastname: event.target[1].value,
-	// 		email: event.target[2].value,
-	// 		password: event.target[3].value,
-	// 		from: "signup"
-	// 	}
-
-
-
-	// 	await axios.post("http://localhost:4000/api/signup", { newUser })
-	// 		.then(response => {
-	// 			if (response.data.success === "falseVAL") {
-	// 				let detailsError = response.data.response.error.details
-	// 				console.log(detailsError)
-	// 				detailsError.map(error =>
-	// 					swal({
-
-	// 						title: "error",
-	// 						icon: "error",
-	// 						text: error.message,
-	// 						buttons: "ok"
-	// 					})
-
-	// 				)
-	// 			}
-	// 			else if (response.data.success === "trueUE") {
-	// 				console.log(response.data)
-	// 			}
-
-	// 			else {
-	// 				swal({
-	// 					title: "check your Email",
-	// 					icon: "success",
-	// 					text: response.data.response,
-	// 					buttons: "ok"
-	// 				})
-	// 			}
+		const newUser = {
+			firstname: event.target[0].value,
+			lastname: event.target[1].value,
+			email: event.target[2].value,
+			password: event.target[3].value,
+			from: "signup"
+		}
+		console.log(event);
 
 
-	// 		})
+		await axios.post("http://localhost:4000/api/signup", { newUser })
+			.then(response => {
+				console.log(response);
+				if (response.data.success === "falseVAL") {
 
-	// }
+					let detailsError = response.data.response.error.details
+					console.log(detailsError)
+					detailsError.map(error =>
+						swal({
+
+							title: "error",
+							icon: "error",
+							text: error.message,
+							buttons: "ok"
+						})
+
+					)
+				}
+				else if (response.data.success === "trueUE") {
+					console.log(response.data)
+				}
+
+				else {
+					swal({
+						title: "check your Email",
+						icon: "success",
+						text: response.data.response,
+						buttons: "ok"
+					})
+				}
+
+
+			})
+
+	}
 
 	return (
 
@@ -158,7 +160,7 @@ function SignUp() {
 					   <hr className="hr2"></hr>
 					   </div>
 					   
-					   <form >
+					   <form  onSubmit={newUser}>
 						   <input type="text" className="form-control inputSign bg-dark" placeholder="NOMBRE (REQUERIDO)"  />
 						   <input type="text" className="form-control inputSign bg-dark" placeholder="APELLIDO (REQUERIDO)"  />
 						   <input type="email" className="form-control inputSign bg-dark " placeholder="EMAIL (REQUERIDO)"  />

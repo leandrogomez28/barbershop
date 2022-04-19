@@ -1,9 +1,50 @@
 import React from "react";
 import './signIn.css'
+
+import { actionType } from "../../reducer";
+import { useStateValue } from "../../StateProvider"
+
 import Facebook from "./Facebook/index"
 import Google from "./Google/index"
+import axios from "axios";
 
 export default function SingIn(params) {
+
+
+    const [{ user }, dispatch] = useStateValue()
+
+    async function logiUser(e) {
+        console.log(e);
+
+        e.preventDefault()
+        const userData = {
+            email: e.target[0].value,
+            password: e.target[1].value
+        }
+        await axios.post("http://localhost:4000/api/signin", { userData })
+            .then(response => {
+                
+                console.log(response.data);
+                displayMessages(response.data)
+            })
+
+        function displayMessages(data) {
+            console.log(data.success)
+            if (!data.success) {
+                console.log(data.error)
+            }
+            else {
+                console.log(data)
+                console.log("bienvenido "+ data.response.token )
+                localStorage.setItem("token",data.response.token)
+            }
+            dispatch({
+                type: actionType.USER,
+                user: data.response
+            })
+        }
+    }
+
     return (
         <div className="generals-sign">
             <div className="izquierda">
@@ -25,7 +66,7 @@ export default function SingIn(params) {
                 <hr className="hr2"></hr>
                 </div>
                 
-                <form >
+                <form  onSubmit={logiUser}>
                     <input type="email" className="form-control inputSign bg-dark " placeholder="EMAIL (REQUERIDO)" aria-label="email" />
                     <input type="password" className="form-control inputSign bg-dark" placeholder="PASSWORD (REQUERIDO)" aria-label="email" />
                     <button className="send" type="send">Ingresar</button>
