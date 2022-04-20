@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Gallery from './components/Gallery';
+import Appp from './components/js';
 
 function App() {
   return (
@@ -19,7 +20,6 @@ function App() {
           Learn React
         </a>
       </header> */}
-
       <Gallery/>
     </div>
   );

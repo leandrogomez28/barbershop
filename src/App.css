@@ -1,8 +1,87 @@
 .App {
   text-align: center;
+  background-image: url(https://i.pinimg.com/736x/49/05/61/49056152885218d837da69e685a892a5.jpg)
 }
 
-.App-logo {
+.tags {
+	text-align: center;
+	padding: 20px 0px;
+	background-color:  #4a070e;
+
+}
+
+.tag {
+	outline: none;
+	border: none;
+  color: rgba(248, 248, 236, 0.829);
+	margin: 0px 10px;
+  background-color: rgba(248, 224, 5, 0.64);
+	cursor: pointer;
+  font-family: 'Rye', cursive;
+  background-image: url();
+
+
+}
+
+.active {
+	font-weight: bold;
+	border-bottom: 1px solid #eee;
+}
+.container {
+	width: 80%;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 10px;
+  background-image: url(https://thumbs.dreamstime.com/b/modelo-incons%C3%BAtil-de-la-barber%C3%ADa-98238245.jpg);
+  border: 7px solid;
+    padding: 120px;
+}
+
+.image-card {
+
+	border-radius: 2px;
+  background-image: url(https://image.shutterstock.com/image-vector/barber-shop-pattern-260nw-1007988013.jpg);
+  
+  box-shadow: 0 30px 30px -6px rgb(197 195 187);
+
+}
+
+.image {
+	width: 100%;
+}
+
+
+.main-heading{
+
+background-image: url();
+font-family: 'Trocchi', serif;
+color: rgb(248, 224, 5)
+}
+
+
+.main-head{
+
+  background-image: url();
+  font-family: 'Trocchi', serif;
+
+  color: rgba(248, 248, 236, 0.829);
+  
+  }
+  
+  
+.menu-tabs { 
+
+
+}
+
+
+
+
+
+
+
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -36,3 +115,4 @@
     transform: rotate(360deg);
   }
 }
+ */
