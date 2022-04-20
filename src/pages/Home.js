@@ -15,6 +15,7 @@ import BotonVales from '../components/BotonVales'
 
 function Home() {
 
+import Video from '../components/video/Video'
 
     return (
         <div>
@@ -30,6 +31,7 @@ function Home() {
             <Testimonial/>
             <Contactos />
             <Deslogueo />
+            <Video/>
             <CartProvider>
                 
                 <Cart />
