@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import "./barberos.css"
 import facebook from '../components/Imagen1/facebook.png'
+import like2 from '../components/Imagen1/like2.png'
 import twitter from '../components/Imagen1/twitter.png'
 import whatsapp from '../components/Imagen1/whatsapp.png'
 import instagram from '../components/Imagen1/instagram.png'
@@ -65,7 +66,7 @@ function Estilista() {
               {/* <!-- twitter - el clásico  --> */}
               <li>
                 <a href="https://twitter.com/tutsplus">
-                  <img src={twitter} />
+                  <img src={like2} />
                 </a>
               </li>
 

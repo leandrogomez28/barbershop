@@ -7,14 +7,14 @@
 /* Boton de la tarjeta para calendario */
 
 .bn39 {
-  background-image: linear-gradient(135deg, #008aff, #86d472);
-  
+  background-image: linear-gradient(135deg, rgb(193, 248, 216), rgb(129, 192, 250));
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   border-radius: 6px;
   box-sizing: border-box;
   color: #ffffff;
   display: block;
   height: 30px;
-  font-size: 0.7em;
+  font-size: 0.5em;
   font-weight: 300;
   padding: 4px;
   position: relative;
@@ -24,7 +24,7 @@
 }
 
 .bn39:hover {
-  color: #fff;
+  color: rgb(15, 15, 15);
 }
 
 .bn39 .bn39span {
@@ -106,7 +106,7 @@ header h1 {
   font-size: 30px;
   line-height: 25px;
   display: inline-block;
-  padding: 20px;
+  padding: 15px;
   transition: all ease 0.250s;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
@@ -127,6 +127,7 @@ header h2 {
   font-weight: normal;
   line-height: 0px;
   margin: 0;
+  
 }
 
 .profile-bio {
@@ -137,10 +138,10 @@ header h2 {
   align-items: center;
   /* margin-top: 10px; */
   text-align: justify;
-  padding: 0px 20px 10px 20px !important;
+  padding: 10px 20px 10px 20px !important;
   transition: all linear 1.5s;
   color: black;
-  font-size: 22px;
+  font-size: 30px;
   opacity: 0;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.42) 49%, rgba(0, 0, 0, 0.61) 100%);
 }
@@ -151,7 +152,7 @@ aside:hover .profile-bio {
 
 .profile-bio p:first-child {
   text-align: center;
-  font-size: 16px;
+  font-size: 19px;
 }
 
 .profile-social-links {
