@@ -27,7 +27,10 @@ import Testimonials from './components/Testimonial'
 import ServicesCards from './components/ServicesCards.js'
 import FooterPage from './components/FooterPage.js'
 import Navbar from './components/Navbar'
-import axios from 'axios';
+
+import axios from 'axios'
+
+
 
 
 function App() {
@@ -45,10 +48,11 @@ function App() {
 
       <Navbar />
       <Routes>
-
+      
       <Route path='/' element={<Home/>} />
       
       </Routes>
+      
       <FooterPage />
 
     </BrowserRouter>

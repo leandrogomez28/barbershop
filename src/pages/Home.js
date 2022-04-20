@@ -5,7 +5,7 @@ import About from '../components/About'
 import Estilistas from "../components/Estilistas";
 import Producto from "../components/CartasProducto/Producto";
 import Cartas from "../components/Cartas";
-
+import Video from '../components/video/Video'
 
 function Home(){
 
@@ -14,6 +14,7 @@ function Home(){
         <div>
             <Titulo/>
             <About/>
+            <Video/>
             <Estilistas/>
             <Carrousel/>
             <Cartas/>
