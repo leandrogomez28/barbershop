@@ -27,31 +27,23 @@ console.log(productosSelecionado)
         <div className="contiene-card2" >
 
         <div id="wrapper">
-          {/* <div class="dust">
-            <img src="http://www.mattdrew.co.uk/experiments/images/ex-2point5d/dust.png" />
-          </div> */}
-          <div class="background">
-            <img src={
+         <img className="productog" src={
                     process.env.PUBLIC_URL + `/productosGeneral/${item.imagen}`
                   } />
-          </div>
         </div>
-
-
-
-
 
         <div className="contenido">
           <h1 className="titulo"> {item.nombre}</h1>
           <h4 className="subtitulo">{item.descripción}</h4>
-          <div class="control">
-            
-            <button class="btn">
-              <span class="buy">Comprar</span>
+          
+          <div className="control-boton">  
+            <button className="btn-boton">
+              <span className="buy-boton">Comprar</span>
             </button>
            
           </div>
         </div>
+        
         </div> 
         )}
       </div>

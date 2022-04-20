@@ -59,8 +59,8 @@ function Union() {
                 {/* <p>{item.descripción}</p> */}
                 <div class="control card__description">
                   {/* <!-- Start Button buying --> */}
-                  <button class="btn">
-                    <span class="buy">
+                  <button class="btn-link">
+                    <span class="buy-link">
                       <LinkRouter to={`/producto/${item._id}`}>
                         Ver Mas
                       </LinkRouter>
