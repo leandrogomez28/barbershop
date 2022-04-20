@@ -205,6 +205,119 @@
 
 
 
+		
+        {
+			id: '33',
+			name: "Pedicura",
+			image:
+"4e72a81b81cadcc760bc9a482abfd34f.jpg"
+		},
+		{
+			id: '34',
+			name: "Pedicura",
+			image:
+"7b888fecbc4383b274461c8effe1bc94.jpg"		},
+		{	id: '35',
+			name: "Pedicura",
+			image:
+"315qfoqyclL._SX466_.jpg"		},		{
+			id: '36',
+			name: "Pedicura",
+			image:
+"719xGjls+pL._SY355_.jpg"		},
+		{
+			id: '37',
+			name: "Pedicura",
+					image:
+"cfb_2x_447099.jpg"		},
+
+        {
+			id: '38',
+			name: "Pedicura",
+			image:
+"descarga (1).jpg"		},
+		{
+			id: '39',
+			name: "Pedicura",
+			image:
+"descarga.jpg"		},
+		{
+			id: '40',
+			name: "Pedicura",
+			image:
+"disenos-de-unas-de-pies-faciles-florales.jpg"		},
+		{
+			id: '41',
+			name: "Pedicura",
+			image: "e5dcbebced2eb60479ebde09056f1c95.jpg",
+		},
+		{
+			id: '42',
+			name: "Pedicura",
+			image:
+"unas-pies.jpg"
+		},
+
+
+
+			
+        {
+			id: '43',
+			name: "Cortes de Cabello/Con Navaja",
+			image:
+"278803183_1003972387214038_441850630774727438_n.jpg"		},
+		{
+			id: '44',
+			name: "Cortes de Cabello/Con Navaja",
+			image:
+"278836373_520596199606557_2929321503148086521_n.jpg"
+},
+		{	id: '45',
+			name: "Cortes de Cabello/Con Navaja",
+			image:
+"278857914_368967855166183_5561985281590615843_n.jpg"		},		{
+			id: '46',
+			name: "Cortes de Cabello/Con Navaja",
+			image:
+"descarga (1).jpg"
+	},
+		{
+			id: '47',
+			name: "Cortes de Cabello/Con Navaja",
+					image:
+"descarga (2).jpg"},
+
+        {
+			id: '48',
+			name: "Cortes de Cabello/Con Navaja",
+			image:
+"descarga (3).jpg"		},
+		{
+			id: '49',
+			name: "Cortes de Cabello/Con Navaja",
+			image:
+"descarga (4).jpg"
+	},
+		{
+			id: '50',
+			name: "Cortes de Cabello/Con Navaja",
+			image:
+"descarga.jpg"
+	},
+		{
+			id: '51',
+			name: "Cortes de Cabello/Con Navaja",
+			image: "lineas-en-el-pelo-5.jpg",
+		},
+		{
+			id: '52',
+			name: "Cortes de Cabello/Con Navaja",
+			image:
+"lineas-en-el-pelo-8-1.webp"
+		},
+
+
+
 
 	]
 

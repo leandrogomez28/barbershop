@@ -74,9 +74,9 @@ export default function Gallery() {
           /
           <button
             className="tag"
-            onClick={() => filterItem("Tratamiento de Cabello")}
+            onClick={() => filterItem("Cortes de Cabello/Con Navaja")}
           >
-            Tratamiento de Cabello
+Cortes de Cabello/Con Navaja
           </button>
           /
           <button className="tag" onClick={() => setItems(Photos)}>
@@ -89,11 +89,11 @@ export default function Gallery() {
 				<div  className="container" >
 					{items.map(img => (
 						<div key={img.id} className="image-card" >
-							<a href={`gallery/Manicura/${img.image}`
+							<a href={`gallery/Todos/${img.image}`
                         }>
 								<img className="image" src={
                           process.env.PUBLIC_URL +
-                          `gallery/Manicura/${img.image}`
+                          `gallery/Todos/${img.image}`
                         } alt="" />
 							</a>
 						</div>
