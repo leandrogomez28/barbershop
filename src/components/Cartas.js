@@ -52,7 +52,7 @@ console.log(mejoresProductos)
     <div>
       <div className="ozy_rreb"></div>
       <div className="product-mas">
-
+      <h1 className="titulo"> Productos Destacados </h1>
         <Carousel responsive={responsive} draggable={true} className=' '>
         {mejoresProductos?.map(item =>
           <div className="card-carousel ">
@@ -73,7 +73,7 @@ console.log(mejoresProductos)
                 <div class="control card__description">
             {/* <!-- Start Button buying --> */}
             <button class="btn">
-              <span class="buy"><LinkRouter to='/productos'>Buy Now</LinkRouter></span>
+              <span class="buy"><LinkRouter to='/productos'>Ver Mas</LinkRouter></span>
             </button>
             {/* <!-- End Button buying --> */}
           </div>

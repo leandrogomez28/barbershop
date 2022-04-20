@@ -23,7 +23,7 @@ function Mostrarcards() {
           <div class="control">
             {/* <!-- Start Button buying --> */}
             <button class="btn">
-              <span class="buy">Buy Now</span>
+              <span class="buy">Comprar</span>
             </button>
             {/* <!-- End Button buying --> */}
           </div>
