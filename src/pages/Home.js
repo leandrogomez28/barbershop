@@ -8,7 +8,7 @@ import Cartas from "../components/Cartas";
 import Contactos from "../components/contactos"
 import Calendario from '../components/Calendario'
 
-import SignIn from '../components/signIn/SignIn'
+
 import IconLogeo from '../components/iconLogeo/index'
 import LikesBarber from "../components/LikesBarber";
 import ServicesCards from "../components/ServicesCards";
@@ -29,7 +29,7 @@ function Home(){
             
             <IconLogeo></IconLogeo>
 
-            <Calendario/>
+            {/* <Calendario/> */}
             
             <LikesBarber/>
    </div>

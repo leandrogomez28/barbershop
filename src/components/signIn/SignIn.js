@@ -8,7 +8,7 @@ import Facebook from "./Facebook/index"
 import Google from "./Google/index"
 import axios from "axios";
 
-export default function SingIn(params) {
+export default function SignIn(params) {
 
 
     const [{ user }, dispatch] = useStateValue()
