@@ -22,7 +22,7 @@ function Union() {
       {/* titulo */}
 
       <div className="encabezado">
-        <h1 className="titulo">MEN’S PRODUCTS </h1>
+        <h1 className="titulo1">MEN’S PRODUCTS </h1>
         <h4 className="subtitulo1">
           Evolucionar el arte del cuidado masculino a través de productos <br />
           de primera calidad totalmente naturales.{" "}
@@ -31,7 +31,7 @@ function Union() {
         <div className="espacio">
           <div className="titulo-promo">
             <h2 className="titulo-promo2">
-              <GiMustache style={{ fontSize: "2.5em", marginBottom: "20px" }} />
+              <GiMustache style={{ fontSize: "1em", marginBottom: "20px" }} />
             </h2>
           </div>
         </div>
@@ -57,16 +57,23 @@ function Union() {
               </div>
               <div className="carta-footer">
                 {/* <p>{item.descripción}</p> */}
-                <div class="control card__description">
-                  {/* <!-- Start Button buying --> */}
-                  <button class="btn-link">
-                    <span class="buy-link">
+                {/* <div class="control1">
+                 
+                  <button class="btn1">
+                    <span class="buy1">
                       <LinkRouter to={`/producto/${item._id}`}>
                         Ver Mas
                       </LinkRouter>
                     </span>
                   </button>
-                  {/* <!-- End Button buying --> */}
+                  
+                </div> */}
+                <div className="cards-producto-ver">
+                  <button className="producto-ver" >
+                  <LinkRouter to={`/producto/${item._id}`}>
+                        Ver Mas
+                      </LinkRouter>
+                  </button>
                 </div>
               </div>
             </div>

@@ -1,19 +1,21 @@
 
 /* titulo */
-.titulo{
-   
+.titulo1{
+  margin-top: 5%;
     color: black;
     font-size: 90px;
     text-align: center;
     font-family: 'Rye', cursive;
     margin-left: 30px;
     text-shadow: 2px 8px 7px white;
+    -webkit-text-stroke: 2px #fffdfd; 
+    margin-left: 2em;
 }
 .subtitulo1{
 
 margin-top: 2em;
   text-align: center;
-   font-size: 40px;
+   font-size: 30px;
    text-align: center;
    font-family: 'Trocchi', serif;
    font-weight: 1000;
@@ -27,16 +29,18 @@ margin-top: 2em;
 
 /* linea */
 .espacio{
+  margin-top: 1em;
   width: 100%;
   height: 90px;
 text-align: center;
-margin-bottom: 5%;
+
+
 }
 .titulo-promo2{
  display: inline-table;
  position: relative;
- font-family: 'Nanum Myeongjo', serif;
- font-size: 40px;
+ font-family: 'Trocchi', serif;
+ font-size: 30px;
  color: rgb(0, 0, 0);
 }
 .titulo-promo2::after, .titulo-promo2::before{
@@ -44,8 +48,8 @@ margin-bottom: 5%;
   position: absolute;
   width: 120px;
   height: 4px;
-  background-color:rgb(0, 0, 0) ;
-  top: 0.9em;
+  background-color:rgb(58, 53, 53) ;
+  top: 0.4em;
 
 }
 
@@ -61,7 +65,7 @@ margin-bottom: 5%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 5em;
+   margin-bottom: 7%;
     
 }
 .map-cartas .card-carousel{
@@ -73,53 +77,49 @@ margin-bottom: 5%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  
 }
 
 /* boton */
 
-.control-mostrar{
+/* 
+.control1{
 	position: absolute;
 	bottom: 20%;
-	left: 85%;
+	left: 40%;
 	
 }
 
-.control-mostrar.btn-mostrar {
-	transform: translateY(0px);
+.btn1 {
+  transform: translateY(0px);
 	transition: 0.3s linear;
-	background: white;
-	border-radius: 5px;
   position: relative;
   overflow: hidden;
 	cursor: pointer;
 	outline: none;
 	border: none;
-	color: rgb(2, 2, 2);
-	padding: 0;
-	margin: 0;
+  border-radius: 5px;
+	background: #000000;
+  color: #fffdfd;
 	
 }
 
-.btn-mostrar:hover{transform: translateY(-4px);}
+.btn1:hover{transform: translateY(-4px);}
 
-.btn span {
-	font-family: 'Trocchi', serif;
+.btn1.buy1 {
+	
 	transition: transform 0.3s;
 	display: inline-block;
   padding: 10px 20px;
 	font-size: 1.2em;
-	margin:0;
+background: #fff;
 	
 }
 
 button {
   font-family: 'Trocchi', serif;
   font-size: 18px;
-
-  background-color: #363636;
-  background: linear-gradient(#404040, transparent 155%);
   color: #0000008c;
- 
   outline: 0;
   cursor: pointer;
   transition: all 1s ease;
@@ -130,25 +130,39 @@ button:hover {
 }
 button:nth-child(1):hover {
  box-shadow:  0px 0px 2px #000;
-   background: #282828;
+   background: #684b24;
   text-shadow: 0 0px 0px transparent, 0 0 1px #d8ce3f, 0 0px 1px transparent, 0 0 0px #d8ce3f, 0 0 25px #d8ce3f, 0 0 0 #d8ce3f, 0 0 5px #d8ce3f, 0 0 6px #d8ce3f;
   }
-button:nth-child(2) {
-  border-left: 1px solid #0000008c;
-  border-right: 1px solid #0000008c;
-}
+ */
 
-button:nth-child(2):hover {
-  border-left: 1px solid #0000008c;
-  border-right: 1px solid #0000008c;
-  box-shadow:  0px 0px 2px #000;
-   background: #282828;
-  text-shadow: 0 0px 0px transparent, 0 0 1px white, 0 0px 1px transparent, 0 0 0px white, 0 0 25px white, 0 0 0 white, 0 0 5px white, 0 0 6px white;
-  
+ 
+button {
+  font-family: 'Trocchi', serif;
+  font-size: 25px;
+  color: #0000008c;
+  outline: 0;
+  cursor: pointer;
+  transition: all 1s ease;
 }
-
-button:nth-child(3):hover {
+button:hover {
+    color: #fff;
+  transition: all 1s ease;
+}
+button:nth-child(1):hover {
  box-shadow:  0px 0px 2px #000;
-   background: #282828;
-  text-shadow: 0 0px 0px transparent, 0 0 1px #FFDC3E, 0 0px 1px transparent, 0 0 0px #FFDC3E, 0 0 25px #FFDC3E, 0 0 0 #FFDC3E, 0 0 5px #FFDC3E, 0 0 6px #FFDC3E;
-}
+   background: #684b24;
+  text-shadow: 0 0px 0px transparent, 0 0 1px #d8ce3f, 0 0px 1px transparent, 0 0 0px #d8ce3f, 0 0 25px #d8ce3f, 0 0 0 #d8ce3f, 0 0 5px #d8ce3f, 0 0 6px #d8ce3f;
+  }
+
+ .producto-ver{
+  border-radius: 30px;
+  color: #d6ae4c;
+  background-color: rgb(0, 0, 0);
+  border-color: #d6ae4c !important;
+  border: solid 5px;
+  width: 260px;
+  height: 60px;
+  
+ }
+
+  
