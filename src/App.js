@@ -31,6 +31,7 @@ import FooterPage from './components/FooterPage.js'
 import Navbar from './components/Navbar'
 import axios from 'axios';
 import Union from './pages/Union';
+import Mostrarservicios from './pages/Mostrarservicios';
 
 
 
@@ -77,6 +78,7 @@ function App() {
         < Route path='/producto/:id' element={<Mostrarcards />} />
         <Route path='/signup' element={<SignUp />} />
         <Route path='/signin' element={<SignIn />} />
+        <Route path='/servicios' element={<Mostrarservicios/>} />
         {/* <Route path='/turnos' element={<Calendario/>} /> */}
 
 

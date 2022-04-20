@@ -11,6 +11,7 @@ export default function Contactos(params) {
 
             <div className="titulo">
                 <h1>CONTACTO</h1>
+                
                 <hr></hr>
                 <h4 >PONGASE EN CONTACTO CON NOSOTROS</h4>
             </div>

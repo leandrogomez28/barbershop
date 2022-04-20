@@ -2,7 +2,7 @@ import React from 'react'
 import "./ServicesCards.css"
 import Corte2 from "./ImgServices/Corte2.jpg"
 import { GiMustache } from "react-icons/gi";
-
+import { Link } from "react-router-dom";
 
 
 
@@ -45,8 +45,9 @@ function ServicesCards() {
                     </div>
                 </div>
                 <div className="cards-services-ver">
-
+                 <Link to="/Servicios">
                 <button  className='services-ver'  type="send">VER MÁS SERVICIOS</button>
+                </Link>
                 </div>
 
             </div>
