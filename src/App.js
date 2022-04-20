@@ -28,6 +28,7 @@ import ServicesCards from './components/ServicesCards.js'
 import FooterPage from './components/FooterPage.js'
 import Navbar from './components/Navbar'
 import axios from 'axios';
+import Mostrarservicios from './pages/Mostrarservicios';
 
 
 
@@ -51,7 +52,7 @@ function App() {
 
       <Route path='/' element={<Home/>} />
       <Route path='/productos' element={<Mostrarcards/>} />
-
+      <Route path='/servicios' element={<Mostrarservicios/>} />
       
       </Routes>
       <FooterPage />
