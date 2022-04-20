@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import "./barberos.css"
 import facebook from '../components/Imagen1/facebook.png'
+import like2 from '../components/Imagen1/like2.png'
 import twitter from '../components/Imagen1/twitter.png'
 import whatsapp from '../components/Imagen1/whatsapp.png'
 import instagram from '../components/Imagen1/instagram.png'
@@ -8,6 +9,7 @@ import { actionType } from '../reducer';
 import { useStateValue } from '../StateProvider';
 import axios from 'axios';
 import Likes from './Likes'
+import { GiMustache } from "react-icons/gi";
 
 
 function Estilista() {
@@ -29,6 +31,20 @@ function Estilista() {
 
   return (
 
+    <div >
+      <div className="estilistas-title">
+      <h1>STAFF PROFESIONAL</h1>
+      <div className="espacio">
+                            <div className="titulo-promo">
+                                <h2 className="titulo-promo2">
+                                    <GiMustache style={{ fontSize: "1em", marginBottom: "20px" }} />
+                                </h2>
+                            </div>
+                        </div>
+      </div>
+
+
+    
     <div className="barber">
       {barberos?.map((item) => {
         return (
@@ -68,7 +84,7 @@ function Estilista() {
               {/* <!-- twitter - el clásico  --> */}
               <li>
                 <a href="https://twitter.com/tutsplus">
-                  <img src={twitter} />
+                  <img src={like2} />
                 </a>
               </li>
 
@@ -100,6 +116,7 @@ function Estilista() {
       }
 
 
+    </div>
     </div>
 
   );

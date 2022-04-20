@@ -77,6 +77,7 @@ function App() {
 
       
       </Routes>
+      
       <FooterPage />
 
     </BrowserRouter>

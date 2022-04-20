@@ -7,14 +7,14 @@
 /* Boton de la tarjeta para calendario */
 
 .bn39 {
-  background-image: linear-gradient(135deg, #008aff, #86d472);
-  
+  background-image: linear-gradient(135deg, rgb(105, 109, 107), rgb(246, 248, 250));
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   border-radius: 6px;
   box-sizing: border-box;
   color: #ffffff;
   display: block;
   height: 30px;
-  font-size: 0.7em;
+  font-size: 0.5em;
   font-weight: 300;
   padding: 4px;
   position: relative;
@@ -24,7 +24,7 @@
 }
 
 .bn39:hover {
-  color: #fff;
+  color: rgb(15, 15, 15);
 }
 
 .bn39 .bn39span {
@@ -44,6 +44,16 @@
 
 /* tarjeta de Barberos  */
 
+.estilistas-title{
+  text-align: center;
+  font-family: 'Rye', cursive;
+  padding-top: 60px;
+  font-size:2em;
+  text-shadow: 3px 1px #2e2e30;
+  color: #d6ae4c;
+
+}
+
 .barber{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -53,6 +63,7 @@ margin: auto;
 justify-items: center;
 align-items: center;
 padding: 30px;
+padding-top: 5px;
 height: 30em;
   
 }
@@ -106,7 +117,7 @@ header h1 {
   font-size: 30px;
   line-height: 25px;
   display: inline-block;
-  padding: 20px;
+  padding: 15px;
   transition: all ease 0.250s;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
@@ -127,20 +138,21 @@ header h2 {
   font-weight: normal;
   line-height: 0px;
   margin: 0;
+  
 }
 
 .profile-bio {
-  font-family: 'Romanesco', cursive;
+  font-family: 'Trocchi', serif !important;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   /* margin-top: 10px; */
   text-align: justify;
-  padding: 0px 20px 10px 20px !important;
+  padding: 10px 20px 10px 20px !important;
   transition: all linear 1.5s;
   color: black;
-  font-size: 22px;
+  font-size: 30px;
   opacity: 0;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.42) 49%, rgba(0, 0, 0, 0.61) 100%);
 }
@@ -151,7 +163,7 @@ aside:hover .profile-bio {
 
 .profile-bio p:first-child {
   text-align: center;
-  font-size: 16px;
+  font-size: 13px;
 }
 
 .profile-social-links {
@@ -164,13 +176,13 @@ aside:hover .profile-bio {
 }
 
 aside:hover .profile-social-links {
-  margin-left: -30px;
+  margin-left:-45px;
   opacity: 1;
 }
 
 .profile-social-links li img {
-  width: 30px;
-  background: #fff;
+  width: 40px;
+  background: rgb(188, 188, 189);
   border-radius: 50%;
   padding: 5px;
 }
