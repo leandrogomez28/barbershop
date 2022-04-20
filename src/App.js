@@ -6,6 +6,7 @@ import Home from './pages/Home.js'
 import Mostrarcards from './pages/Mostrarcards';
 import SignUp from './components/signUp/SignUp.js'
 import SignIn from './components/signIn/SignIn.js';
+import Calendario from './components/Calendario'
 
 // import './App.css';
 import Contactos from './components/contactos/index'
@@ -35,7 +36,7 @@ import axios from 'axios';
 function App() {
   const [{ servicios }, dispatch] = useStateValue()
 
-  
+
 
 
   useEffect(() => {
@@ -48,7 +49,7 @@ function App() {
             "Authorization": "Bearer " + token
           }
         })
-  
+
         .then(user=>{
         if (user.data.success) {
           dispatch({
@@ -60,7 +61,7 @@ function App() {
         }
       })
     }
-    
+
   }, [])
 
   return (
@@ -74,10 +75,11 @@ function App() {
       <Route path='/productos' element={<Mostrarcards/>} />
       <Route path='/signup' element={<SignUp/>} />
       <Route path='/signin' element={<SignIn/>} />
+      {/* <Route path='/turnos' element={<Calendario/>} /> */}
 
-      
+
       </Routes>
-      
+
       <FooterPage />
 
     </BrowserRouter>

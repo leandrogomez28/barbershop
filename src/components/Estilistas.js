@@ -10,6 +10,7 @@ import { useStateValue } from '../StateProvider';
 import axios from 'axios';
 import Likes from './Likes'
 import { GiMustache } from "react-icons/gi";
+import { Link as LinkRouter } from 'react-router-dom';
 
 
 function Estilista() {
@@ -71,7 +72,7 @@ function Estilista() {
             {/* <!-- bit of a bio; who are you? --> */}
             <div class="profile-bio">
               <div className="turno">
-            <a class="bn39" href="/"><span class="bn39span">Turno</span></a>
+            <a class="bn39" href="/"><LinkRouter  to='/turnos'class="bn39span" >Turnos</LinkRouter></a>
             </div>
             <div className="resumen">
               <p>{item.reseña}</p>

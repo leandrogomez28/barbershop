@@ -11,6 +11,7 @@ import Deslogueo from '../components/iconLogeo/Deslogueo'
 import { CartProvider, useCart } from "react-use-cart";
 import Cart from '../components/Carrito'
 import Testimonial from "../components/Testimonial";
+import BotonVales from '../components/BotonVales'
 
 function Home() {
 
@@ -21,8 +22,11 @@ function Home() {
             <About />
             <Estilistas />
             <ServicesCards />
-            <Cartas />
+
             <Carrousel />
+            <BotonVales/>
+            <Cartas />
+            
             <Testimonial/>
             <Contactos />
             <Deslogueo />
@@ -30,6 +34,7 @@ function Home() {
                 
                 <Cart />
             </CartProvider>
+           
 
 
         </div>
