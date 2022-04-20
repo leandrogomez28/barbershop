@@ -3,7 +3,8 @@ const Barberos = require("../models/barberos.js");
 
 const Servicios = require("../models/servicios.js")
 
-const Productos = require('../models/productos.js')
+const Productos = require('../models/productos.js');
+const Barbero = require("../models/barberos.js");
 
 
 
@@ -67,6 +68,36 @@ const barberosController = {
 
         })
 
+    },
+    likeDislike:async(req,res)=>{
+        const id=req.params.id;
+        const user=req.user.id
+        let barberos
+        console.log(id)
+        console.log(user)
+        
+
+        try {
+           barberos= await Barbero.findOne({_id:id})
+            if(barberos.likes.includes(user)){
+
+                Barbero.findByIdAndUpdate({_id:id},{$pull:{likes:user}},{new:true})
+                .then(response=>res.json({success:true,response:response.likes}))
+                .catch(error=>console.log(error))
+            }
+            else{
+                Barbero.findByIdAndUpdate({_id:id},{$push:{likes:user}},{new:true})
+                .then(response=>res.json({success:true,response:response.likes}))
+                .catch(error=>console.log(error))
+            }
+        } catch (err) {
+            error=err
+            res.json({success:false,resposne:error})
+            
+        }
+
+
+        
     }
 
    

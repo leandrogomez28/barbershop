@@ -2,17 +2,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
 
       .fondo {
- 
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        background-image: url("https://i.pinimg.com/736x/a4/f9/89/a4f9896e75a95d4a824546a7ec3303d1.jpg");
+        background-color:white;
         
       }
-      .cards-services .cards-title h1{
+      .ozy_rreb{
+        bottom: 0;
+        left: 0;
+        /* height: 105px; */
+        height: 133px;
+        background-image: url(https://shaver.freevision.me/wp-content/themes/shaver/images/assets/bottom_row_ripped.png);
+        }
+        
+        .ozy_rret {
+            top: 0;
+            left: 0;
+            /* height: 117px; */
+            height: 93px;
+            background-image: url(https://shaver.freevision.me/wp-content/themes/shaver/images/assets/top_row_ripped.png);
+        }
+      
+      .cards-services .cards-title h2{
+     
+        text-align: center;
         font-family: 'Rye', cursive;
-        color: rgba(248, 248, 236, 0.829);
+        font-size:2em;
+        text-shadow: 3px 1px #2e2e30;
+        color: #d6ae4c;
       }
       
       .cards-services .cards {
@@ -33,7 +53,7 @@
       .cards-services .card-title {
         display: block;
         text-align: center;
-        color: rgba(240, 225, 95, 0.829);
+        color:  #d6ae4c;
         background-color: #0e0d0d;
         padding: 2%;
         border-top-right-radius: 4px;
@@ -42,10 +62,12 @@
         
       }
 
-      .cards-services .cards-title h3{
-        font-family: 'Trocchi', serif !important;
-        color: rgba(240, 225, 95, 0.829);
+      .cards-services .cards-title p{
+
+        font-family: 'Trocchi', serif;
+        font-size: 1em;
         text-align: center;
+        
        }
        .cards-services .card img {
         width: 100%;
@@ -80,3 +102,100 @@
         text-align: center;
       }
       
+      /* boton */
+      .services-ver{
+       border-radius: 30px;
+       color: #d6ae4c;
+       background-color: black;
+       border-color: #d6ae4c !important;
+       border: solid 5px;
+       width: 260px;
+       height: 60px;
+      }
+
+      .button{
+        position: relative;
+        top: 10px;
+        left: 10px;
+        border-radius: 30px;
+        color: #d6ae4c;
+        background-color: black;
+        border-color: #d6ae4c !important;
+        border: solid 5px;
+        width: 115px;
+        height: 60px;
+      }
+      /* .cards-services .control{
+        position: absolute;
+        bottom: 20%;
+        left: 85%;
+        
+      }
+      
+      .fondo .btn {
+        transform: translateY(0px);
+        transition: 0.3s linear;
+        background: white;
+        border-radius: 5px;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        color: rgb(2, 2, 2);
+        padding: 0;
+        margin: 0;
+        
+      }
+      
+      .fondo .btn:hover{transform: translateY(-4px);}
+      
+      .fondo .btn span {
+        font-family: 'Trocchi', serif;
+        transition: transform 0.3s;
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 1.2em;
+        margin:0;
+        
+      }
+      
+      .fondo .button {
+        font-family: 'Trocchi', serif;
+        font-size: 18px;
+        padding: 15px 25px;
+        background-color: #363636;
+        background: linear-gradient(#404040, transparent 155%);
+        color: #0000008c;
+        border-color: transparent;
+        outline: 0;
+        cursor: pointer;
+        transition: all 1s ease;
+      }
+      .fondo .button:hover {
+          color: #fff;
+        transition: all 1s ease;
+      }
+      .fondo .button:nth-child(1):hover {
+       box-shadow:  0px 0px 2px #000;
+         background: #282828;
+        text-shadow: 0 0px 0px transparent, 0 0 1px #d8ce3f, 0 0px 1px transparent, 0 0 0px #d8ce3f, 0 0 25px #d8ce3f, 0 0 0 #d8ce3f, 0 0 5px #d8ce3f, 0 0 6px #d8ce3f;
+        }
+        .fondo .button:nth-child(2) {
+        border-left: 1px solid #0000008c;
+        border-right: 1px solid #0000008c;
+      }
+      .fondo .button:nth-child(2):hover {
+        border-left: 1px solid #0000008c;
+        border-right: 1px solid #0000008c;
+        box-shadow:  0px 0px 2px #000;
+         background: #282828;
+        text-shadow: 0 0px 0px transparent, 0 0 1px white, 0 0px 1px transparent, 0 0 0px white, 0 0 25px white, 0 0 0 white, 0 0 5px white, 0 0 6px white;
+        
+      }
+      
+      .fondo .button:nth-child(3):hover {
+       box-shadow:  0px 0px 2px #000;
+         background: #282828;
+        text-shadow: 0 0px 0px transparent, 0 0 1px #FFDC3E, 0 0px 1px transparent, 0 0 0px #FFDC3E, 0 0 25px #FFDC3E, 0 0 0 #FFDC3E, 0 0 5px #FFDC3E, 0 0 6px #FFDC3E;
+      } */

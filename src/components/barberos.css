@@ -409,3 +409,33 @@ aside:hover ul li:nth-child(3) {
     transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
   }
 }
+
+
+/* boton likes */
+
+.button-likes{
+  display: flex;  
+  justify-content: center;
+  align-content: center;
+  align-items:center ;
+  font-size: 1.5em;
+
+}
+
+.button-likes button{
+  border:none;
+  height: 2em;
+  width:2em;
+  background-color: #f8f7f5;
+  border-radius: 50%;
+  z-index: 1;
+  
+}
+.button-likes button svg{
+  height: 2em;
+}
+
+.button-likes button:hover{
+  background-color:rgb(68, 65, 65);
+
+}

@@ -15,13 +15,13 @@ async function sendEmail(email, uniqueText) {
         port: 465,
         secure: true,
         auth: {
-            user: "leandro.mytinerary@gmail.com",
-            pass: "mytinerary1234"
+            user: "mytineraryj@gmail.com",
+            pass: "R3facil9"
         }
 
     })
 
-    const sender = "leandro.mytinerary@gmail.com"
+    const sender = "mytineraryj@gmail.com"
     const mailOptions = {
         from: sender,
         to: email,
@@ -30,7 +30,7 @@ async function sendEmail(email, uniqueText) {
     }
     await transporter.sendMail(mailOptions, function (error, response) {
         if (error) {
-            console - log(error)
+            console.log(error)
         }
         else {
             console.log("mensaje enviado")
@@ -123,6 +123,7 @@ const usersControllers = {
 
     accesoUsuario: async (req, res) => {
         const { email, password } = req.body.userData
+        console.log(req.body.userData)
         try {
             const usuario = await User.findOne({ email })
 

@@ -1,0 +1,19 @@
+.cssface{
+    width: 45% !important;
+    height: 50px;
+    background-color: rgb(75, 75, 227);
+    border-radius: 20px;
+    border: 0px;
+    color: aliceblue;
+    display: inline-flex;
+    align-items: center;
+    box-shadow: rgb(0 0 0 / 24%) 0px 2px 2px 0px, rgb(0 0 0 / 24%) 0px 0px 1px 0px !important; 
+    font-family: Roboto, sans-serif;
+}
+.logo{
+    font-size: 34px;
+    margin-right: 10px;
+}
+.content-face{
+    padding-left: 2em;
+}
