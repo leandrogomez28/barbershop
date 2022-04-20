@@ -10,7 +10,7 @@
 	font-size: 20px;
   }
   details {
-	background: white;
+	background: rgba(255, 255, 255, 0);
     margin: 40px;
     position: absolute;
     top: 1em;
@@ -67,7 +67,7 @@
 	height: 0;
 	width: fit-content;
 	border-radius: var(--cornerRad);
-	background-color: var(--primColor);
+  background-color: #fffbfb24;
 	box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2);
 	margin-top: 8px;
 	display: flex;
@@ -76,14 +76,16 @@
 	overflow: hidden;
 	animation: closeMenu 300ms ease-in-out forwards;
   }
-  .menu2 a {
-	padding: 12px 24px;
-	margin: 0 16px;
-	color: var(--secoColor);
-	border-bottom: 2px solid rgba(0, 0, 0, 0.1);
-	text-decoration: none;
-	text-align: center;
-	transition: filter 200ms linear 0s;
+  .menu a {
+    padding: 12px 13px;
+    margin: 0 16px;
+    font-weight: bolder;
+    color: #f9fafb;
+    border-bottom: 2px solid #ffc107;
+    text-decoration: none;
+    text-align: center;
+    transition: filter 200ms linear 0s;
+    font-family: 'Trocchi', serif;
   }
   .menu2 a:nth-of-type(1) {
 	padding-top: 24px;
@@ -97,13 +99,15 @@
   }
   details::before {
 	content: "MENU";
-    color: var(--secoColor);
+  color: #040300;
+  font-family: 'Trocchi', serif;
+  font-weight: bold;
+  font-size: 150%;
+  /* text-shadow: 2px 8px 7px white; */
+  -webkit-text-stroke: 1px #fffdfd; 
     position: absolute;
     top: 0em;
     margin-left: 40px;
-    /* opacity: 0.4; */
-    /* font-size: 1em; */
-    background-color: white;
     padding: 1em;
   }
   details[open]::before {

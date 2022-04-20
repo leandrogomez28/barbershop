@@ -30,6 +30,7 @@ import ServicesCards from './components/ServicesCards.js'
 import FooterPage from './components/FooterPage.js'
 import Navbar from './components/Navbar'
 import axios from 'axios';
+import Union from './pages/Union';
 
 
 
@@ -42,24 +43,24 @@ function App() {
   useEffect(() => {
     axios.get("http://localhost:4000/api/datos")
       .then(response => console.log(response))
-      if (localStorage.getItem("token") !== null) {
-        const token = localStorage.getItem("token")
-        const user = axios.get("http://localhost:4000/api/signintoken", {
-          headers: {
-            "Authorization": "Bearer " + token
-          }
-        })
-
-        .then(user=>{
-        if (user.data.success) {
-          dispatch({
-            type: actionType.USER,
-            user: user.data.respuesta
-          })
-        } else {
-          localStorage.removeItem("token")
+    if (localStorage.getItem("token") !== null) {
+      const token = localStorage.getItem("token")
+      const user = axios.get("http://localhost:4000/api/signintoken", {
+        headers: {
+          "Authorization": "Bearer " + token
         }
       })
+
+        .then(user => {
+          if (user.data.success) {
+            dispatch({
+              type: actionType.USER,
+              user: user.data.respuesta
+            })
+          } else {
+            localStorage.removeItem("token")
+          }
+        })
     }
 
   }, [])
@@ -71,11 +72,12 @@ function App() {
       <Navbar />
       <Routes>
 
-      <Route path='/' element={<Home/>} />
-      <Route path='/productos' element={<Mostrarcards/>} />
-      <Route path='/signup' element={<SignUp/>} />
-      <Route path='/signin' element={<SignIn/>} />
-      {/* <Route path='/turnos' element={<Calendario/>} /> */}
+        <Route path='/' element={<Home />} />
+        <Route path='/productos' element={<Union />} />
+        < Route path='/producto/:id' element={<Mostrarcards />} />
+        <Route path='/signup' element={<SignUp />} />
+        <Route path='/signin' element={<SignIn />} />
+        {/* <Route path='/turnos' element={<Calendario/>} /> */}
 
 
       </Routes>
