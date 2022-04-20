@@ -15,6 +15,7 @@ function Navbar() {
                 <LinkRouter to='/'>Inicio</LinkRouter>
                 <LinkRouter to='/productos'>Productos</LinkRouter>
                 <LinkRouter to='/signup'>Registro</LinkRouter>
+                <LinkRouter to='/union'>Union</LinkRouter>
                 <LinkRouter to='/signin'>SignIn</LinkRouter>
                 <LinkRouter to='/servicios'>inicio</LinkRouter>
                 </nav>
