@@ -3,15 +3,11 @@ import Titulo from "../components/Titulo";
 import Carrousel from '../components/Carrousel'
 import About from '../components/About'
 import Estilistas from "../components/Estilistas";
-import Producto from "../components/CartasProducto/Producto";
 import Cartas from "../components/Cartas";
 import Contactos from "../components/contactos"
 import Calendario from '../components/Calendario'
-
-import SignIn from '../components/signIn/SignIn'
-import IconLogeo from '../components/iconLogeo/index'
-import LikesBarber from "../components/LikesBarber";
 import ServicesCards from "../components/ServicesCards";
+import Deslogueo from '../components/iconLogeo/Deslogueo'
 
 function Home(){
 
@@ -25,13 +21,9 @@ function Home(){
             <Cartas/>
             <Carrousel/>
             <Contactos/>
+            <Deslogueo/>
+           
             
-            
-            <IconLogeo></IconLogeo>
-
-            <Calendario/>
-            
-            <LikesBarber/>
    </div>
         
     )

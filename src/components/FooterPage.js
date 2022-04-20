@@ -6,9 +6,9 @@ function FooterPage() {
 
     <div id="footer-widget-bar" className="widget">
 
-      <div >
+       <div >
 
-        <div id="back-to-top-wrapped" className="bottomed">
+         <div id="back-to-top-wrapped" className="bottomed">
          <div>
             <a href="#top" id="to-top-buttom" className="heading-font" title="BACK TO TOP">
               <svg xmls="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewbox="0 0 30.63 107.42" className="svg replaced-svg">
@@ -25,7 +25,7 @@ function FooterPage() {
          <div>
             <span className="caption">BACK TO TOP</span>
          </div>
-        </div>
+        </div>  
 
 
 

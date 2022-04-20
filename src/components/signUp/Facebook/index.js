@@ -37,7 +37,7 @@ export default function LoginFacebook(params) {
                 callback={responseFacebook}
                 cssClass="cssface"
                 icon={<TiSocialFacebookCircular className="logo"></TiSocialFacebookCircular>}
-                textButton={<div>Registrarse con Facebook </div>}
+                textButton={<div className="content-face">Registrarse con Facebook </div>}
             />
 
         </div>

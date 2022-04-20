@@ -5,8 +5,9 @@ import { actionType } from "../../reducer";
 import {FaUserCircle} from 'react-icons/fa'
 import './logo.css'
 import Logo from '../../imagenes/logout.png'
+import { Link as LinkRouter } from 'react-router-dom';
 
-export default function IconLogeo(params) {
+function Deslogueo(params) {
     const [{ user }, dispatch] = useStateValue()
 
     async function cerrarSesion() {
@@ -33,10 +34,16 @@ export default function IconLogeo(params) {
             <div className="nav-link active hover-underline-animation" aria-current="page" to="/singIn">Sing Out </div> */}
 
             {
-                !user ?<div className="nav-link active hover-underline-animation" aria-current="page" ><FaUserCircle/></div>:
-                <div className="nav-link active hover-underline-animation logueado" aria-current="page" onClick={cerrarSesion}><img src={Logo}/> </div>
+                !user ?<div className="nav-link active hover-underline-animation" aria-current="page" >
+                    <LinkRouter to='/signin' className="nav-link-signin">
+                    <FaUserCircle/>
+                </LinkRouter>
+                </div>
+                :
+                <div className="nav-link active hover-underline-animation " aria-current="page" onClick={cerrarSesion}><img className="logueado" src={Logo}/> </div>
             }
 
         </div>
     )
 }
+export default Deslogueo;

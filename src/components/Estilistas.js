@@ -7,6 +7,7 @@ import instagram from '../components/Imagen1/instagram.png'
 import { actionType } from '../reducer';
 import { useStateValue } from '../StateProvider';
 import axios from 'axios';
+import Likes from './Likes'
 
 
 function Estilista() {
@@ -33,6 +34,8 @@ function Estilista() {
         return (
 
           <aside class="profile-card">
+
+         <Likes likes={item.likes} id={item._id}/>
 
             <header>
 

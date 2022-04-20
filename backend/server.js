@@ -8,7 +8,7 @@ const app= express()
 require("./config/database")
 
 
-// middlewares
+// middlewares 
 app.use(express.json())
 app.use(cors())
 app.use(passport.initialize())

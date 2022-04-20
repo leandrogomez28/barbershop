@@ -69,111 +69,42 @@ function SignUp() {
 	return (
 
 
-	<div>
-			{/* <div className="container d-flex  mt-5">
-				<div className="signup-form  ">
-					<form action="" method="post">
-						<h2>Sign Up</h2>
-						<p>Please fill in this form to create an account!</p>
-						<div className="form-group rounded">
-							<div className="input-group">
-								<div className="input-group-prepend">
-									<span className="input-group-text">
-										<span className="fa fa-user"><FaUserAlt /></span>
-									</span>
-								</div>
-								<input type="text" className="form-control bg-dark" name="firstname" placeholder="Firstname " required="required" />
-							</div>
-						</div>
-						<div className="form-group rounded">
-							<div className="input-group">
-								<div className="input-group-prepend">
-									<span className="input-group-text">
-										<span className="fa fa-user"><FaUserAlt /></span>
-									</span>
-								</div>
-								<input type="text" className="form-control" name="lastname" placeholder="Lastname" required="required" />
-							</div>
-						</div>
-						<div className="form-group">
-							<div className="input-group">
-								<div className="input-group-prepend">
-									<span className="input-group-text">
-										<span className="fa fa-paper-plane"><FaPaperPlane /></span>
-									</span>
-								</div>
-								<input type="email" className="form-control" name="email" placeholder="Email Address" required="required" />
-							</div>
-						</div>
-						<div className="form-group">
-							<div className="input-group">
-								<div className="input-group-prepend">
-									<span className="input-group-text">
-										<span className="fa fa-lock"><FaLock /></span>
-									</span>
-								</div>
-								<input type="password" className="form-control" name="password" placeholder="Password" required="required" />
-							</div>
-						</div>
-						<div className="form-group">
-							<div className="input-group">
-								<div className="input-group-prepend">
-									<span className="input-group-text">
-										<span className="fa fa-check"><FaCheck /></span>
-									</span>
-								</div>
-								<input type="password" className="form-control" name="confirm_password" placeholder="Confirm Password" required="required" />
-							</div>
-						</div>
-						<div className="form-group">
-							<label className="form-check-label"><input type="checkbox" required="required" /> I accept the <a href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a></label>
-						</div>
-						<div className="form-group d-flex justify-content-center signup-botones">
-							<button type="submit" className="btn btn-primary btn-lg">Sign Up</button>
-							<Google /> 
-							<Facebook /> 
-						</div>
-		
-					</form>
-					 <div className="text-center">Already have an account?<LinkRouter to='/sign'>Sign In</LinkRouter></div> 
-		
-		
+		<div>
+
+			<div className="generals-signUp">
+
+				<div className="izquierda-signUp">
+					{/* <img src="https://shaver.freevision.me/wp-content/uploads/2016/06/shutterstock_296116106-compressor.jpg"></img> */}
 				</div>
-		
-			
-			</div> */}
-				<div className="generals-signUp">
-				  
-				   <div className="izquierda-signUp">
-					   <div className="cabeza-titulo">
-						   <h1 className="h1">CCS.ESTILOS</h1>
-						   <h4>Registro</h4></div>
-					   <div className="mb-2">
-						   <Facebook/>
-					   </div>
-					   <div>
-						   <Google/>
-						   </div>
-					   <div className="sign">
-					   <hr className="hr1"></hr>
-						 <span>or</span>  
-					   <hr className="hr2"></hr>
-					   </div>
-					   
-					   <form  onSubmit={newUser}>
-						   <input type="text" className="form-control inputSign bg-dark" placeholder="NOMBRE (REQUERIDO)"  />
-						   <input type="text" className="form-control inputSign bg-dark" placeholder="APELLIDO (REQUERIDO)"  />
-						   <input type="email" className="form-control inputSign bg-dark " placeholder="EMAIL (REQUERIDO)"  />
-						<input type="password" className="form-control inputSign bg-dark" placeholder="PASSWORD (REQUERIDO)"  />
-		
+
+				<div className="derecha-signUp">
+					<div className="cabeza-titulo">
+						<h1 className="h1">CCS.ESTILOS</h1>
+						<h4>Registro</h4></div>
+					<div className="mb-2">
+						<Facebook />
+					</div>
+					<div>
+						<Google />
+					</div>
+					<div className="sign">
+						<hr className="hr1"></hr>
+						<span>or</span>
+						<hr className="hr2"></hr>
+					</div>
+
+					<form onSubmit={newUser}>
+						<input type="text" className="form-control inputSign bg-dark" placeholder="NOMBRE (REQUERIDO)" />
+						<input type="text" className="form-control inputSign bg-dark" placeholder="APELLIDO (REQUERIDO)" />
+						<input type="email" className="form-control inputSign bg-dark " placeholder="EMAIL (REQUERIDO)" />
+						<input type="password" className="form-control inputSign bg-dark" placeholder="PASSWORD (REQUERIDO)" />
+
 						<button className="send" type="send">Registrarse</button>
-					   </form>
-				   </div>
-				   <div className="derecha-signUp">
-					   {/* <img src="https://shaver.freevision.me/wp-content/uploads/2016/06/shutterstock_296116106-compressor.jpg"></img> */}
-				   </div>
-			   </div>
-	</div>
+					</form>
+				</div>
+
+			</div>
+		</div>
 
 	)
 

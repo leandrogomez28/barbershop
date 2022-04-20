@@ -7,6 +7,7 @@ import { useStateValue } from "../../StateProvider"
 import Facebook from "./Facebook/index"
 import Google from "./Google/index"
 import axios from "axios";
+import swal from 'sweetalert';
 
 export default function SingIn(params) {
 
@@ -28,21 +29,24 @@ export default function SingIn(params) {
                 displayMessages(response.data)
             })
 
-        function displayMessages(data) {
-            console.log(data.success)
-            if (!data.success) {
-                console.log(data.error)
+            function displayMessages(data) {
+                if (!data.success) {
+                    console.log(alert(data.error))
+                }
+                else {
+                    console.log(data.response)
+                    localStorage.setItem("token", data.response.token)
+                    swal({
+                        title: "Welcome",
+                        text: data.response.firstname + " " + data.response.lastname,
+                        icon: "success",
+                    });
+                }
+                dispatch({
+                    type: actionType.USER,
+                    user: data.response
+                })
             }
-            else {
-                console.log(data)
-                console.log("bienvenido "+ data.response.token )
-                localStorage.setItem("token",data.response.token)
-            }
-            dispatch({
-                type: actionType.USER,
-                user: data.response
-            })
-        }
     }
 
     return (

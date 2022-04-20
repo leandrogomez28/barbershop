@@ -4,8 +4,8 @@ import { useStateValue } from './StateProvider';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home.js'
 import Mostrarcards from './pages/Mostrarcards';
-import SignUp from './components/signUp/SignUp'
-import SignIn from './components/signIn/SignIn';
+import SignUp from './components/signUp/SignUp.js'
+import SignIn from './components/signIn/SignIn.js';
 
 // import './App.css';
 import Contactos from './components/contactos/index'
