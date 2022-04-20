@@ -23,6 +23,21 @@ background: #DFC2F2;
 	
 }
 
+.gift-title h1{
+	text-align: center;
+        font-family: 'Rye', cursive;
+        font-size:2em;
+        text-shadow: 3px 1px #2e2e30;
+        color: #d6ae4c;
+}
+
+.gift-title h3{
+	font-family: 'Trocchi', serif !important;
+        color: rgba(240, 225, 95, 0.829);
+        text-align: center;
+}
+
+
 
 
 /* 	Product details  */

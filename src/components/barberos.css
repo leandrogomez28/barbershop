@@ -7,7 +7,7 @@
 /* Boton de la tarjeta para calendario */
 
 .bn39 {
-  background-image: linear-gradient(135deg, rgb(193, 248, 216), rgb(129, 192, 250));
+  background-image: linear-gradient(135deg, rgb(105, 109, 107), rgb(246, 248, 250));
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   border-radius: 6px;
   box-sizing: border-box;
@@ -44,6 +44,16 @@
 
 /* tarjeta de Barberos  */
 
+.estilistas-title{
+  text-align: center;
+  font-family: 'Rye', cursive;
+  padding-top: 60px;
+  font-size:2em;
+  text-shadow: 3px 1px #2e2e30;
+  color: #d6ae4c;
+
+}
+
 .barber{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -53,6 +63,7 @@ margin: auto;
 justify-items: center;
 align-items: center;
 padding: 30px;
+padding-top: 5px;
 height: 30em;
   
 }
@@ -131,7 +142,7 @@ header h2 {
 }
 
 .profile-bio {
-  font-family: 'Romanesco', cursive;
+  font-family: 'Trocchi', serif !important;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -152,7 +163,7 @@ aside:hover .profile-bio {
 
 .profile-bio p:first-child {
   text-align: center;
-  font-size: 19px;
+  font-size: 13px;
 }
 
 .profile-social-links {
@@ -165,13 +176,13 @@ aside:hover .profile-bio {
 }
 
 aside:hover .profile-social-links {
-  margin-left: -30px;
+  margin-left:-45px;
   opacity: 1;
 }
 
 .profile-social-links li img {
-  width: 30px;
-  background: #fff;
+  width: 40px;
+  background: rgb(188, 188, 189);
   border-radius: 50%;
   padding: 5px;
 }

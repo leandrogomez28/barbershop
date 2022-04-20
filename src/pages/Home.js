@@ -8,6 +8,7 @@ import Cartas from "../components/Cartas";
 import Contactos from "../components/contactos";
 import Calendario from '../components/Calendario';
 import BotonVales from "../components/BotonVales";
+import ValesGift from "../components/ValesGift";
 
 function Home(){
 
@@ -22,6 +23,7 @@ function Home(){
             <BotonVales/>
             <Contactos/>
             <Calendario/>
+            <ValesGift/>
             
    </div>
         
