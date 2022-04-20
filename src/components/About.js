@@ -1,7 +1,7 @@
 import React from "react";
 import './about.css'
 import Silla from '../imagenes/silla-barber.jpeg'
-
+import { GiMustache } from "react-icons/gi";
 
 function About() {
 
@@ -19,8 +19,14 @@ function About() {
 
                 <div className="texto-about">
 
-                    <h2> Sobre Nosotros</h2>
-                    <hr />
+                    <h2> SOBRE NOSOTROS</h2>
+                    <div className="espacio">
+                            <div className="titulo-promo">
+                                <h2 className="titulo-promo2">
+                                    <GiMustache style={{ fontSize: "1em", marginBottom: "20px" }} />
+                                </h2>
+                            </div>
+                        </div>
                     <p>Nuestra barbería es un territorio creado exclusivamente para hombres que aprecian los más altos estándares de calidad, valoran su tiempo y la apariencia impecable. </p>
 
                         <p>Nuestra gama de servicios abarca muchas técnicas y procedimientos, desde el afeitado con navaja y el peinado hasta el cuidado de la barba y las cejas.</p>

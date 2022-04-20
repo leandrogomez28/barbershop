@@ -9,6 +9,7 @@ import Contactos from "../components/contactos"
 import Calendario from '../components/Calendario'
 import LikesBarber from "../components/LikesBarber";
 import ServicesCards from "../components/ServicesCards";
+import Testimonial from "../components/Testimonial";
 
 function Home(){
 
@@ -18,11 +19,11 @@ function Home(){
             <Titulo/>
             <About/>
             <Estilistas/>
-            <ServicesCards/>
-            <Cartas/>
+            <ServicesCards/> 
             <Carrousel/>
-            <Contactos/>
-            
+            <Cartas/>
+            <Testimonial/>
+            <Contactos/> 
             <LikesBarber/>
    </div>
         

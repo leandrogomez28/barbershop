@@ -1,6 +1,6 @@
   @import url('https://fonts.googleapis.com/css2?family=Rye&family=Trocchi&display=swap');
 
-.content-slider {      
+/* .content-slider {      
     background-image: url("https://blog.agendapro.com/hubfs/barberos%20famosos.jpg");
     background-size: cover;
     
@@ -8,12 +8,14 @@
 
    
     
-  }
+  } */
 .content-text {
+    
     text-align: center;
-    margin-top: 5em;
     font-family: 'Rye', cursive;
-    color: beige;
+    font-size:2em;
+    text-shadow: 3px 1px #2e2e30;
+    color: #d6ae4c;
     
 }
   
@@ -48,7 +50,7 @@
   .slider .quote {
     font-size: 40px;
     font-style: 'Trocchi', serif;
-    color: rgb(162, 174, 24);
+    color: white;
   }
   
   .slider .source {
