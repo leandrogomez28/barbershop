@@ -1,0 +1,11 @@
+.ubicacion{
+    display: flex;
+    border: solid red;
+}
+
+
+.Carrito-vacio{
+    margin-top: 5em;
+    text-align: center;
+    color: aliceblue;
+}

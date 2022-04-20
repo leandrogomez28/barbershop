@@ -8,12 +8,36 @@ import axios from 'axios';
 import { GiMustache } from "react-icons/gi";
 import {useParams} from "react-router-dom"
 
+import { CartProvider, useCart } from "react-use-cart";
+
 function Mostrarcards() {
+  const { addItem } = useCart();
 
   const [{ productos }, dispatch] = useStateValue()
   const {id}=useParams()
 const productosSelecionado=productos.filter((item) =>item._id===id)
 console.log(productosSelecionado)
+
+const productos2 = [
+  {
+    id: 1,
+    name: "Malm",
+    price: 9900,
+    quantity: 1
+  },
+  {
+    id: 2,
+    name: "Nordli",
+    price: 16500,
+    quantity: 5
+  },
+  {
+    id: 3,
+    name: "Kullen",
+    price: 4500,
+    quantity: 1
+  },
+];
 
   return (
     
@@ -40,6 +64,9 @@ console.log(productosSelecionado)
             <button className="btn-boton">
               <span className="buy-boton">Comprar</span>
             </button>
+            <div key={item.id}>
+              <button onClick={() => addItem(item)}>Agregar al carrito</button>
+            </div>
            
           </div>
         </div>

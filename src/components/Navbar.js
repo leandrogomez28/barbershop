@@ -19,6 +19,7 @@ function Navbar() {
                 <LinkRouter to='/signup'>Registro</LinkRouter>
                 <LinkRouter to='/signin'>SignIn</LinkRouter>
                 <LinkRouter to='/galeria'>Galeria</LinkRouter>
+                <LinkRouter to='/carrito'>Carrito</LinkRouter>
                 
                 </nav>
             </details>

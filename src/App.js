@@ -33,6 +33,10 @@ import axios from 'axios';
 import Union from './pages/Union';
 
 
+import Carrito from './components/Carrito'
+import { CartProvider } from "react-use-cart";
+
+
 
 function App() {
   const [{ servicios }, dispatch] = useStateValue()
@@ -74,10 +78,11 @@ function App() {
 
         <Route path='/' element={<Home />} />
         <Route path='/productos' element={<Union />} />
-        < Route path='/producto/:id' element={<Mostrarcards />} />
+        < Route path='/producto/:id' element={<CartProvider> <Mostrarcards /> </CartProvider>  } />
         <Route path='/signup' element={<SignUp />} />
         <Route path='/signin' element={<SignIn />} />
         {/* <Route path='/turnos' element={<Calendario/>} /> */}
+        <Route path='/carrito' element={<CartProvider> <Carrito /> </CartProvider> } />
 
 
       </Routes>
