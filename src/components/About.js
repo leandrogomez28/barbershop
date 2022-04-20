@@ -1,5 +1,5 @@
 import React from "react";
-import './about.css'
+import './aboutRasgado.css'
 import Silla from '../imagenes/silla-barber.jpeg'
 import { GiMustache } from "react-icons/gi";
 
