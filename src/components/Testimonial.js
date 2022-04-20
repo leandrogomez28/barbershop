@@ -2,19 +2,29 @@
 import React from 'react'
 import Logo from '../components/logo.jpeg';
 import './Testimonial.css'
+import { GiMustache } from "react-icons/gi";
+
 
 function Carrousel() {
     return (
         
          <div class="content-slider ">
              <div className='content-text'>
-                 <h1>Testimonios</h1>
+                 <h1>TESTIMONIOS</h1>
+                 <div className="espacio">
+                            <div className="titulo-promo">
+                                <h2 className="titulo-promo2">
+                                    <GiMustache style={{ fontSize: "1em", marginBottom: "20px" }} />
+                                </h2>
+                            </div>
+                        </div>
                  {/* <img src={Logo} alt=" "/> */}
              <div class="slider">
+            
                  <div class="mask">
                      <ul>
                          <li class="anim1">
-                             <div class="quote">“ Peluquerias hay muchas pero esta es especial.Puedes venir a reirte hasta la saciedad y a que te mimen...."</div>
+                             <div class="quote">“ Peluquerias hay muchas pero esta es especial. Puedes venir a reirte hasta la saciedad y a que te mimen...."</div>
                              <div class="source">- Leandro</div>
                          </li>
                          <li class="anim2">

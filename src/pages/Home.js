@@ -10,6 +10,7 @@ import ServicesCards from "../components/ServicesCards";
 import Deslogueo from '../components/iconLogeo/Deslogueo'
 import { CartProvider, useCart } from "react-use-cart";
 import Cart from '../components/Carrito'
+import Testimonial from "../components/Testimonial";
 
 function Home() {
 
@@ -22,6 +23,7 @@ function Home() {
             <ServicesCards />
             <Cartas />
             <Carrousel />
+            <Testimonial/>
             <Contactos />
             <Deslogueo />
             <CartProvider>
