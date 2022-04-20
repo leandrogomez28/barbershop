@@ -1,58 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rye&family=Trocchi&display=swap');
-
-.about{
-    width: 100%;
-    
-  
-}
-.ozy_rreb{
-bottom: 0;
-left: 0;
-/* height: 105px; */
-height: 133px;
-background-image: url(https://shaver.freevision.me/wp-content/themes/shaver/images/assets/bottom_row_ripped.png);
-}
-
-.ozy_rret {
-    top: 0;
-    left: 0;
-    /* height: 117px; */
-    height: 93px;
-    background-image: url(https://shaver.freevision.me/wp-content/themes/shaver/images/assets/top_row_ripped.png);
-}
-.content-about{
-    width: 100%;
+.content-aboutUs{
+    padding-top: 3rem;
+    display: flex;
+    align-items: center;
     height: 100%;
-    background-color: white;
-}
-
-.silla{
-    height: 100%;
-    width: 50%;
-   
-    
-}
-.silla img{
     width: 100%;
 }
-.texto-about{
-    height: 100%;
-    width: 50%;padding: 2em;
-    
+.title-aboutUs h1{
+ color:#d6ae4c ;
 }
-.texto-about h2{
-text-align: center;
-font-family: 'Rye', cursive;
-font-size:2em;
-text-shadow: 3px 1px #2e2e30;
-color: #d6ae4c;
-}
-
-.texto-about p{
-    font-family: 'Trocchi', serif;
-    font-size: 1em;
+.text-aboutUs .h3{
+ 
     text-align: center;
-    
+    width: 50%;
 }
-
+.img-aboutUs{
+    display: flex;
+    width: 50%;
+}
