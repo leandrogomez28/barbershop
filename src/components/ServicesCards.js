@@ -30,15 +30,6 @@ function ServicesCards() {
                         <div className="card">
                             <h2 className="card-title">Titulo</h2>
                             <img src={Corte2} />
-                            <div class="control">
-                                {/* <!-- Start Button buying --> */}
-                                <button class="btn">
-                                    <span class="buy">Buy Now</span>
-                                </button>
-                                {/* <!-- End Button buying --> */}
-                            </div>
-
-
                             <p className="card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
                         </div>
                         <div className="card">
@@ -52,10 +43,15 @@ function ServicesCards() {
                             <p className="card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
                         </div>
                     </div>
-
-
                 </div>
+                <div className="cards-services-ver">
+
+                <button  className='services-ver'  type="send">VER MÁS SERVICIOS</button>
+                </div>
+
             </div>
+
+          
             <div className="ozy_rret"></div>
         </>
     )
