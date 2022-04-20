@@ -52,7 +52,7 @@ console.log(mejoresProductos)
     <div>
       <div className="ozy_rreb"></div>
       <div className="product-mas">
-      <h1 className="titulo"> Productos Destacados </h1>
+      <h1 className="titulo m-0"> Productos Destacados </h1>
         <Carousel responsive={responsive} draggable={true} className=' '>
         {mejoresProductos?.map(item =>
           <div className="card-carousel ">
