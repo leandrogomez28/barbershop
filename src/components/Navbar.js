@@ -10,7 +10,9 @@ function Navbar() {
         <>
 
             <details>
+
                 <summary></summary>
+                
                 <nav class="menu">
                 <LinkRouter to='/'>Inicio</LinkRouter>
                 <LinkRouter to='/productos'>Productos</LinkRouter>

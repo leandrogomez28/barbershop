@@ -66,7 +66,7 @@ text-align: center;
     flex-wrap: wrap;
     justify-content: space-around;
    margin-bottom: 7%;
-    
+   margin-top: 5%;  
 }
 .map-cartas .card-carousel{
     
@@ -81,40 +81,6 @@ text-align: center;
 }
 
 /* boton */
-
-/* 
-.control1{
-	position: absolute;
-	bottom: 20%;
-	left: 40%;
-	
-}
-
-.btn1 {
-  transform: translateY(0px);
-	transition: 0.3s linear;
-  position: relative;
-  overflow: hidden;
-	cursor: pointer;
-	outline: none;
-	border: none;
-  border-radius: 5px;
-	background: #000000;
-  color: #fffdfd;
-	
-}
-
-.btn1:hover{transform: translateY(-4px);}
-
-.btn1.buy1 {
-	
-	transition: transform 0.3s;
-	display: inline-block;
-  padding: 10px 20px;
-	font-size: 1.2em;
-background: #fff;
-	
-}
 
 button {
   font-family: 'Trocchi', serif;
@@ -133,12 +99,13 @@ button:nth-child(1):hover {
    background: #684b24;
   text-shadow: 0 0px 0px transparent, 0 0 1px #d8ce3f, 0 0px 1px transparent, 0 0 0px #d8ce3f, 0 0 25px #d8ce3f, 0 0 0 #d8ce3f, 0 0 5px #d8ce3f, 0 0 6px #d8ce3f;
   }
- */
+ 
 
  
 button {
   font-family: 'Trocchi', serif;
-  font-size: 25px;
+  /* font-size: 25px; */
+  font-weight: 1000;
   color: #0000008c;
   outline: 0;
   cursor: pointer;
@@ -150,7 +117,7 @@ button:hover {
 }
 button:nth-child(1):hover {
  box-shadow:  0px 0px 2px #000;
-   background: #684b24;
+   background: #3f3528;
   text-shadow: 0 0px 0px transparent, 0 0 1px #d8ce3f, 0 0px 1px transparent, 0 0 0px #d8ce3f, 0 0 25px #d8ce3f, 0 0 0 #d8ce3f, 0 0 5px #d8ce3f, 0 0 6px #d8ce3f;
   }
 

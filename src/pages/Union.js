@@ -70,8 +70,8 @@ function Union() {
                 </div> */}
                 <div className="cards-producto-ver">
                   <button className="producto-ver" >
-                  <LinkRouter to={`/producto/${item._id}`}>
-                        Ver Mas
+                  <LinkRouter to={`/producto/${item._id}`}> VER MAS 
+                  <GiMustache style={{ fontSize: "2em",marginBottom:"8px" }} />
                       </LinkRouter>
                   </button>
                 </div>
