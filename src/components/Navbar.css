@@ -76,7 +76,7 @@
 	overflow: hidden;
 	animation: closeMenu 300ms ease-in-out forwards;
   }
-  .menu a {
+  .menu2 a {
     padding: 12px 13px;
     margin: 0 16px;
     font-weight: bolder;
@@ -98,17 +98,18 @@
   text-shadow: 0 0 10px rgb(42, 41, 41);
   }
   details::before {
-	content: "MENU";
-  color: #040300;
-  font-family: 'Trocchi', serif;
-  font-weight: bold;
-  font-size: 150%;
-  /* text-shadow: 2px 8px 7px white; */
-  -webkit-text-stroke: 1px #fffdfd; 
+    content: "MENU";
+    color: #040300;
+    font-family: 'Trocchi', serif;
+    font-weight: bold;
+    font-size: 150%;
+    /* text-shadow: 2px 8px 7px white; */
+    -webkit-text-stroke: 1px #fffdfd;
     position: absolute;
-    top: 0em;
+    top: 12px;
     margin-left: 40px;
-    padding: 1em;
+    left: 20px;
+    
   }
   details[open]::before {
 	animation: fadeMe 300ms linear forwards;
