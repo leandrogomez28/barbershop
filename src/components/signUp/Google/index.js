@@ -1,11 +1,28 @@
 import React from "react";
 import GoogleLogin from 'react-google-login';
 import './google.css'
+import axios from "axios";
 
 export default function LoginGoogle (params) {
-    const responseGoogle = (response) => {
-        console.log(response);
+
+    const responseGoogle = async(response) => {
+        console.log(response)
+        const newUser = {
+            firstname:response.profileObj.givenName,
+            lastname:response.profileObj.familyName,
+            email:response.profileObj.email,
+            password:response.googleId+"aA",
+            from:"Google"
+        }
+        
+        await axios.post("http://localhost:4000/api/signup", { newUser })
+        
+            .then(response => {
+                console.log(response)
+            })
+        
       }
+      
     return(
         <div>
             <GoogleLogin

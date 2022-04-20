@@ -9,7 +9,7 @@ import Google from "./Google/index"
 import axios from "axios";
 import swal from 'sweetalert';
 
-export default function SingIn(params) {
+export default function SignIn(params) {
 
 
     const [{ user }, dispatch] = useStateValue()
