@@ -3,22 +3,44 @@ import Titulo from "../components/Titulo";
 import Carrousel from '../components/Carrousel'
 import About from '../components/About'
 import Estilistas from "../components/Estilistas";
-import Producto from "../components/CartasProducto/Producto";
 import Cartas from "../components/Cartas";
+import Contactos from "../components/contactos"
+import Calendario from '../components/Calendario'
+import ServicesCards from "../components/ServicesCards";
+import Deslogueo from '../components/iconLogeo/Deslogueo'
+import { CartProvider, useCart } from "react-use-cart";
+import Cart from '../components/Carrito'
+import Testimonial from "../components/Testimonial";
+import BotonVales from '../components/BotonVales'
 import Video from '../components/video/Video'
+function Home() {
 
-function Home(){
 
 
-    return(
+    return (
         <div>
-            <Titulo/>
-            <About/>
+            <Titulo />
+            <About />
+            <Estilistas />
+            <ServicesCards />
+
+            <Carrousel />
+            <BotonVales/>
+            <Cartas />
+            
+            <Testimonial/>
+            <Contactos />
+            <Deslogueo />
             <Video/>
-            <Estilistas/>
-            <Carrousel/>
-            <Cartas/>
+            <CartProvider>
+                
+                <Cart />
+            </CartProvider>
+           
+
+
         </div>
+
     )
 }
 

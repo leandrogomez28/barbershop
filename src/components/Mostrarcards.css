@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Rye&family=Trocchi&display=swap');
+
+
+/* principal  */
+
+
+.background .img{
+object-fit: cover;
+width: 100%;
+height: 100%;
+margin-left: 50px;
+}
+
+#wrapper {
+  width: 60%;
+  height: 10em;
+  margin-left: 20%;
+  margin-top: 5%;
+}
+
+@keyframes background {
+  0% {transform:translateX(0px) translateY(0px);}
+  100% {transform:translateX(-130px) translateY(0px);}
+
+}
+  
+
+/* titulo */
+.titulo{
+   margin-top: 20%;
+    color: black;
+    font-size: 90px;
+    text-align: center;
+    font-family: 'Rye', cursive;
+    margin-left: 10px;
+    text-shadow: 2px 8px 7px white;
+    -webkit-text-stroke: 2px #fffdfd; 
+}
+
+.subtitulo{
+  text-shadow:4px 2px 5px  #000000;
+  -webkit-text-fill-color:#f6f1f1fb;
+  margin-bottom: 30px;
+   text-align: center;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Trocchi', serif;
+}
+
+
+
+
+/* galeria */
+
+.div{
+  /* background: rgba(76,76,76,1);
+  background: -moz-radial-gradient(center, ellipse cover, rgba(76,76,76,1) 0%, rgba(43,43,43,1) 0%, rgba(23,23,23,1) 91%, rgba(23,23,23,1) 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(76,76,76,1)), color-stop(0%, rgba(43,43,43,1)), color-stop(91%, rgba(23,23,23,1)), color-stop(100%, rgba(23,23,23,1)));
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(76,76,76,1) 0%, rgba(43,43,43,1) 0%, rgba(23,23,23,1) 91%, rgba(23,23,23,1) 100%);
+  background: -o-radial-gradient(center, ellipse cover, rgba(76,76,76,1) 0%, rgba(43,43,43,1) 0%, rgba(23,23,23,1) 91%, rgba(23,23,23,1) 100%);
+  background: -ms-radial-gradient(center, ellipse cover, rgba(76,76,76,1) 0%, rgba(43,43,43,1) 0%, rgba(23,23,23,1) 91%, rgba(23,23,23,1) 100%);
+  background: radial-gradient(ellipse at center, rgba(76,76,76,1) 0%, rgba(43,43,43,1) 0%, rgba(23,23,23,1) 91%, rgba(23,23,23,1) 100%); */
+width: 100%;
+height: 25em; 
+background-color: rgb(0, 0, 0);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.contiene-card2{
+  display: flex;
+   height: 40em;
+    width: 100%;
+
+}
+.contenido{
+  width: 50%;
+  margin-right: 3em;
+}
+.productog{
+width: 20em;
+margin-left: 10%;
+border-radius: 0 10% ;
+box-shadow: 18px 20px 15px rgba(255, 255, 255, 0.764);
+}
+
+/* boton */
+
+.control-boton{
+	position: absolute;
+	bottom: 20%;
+	left: 70%;
+	
+}
+
+.btn-boton{
+	transform: translateY(0px);
+	transition: 0.3s linear;
+  position: relative;
+  overflow: hidden;
+	cursor: pointer;
+	outline: none;
+	border: none;
+  border-radius: 5px;
+	background: #434343;
+  color: #fffdfd;
+}
+
+.btn-boton:hover{transform: translateY(-4px);}
+
+.btn-boton .buy-boton {
+
+	transition: transform 0.3s;
+	display: inline-block;
+  padding: 5px 20px;
+	font-size: 1.2em;
+	
+	
+}
+
+
+
+

@@ -10,11 +10,11 @@ function Video() {
          
               <div className='vi'>
          <ReactPlayer
-          url='https://youtu.be/fURAMByYC28'
+          url='https://youtu.be/FNrq2NE4TaU'
           className='react-player'
           playing
           width='100%'
-          height='200%'
+          height='20em'
           controls
           volume={0.5}/>
           

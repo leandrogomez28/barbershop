@@ -2,6 +2,7 @@ import React from "react";
 import "./valesGift.css"
 import modelo1 from '../components/Imagen1/modelo1.jpg'
 import logo1 from '../components/Imagen1/logo1.jpeg'
+import { GiMustache } from "react-icons/gi";
 
 
 
@@ -10,6 +11,19 @@ function Vales(){
     return(
 
 <div className="gift">
+
+<div className='gift-title'>
+                    <h1>REGALA UN CAMBIO DE LOOK</h1>
+					<div className="espacio">
+                            <div className="titulo-promo">
+                                <h2 className="titulo-promo2">
+                                    <GiMustache style={{ fontSize: "1em", marginBottom: "20px" }} />
+                                </h2>
+                            </div>
+                        </div>
+                    <h3>Una manera de demostrar un detalle para esa persona especial que se lo merece, es obsequiandole una Gift Card.</h3>
+                    <h3>Será atendido por nuestros profesionales y le harán el cambio de look que se mecere lucir.</h3>
+    </div>
 
 <div id="container">	
 	

@@ -29,7 +29,7 @@ const validator = (req, res, next) => {
         
         from: joi.string(),
 
-        
+         
 
     })
     const validation = Schema.validate(req.body.newUser, { abortEarly: false })

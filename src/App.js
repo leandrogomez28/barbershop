@@ -3,12 +3,14 @@ import { actionType } from './reducer';
 import { useStateValue } from './StateProvider';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home.js'
-
-
+import Mostrarcards from './pages/Mostrarcards';
+import SignUp from './components/signUp/SignUp.js'
+import SignIn from './components/signIn/SignIn.js';
+import Calendario from './components/Calendario'
 
 // import './App.css';
 import Contactos from './components/contactos/index'
-import SingIn from './components/signIn/SignIn';
+
 import Gallery from './components/Gallery';
 import Cartas from './components/Cartas.js';
 import Producto from './components/CartasProducto/Producto.js'
@@ -16,7 +18,7 @@ import Producto from './components/CartasProducto/Producto.js'
 import Carrousel2 from './components/CartasProducto/Cariusel2'
 import Carrousel from './components/Carrousel'
 import Titulo from './components/Titulo';
-import SignUp from './components/SignUp';
+
 
 
 import Estilistas from './components/Estilistas.js'
@@ -27,9 +29,8 @@ import Testimonials from './components/Testimonial'
 import ServicesCards from './components/ServicesCards.js'
 import FooterPage from './components/FooterPage.js'
 import Navbar from './components/Navbar'
-
-import axios from 'axios'
-
+import axios from 'axios';
+import Union from './pages/Union';
 
 
 
@@ -37,9 +38,31 @@ function App() {
   const [{ servicios }, dispatch] = useStateValue()
 
 
+
+
   useEffect(() => {
     axios.get("http://localhost:4000/api/datos")
       .then(response => console.log(response))
+    if (localStorage.getItem("token") !== null) {
+      const token = localStorage.getItem("token")
+      const user = axios.get("http://localhost:4000/api/signintoken", {
+        headers: {
+          "Authorization": "Bearer " + token
+        }
+      })
+
+        .then(user => {
+          if (user.data.success) {
+            dispatch({
+              type: actionType.USER,
+              user: user.data.respuesta
+            })
+          } else {
+            localStorage.removeItem("token")
+          }
+        })
+    }
+
   }, [])
 
   return (
@@ -48,11 +71,17 @@ function App() {
 
       <Navbar />
       <Routes>
-      
-      <Route path='/' element={<Home/>} />
-      
+
+        <Route path='/' element={<Home />} />
+        <Route path='/productos' element={<Union />} />
+        < Route path='/producto/:id' element={<Mostrarcards />} />
+        <Route path='/signup' element={<SignUp />} />
+        <Route path='/signin' element={<SignIn />} />
+        {/* <Route path='/turnos' element={<Calendario/>} /> */}
+
+
       </Routes>
-      
+
       <FooterPage />
 
     </BrowserRouter>
