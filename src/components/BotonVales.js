@@ -1,6 +1,7 @@
 import React from "react";
 import "./botonVales.css"
 import modelo2 from "./Imagen1/modelo2.jpg"
+import { Link as LinkRouter } from 'react-router-dom';
 
 
 function Valesboton(){
@@ -18,7 +19,7 @@ function Valesboton(){
         </figure> */}
         <figure class="hover6">
             <img src="https://c.tenor.com/vuARQSx7T-AAAAAd/barba-beard.gif" alt="이미지1"/>
-            <figcaption><strong>Vales Regalos</strong></figcaption>
+           <LinkRouter to="/valesgifts"><figcaption><strong>Vales Regalos</strong></figcaption></LinkRouter> 
         </figure>
     </div>
 

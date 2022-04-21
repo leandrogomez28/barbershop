@@ -11,7 +11,18 @@ function Vales(){
     return(
 
 <div className="gift">
-
+<div className="cover-container">
+            <video
+              className="video"
+              src={covervideo}
+              autoPlay
+              loop
+              muted
+            ></video>
+            <div className="nombreciudad">
+              {/* <h1>{data.name}</h1> */}
+            </div>
+          </div>
 <div className='gift-title'>
                     <h1>REGALA UN CAMBIO DE LOOK</h1>
 					<div className="espacio">

@@ -52,7 +52,7 @@ function Estilista() {
 
           <aside class="profile-card">
 
-         <Likes likes={item.likes} id={item._id}/>
+         {/* <Likes likes={item.likes} id={item._id}/> */}
 
             <header>
 
@@ -60,7 +60,9 @@ function Estilista() {
               <a href="https://tutsplus.com">
               <img src={process.env.PUBLIC_URL +`/barberosGaleria/${item.img}`}/>
               </a>
-
+              <div className="like-style">
+              <Likes likes={item.likes} id={item._id}/>
+              </div>
               {/* <!-- the username --> */}
               <h1>{item.nombre} {item.apellido}</h1>
 
@@ -72,7 +74,7 @@ function Estilista() {
             {/* <!-- bit of a bio; who are you? --> */}
             <div class="profile-bio">
               <div className="turno">
-            <a class="bn39" href="/"><LinkRouter  to='/turnos'class="bn39span" >Turnos</LinkRouter></a>
+            <LinkRouter  to='/turnos' class="bn39"><span class="bn39span" >Turnos</span></LinkRouter>
             </div>
             <div className="resumen">
               <p>{item.reseña}</p>
@@ -84,9 +86,12 @@ function Estilista() {
 
               {/* <!-- twitter - el clásico  --> */}
               <li>
-                <a href="https://twitter.com/tutsplus">
+                {/* <a href="https://twitter.com/tutsplus">
                   <img src={like2} />
-                </a>
+                </a> */}
+
+           
+
               </li>
 
               {/* <!-- envato – use this one to link to your marketplace profile --> */}
