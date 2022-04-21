@@ -1,0 +1,28 @@
+
+
+.video-tx h1{
+  padding-top: 3em;
+  text-align: center;
+  font-family: 'Rye', cursive;
+  font-size:2em;
+  text-shadow: 3px 1px #2e2e30;
+  color: #d6ae4c;
+}
+.video-tx{
+width: 75%;
+    position: relative;
+    left: 10%;
+    height: 25em;
+    margin-bottom: 10em;
+}
+.vid {
+  height: 11em;
+   position: relative;
+   padding: 56.25%;
+   
+  }
+  .reac-player{
+    position: absolute;
+    top: 0;
+    left: 0;
+  }

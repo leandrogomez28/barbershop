@@ -1,1 +1,132 @@
+body {
+  background: #DFC2F2;
+  background-image: url(https://t3.ftcdn.net/jpg/03/50/52/20/240_F_350522076_WxRXasOJSbxonsSpGizpjsTGBOuLdmU0.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+.body2{
+  background-image:url( https://us.123rf.com/450wm/naropano/naropano1606/naropano160600509/58727522-textura-de-fondo-oscuro-en-blanco-para-el-dise%C3%B1o-bordes-oscuros.jpg);
+}
+.App {
+  text-align: center;
+  background-image: url(https://i.pinimg.com/736x/49/05/61/49056152885218d837da69e685a892a5.jpg)
+}
 
+.Galery .tags {
+	text-align: center;
+	padding: 20px 0px;
+	background-color:  #4a070e;
+  
+
+}
+
+.Galery .tag {
+	outline: none;
+	border: none;
+  color: rgba(248, 248, 236, 0.829);
+	margin: 0px 10px;
+  background-color: rgba(248, 224, 5, 0.64);
+	cursor: pointer;
+  font-family: 'Rye', cursive;
+  background-image: url();
+
+
+}
+
+.Galery .active {
+	font-weight: bold;
+	border-bottom: 1px solid #eee;
+}
+.Galery h1{
+  padding-top: 5em;
+}
+.Galery .container2 {
+	width: 80%;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 10px;
+  background-image: url(https://thumbs.dreamstime.com/b/modelo-incons%C3%BAtil-de-la-barber%C3%ADa-98238245.jpg);
+  border: 7px solid;
+    padding: 120px;
+}
+
+.Galery .image-card {
+
+	border-radius: 2px;
+  background-image: url(https://i.pinimg.com/originals/ff/f2/09/fff209ca62c4f94ee6c683132428d1df.jpg);
+  
+  box-shadow: 0 30px 30px -6px rgb(197 195 187);
+
+}
+
+/* .barberia {
+  background-image: url(https://image.shutterstock.com/image-vector/barber-shop-pattern-260nw-1007988013.jpg);
+} */
+
+.Galery .image {
+	width: 100%;
+}
+
+
+.Galery .main-heading{
+
+background-image: url();
+font-family: 'Trocchi', serif;
+color: rgb(248, 224, 5)
+}
+
+
+.Galery .main-head{
+
+  background-image: url();
+  font-family: 'Trocchi', serif;
+
+  color: rgba(248, 248, 236, 0.829);
+  
+  }
+  
+  
+
+
+
+
+
+
+
+
+/* .App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+ */

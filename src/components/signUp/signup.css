@@ -1,0 +1,181 @@
+.signup-form {
+    width: 400px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+.signup-form form {
+    color: #999;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    background-image: url('https://i.pinimg.com/564x/1d/9f/2b/1d9f2bf76da6430fa9df011fb5cce049.jpg');
+    background-size: contain;
+    
+    box-shadow: 0px 2px 2px rgb(0 0 0 / 30%);
+    padding: 30px;
+}
+.signup-form h2 {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    margin-top: 0;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.signup-form .form-group {
+    margin-bottom: 20px;
+}
+
+
+.signup-form .fa {
+    font-size: 21px;
+}
+
+.signup-form label {
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.signup-form form a {
+    color: #19aa8d;
+    text-decoration: none;
+}
+.signup-form input{
+    background-color: transparent;
+   
+}
+
+.signup-form .btn {
+    font-size: 16px;
+    font-weight: bold;
+    background: #19aa8d !important;
+    border: none;
+    min-width: 140px;
+}
+
+.signup-form a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.googleUp{
+  justify-content: center;
+  margin: 1em 0 1em 0;
+ 
+
+}
+.signup-botones{
+    flex-direction: column;
+}
+
+.my-facebook-button-class { 
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    font-family: Helvetica,sans-serif;
+    font-weight: 700;
+    -webkit-font-smoothing: antialiased;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: calc(.27548vw + 12.71074px);
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background-color .3s,border-color .3s;
+    background-color: #4c69ba;
+    border: calc(0.06887vw + 0.67769px) solid #4c69ba;
+  
+}
+
+/*-----------------------------------------*/
+
+.generals-signUp {
+    display: flex;
+    background-image: url("https://blog.agendapro.com/hubfs/Barberia.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 80vh;
+    
+    
+}
+.generals:before{
+content: "";
+width: 100%;
+min-height: 80vh;
+position: absolute;
+top: 0; 
+background: linear-gradient(90deg, #6d6d6d, #000000, black);
+opacity: 0.7;
+
+}
+.izquierda-signUp{
+    
+    width: 50%;  
+
+}
+.izquierda-signUp > img {
+    width: 100%;
+    
+}
+.derecha-signUp{
+    width: 50%;   
+    color: whitesmoke;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+.derecha-signUp .sign{
+    display: flex;
+}
+.derecha-signUp .inputSign{
+   width: 40% !important;
+   margin-left: 30%;
+   margin-bottom: 30px;
+   text-align: center;
+   
+}
+.derecha-signUp .hr2{
+    width: 16%;
+    color: #d6ae4c;
+    opacity: unset;
+    
+}
+.derecha-signUp .hr1{
+    width: 16%;
+    color: #d6ae4c;
+    opacity: unset;
+    margin-left: 30%;
+}
+.derecha-signUpspan{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.derecha-signUp .send{
+    border-radius: 30px;
+    color: #d6ae4c;
+    background-color: black;
+    border-color: #d6ae4c !important;
+    border: solid 5px;
+}
+.derecha-signUp .send:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #d6ae4c;
+}
+.derecha-signUp .h1{
+    color:#d6ae4c !important;
+    margin-top: 30px;
+    
+}
+.cabeza-titulo{
+text-shadow: 0 0 10px black;
+}
+

@@ -1,136 +1,110 @@
-import React from "react";
+import React,{useEffect} from "react";
 import "./Cards.css"
-import {FaFacebook} from"react-icons/fa";
+import { Link as LinkRouter } from 'react-router-dom';
+import { actionType } from '../reducer';
+import { useStateValue } from '../StateProvider';
+import axios from 'axios';
+import { GiMustache } from "react-icons/gi";
 
-function Cartas (){
-    return(
-        
-        <div className="carousel-prod">
-        <div className="container-prod">
-        <input type="radio" name="dot" id="one"/>
-        <input type="radio" name="dot" id="two"/>
-        <div className="titulo-prod">Andrew Neil</div>
-        <div className="subtitulo-prod">Andrew Neil</div>
-       
-        <div className="main-card">
-          <div className="cards">
+
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
+
+function Cartas() {
+  const [{ productos }, dispatch] = useStateValue()
+
+
+  useEffect(() => {
+    axios.get("http://localhost:4000/api/productos")
+    .then(response => {
+      dispatch({
+        type: actionType.PRODUCTOSDB,
+        productos: response.data.response.productos
+      })
+
+    })
+}, [])
+
+const mejoresProductos=productos.slice(0,10)
+
+console.log(mejoresProductos)
+
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1
+    }
+  };
+  return (
+    <div>
+      <div className="ozy_rreb"></div>
+      <div className="product-mas">
+      <h1 className="titulo m-0"> PRODUCTOS DESTACADOS </h1>
+      <div className="espacio">
+                        <div className="titulo-promo">
+                            <h2 className="titulo-promo2">
+                                <GiMustache style={{ fontSize: "2.5em", marginBottom: "20px" }} />
+                            </h2>
+                        </div>
+                    </div>
+        <Carousel responsive={responsive} draggable={true} className=' '>
+        {mejoresProductos?.map(item =>
+          <div className="card-carousel ">
+         
             <div className="card">
-             <div className="content">
-               <div className="img">
-                <img />
-                {/* llamar foto */}
-               </div>
-               <div className="details">
-                 <div className="name">Andrew Neil</div>
-                 <div className="job">Price</div>
-               </div>
-               <div className="media-icons">
-                 <a href="#"><FaFacebook style={{ fontSize:"2.5em"}}/></a>
+
+              <img src={process.env.PUBLIC_URL +`/productosGeneral/${item.imagen}`} className="card__image " />
+              <div class="card__overlay">
+                <div class="card__header">
+                  <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
+                  
+                  <div class="card__header-text ">
+                  <h3 class="card__title">{item.nombre}</h3>
+                    <span class="card__status">{item.precio}</span>
+                  </div>
+                </div>
                 
-               </div>
-             </div>
-            </div>
-            <div className="card">
-             <div className="content">
-               <div className="img">
-                <img />
-               </div>
-               <div className="details">
-                 <div className="name">Jasmine Carter</div>
-                 <div className="job">Price</div>
-               </div>
-               <div className="media-icons">
-               <a href="#"><i style={{ fontSize:"2.5em"}}><FaFacebook/></i></a>
-                 <a href="#"><i className="fab fa-twitter"></i></a>
-                 <a href="#"><i className="fab fa-instagram"></i></a>
-                 <a href="#"><i className="fab fa-youtube"></i></a>
-               </div>
-             </div>
-            </div>
-            <div className="card">
-             <div className="content">
-               <div className="img">
-                <img />
-               </div>
-               <div className="details">
-                 <div className="name">Justin Chung</div>
-                 <div className="job">Price</div>
-               </div>
-               <div className="media-icons">
-               <a href="#"><i style={{ fontSize:"2.5em"}}><FaFacebook/></i></a>
-                 <a href="#"><i className="fab fa-twitter"></i></a>
-                 <a href="#"><i className="fab fa-instagram"></i></a>
-                 <a href="#"><i className="fab fa-youtube"></i></a>
-               </div>
-             </div>
-            </div>
+                <div class="control card__description">
+            {/* <!-- Start Button buying --> */}
+            <button class="btn">
+              <span class="buy"><LinkRouter to='/productos'>Ver Mas</LinkRouter></span>
+            </button>
+            {/* <!-- End Button buying --> */}
           </div>
-          <div className="cards">
-            <div className="card">
-             <div className="content">
-               <div className="img">
-                 <img />
-               </div>
-               <div className="details">
-                 <div className="name">Appolo Reef</div>
-                 <div className="job">Price</div>
-               </div>
-               <div className="media-icons">
-               <a href="#"><i style={{ fontSize:"2.5em"}}><FaFacebook/></i></a>
-                 <a href="#"><i className="fab fa-twitter"></i></a>
-                 <a href="#"><i className="fab fa-instagram"></i></a>
-                 <a href="#"><i className="fab fa-youtube"></i></a>
-               </div>
-             </div>
+              </div>
             </div>
-            <div className="card">
-             <div className="content">
-               <div className="img">
-                 <img />
-               </div>
-               <div className="details">
-                 <div className="name">Adrina Calvo</div>
-                 <div className="job">Price</div>
-               </div>
-               <div className="media-icons">
-               <a href="#"><i style={{ fontSize:"2.5em"}}><FaFacebook/></i></a>
-                 <a href="#"><i className="fab fa-twitter"></i></a>
-                 <a href="#"><i className="fab fa-instagram"></i></a>
-                 <a href="#"><i className="fab fa-youtube"></i></a>
-               </div>
-             </div>
-            </div>
-            <div className="card">
-             <div className="content">
-               <div className="img">
-                <img />
-               </div>
-               <div className="details">
-                 <div className="name">Nicole Lewis</div>
-                 <div className="job">Price</div>
-               </div>
-               <div className="media-icons">
-               <a href="#"><i style={{ fontSize:"2.5em"}}><FaFacebook/></i></a>
-                 <a href="#"><i className="fab fa-twitter"></i></a>
-                 <a href="#"><i className="fab fa-instagram"></i></a>
-                 <a href="#"><i className="fab fa-youtube"></i></a>
-               </div>
-             </div>
-            </div>
-          </div>
-        </div>
-        <div className="button">
-          <label for="one" className=" active one"></label>
-          <label for="two" className="two"></label>
-        </div>
+          
+          </div >
+      )}
+
+
+
+        </Carousel>
+
+
       </div>
+      <div className="ozy_rret"></div>
 
-        </div>
 
-    
-        
- 
-    );
+
+
+    </div>
+
+
+  );
 }
 
 export default Cartas;
