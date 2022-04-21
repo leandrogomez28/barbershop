@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React,{useEffect} from "react";
 import "./Cards.css"
 import { Link as LinkRouter } from 'react-router-dom';
@@ -10,17 +9,6 @@ import { GiMustache } from "react-icons/gi";
 
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-=======
-import React, { useEffect } from "react";
-import "./Cards.css";
-import { Link as LinkRouter } from "react-router-dom";
-import { actionType } from "../reducer";
-import { useStateValue } from "../StateProvider";
-import axios from "axios";
-import { GiMustache } from "react-icons/gi";
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
->>>>>>> origin/yohanna2
 
 function Cartas() {
   const [{ productos }, dispatch] = useStateValue();
@@ -61,21 +49,6 @@ function Cartas() {
     <div>
       <div className="ozy_rreb"></div>
       <div className="product-mas">
-<<<<<<< HEAD
-      <h1 className="titulo m-0"> PRODUCTOS DESTACADOS </h1>
-      <div className="espacio">
-                        <div className="titulo-promo">
-                            <h2 className="titulo-promo2">
-                                <GiMustache style={{ fontSize: "2.5em", marginBottom: "20px" }} />
-                            </h2>
-                        </div>
-                    </div>
-        <Carousel responsive={responsive} draggable={true} className=' '>
-        {mejoresProductos?.map(item =>
-          <div className="card-carousel ">
-         
-            <div className="card">
-=======
         <h1 className="titulo m-0"> Productos Destacados </h1>
         <Carousel responsive={responsive} draggable={true} className=" ">
           {mejoresProductos?.map((item) => (
@@ -92,7 +65,6 @@ function Cartas() {
                     <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
                       <path />
                     </svg>
->>>>>>> origin/yohanna2
 
                     <div class="card__header-text ">
                       <h3 class="card__title">{item.nombre}</h3>
