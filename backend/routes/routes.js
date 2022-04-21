@@ -13,7 +13,8 @@ const validator=require("../controllers/validator")
 Router.route("/productos")
 .get(ObtenerProductos) 
 
-
+Router.route("/servicios")
+.get(ObtenerServicios) 
 
 Router.route("/barberos")
 .get(ObtenerDatos)

@@ -5,19 +5,20 @@ import { Link as LinkRouter } from "react-router-dom";
 import { actionType } from "../reducer";
 import { useStateValue } from "../StateProvider";
 import axios from "axios";
-import "../components/ServicesCards.css";
+// import "../components/ServicesCards.css";
 import Corte2 from "../components/ImgServices/Corte2.jpg";
+import "../components/Mostrarservicios.css";
 
 
 function Mostrarservicios() {
-    const [{ productos }, dispatch] = useStateValue();
-
+    const [{ servicios }, dispatch] = useStateValue();
+    
     useEffect(() => {
 
         axios.get("http://localhost:4000/api/servicios").then((response) => {
             dispatch({
                 type: actionType.SERVICIOSDB,
-                cities: response.data.response.servicios
+                servicios: response.data.response.servicios,
             });
         });
     }, []);
@@ -38,23 +39,20 @@ function Mostrarservicios() {
 
                 <p className="subtitulo-mostrarS" >Sin dejar de lado el tradicional corte y afeitado con navaja, esta nueva era de la barbería dispone
                     de una variedad de servicios altamente especializados en cosmetología capilar y belleza masculina.</p>
-
-                <div className="cards">
-                    <div className="card">
-                        <h2 className="card-title">Titulo</h2>
-                        <img src={Corte2} />
-                        <p className="card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
-                    </div>
-                    
+               
+                
+                    <div className="cards">
+                    {servicios.map((item)=>(
+                        <div className="card">
+                            
+                            <h3 className="card-title">{item.nombre}</h3>
+                            <img src= { process.env.PUBLIC_URL+`/imgServicios/${item.imagen}`}/>
+                            <p className="card-desc">{item.descripcion}</p>
+                            
+                        </div>
+                    ))}
+                    </div>                
                 </div>
-
-            </div>
-
-
-
-
-
-
         </>
     )
 }

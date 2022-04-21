@@ -1,4 +1,8 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { Link as LinkRouter } from 'react-router-dom';
+import { actionType } from '../reducer';
+import { useStateValue } from '../StateProvider';
+import axios from 'axios';
 import "./ServicesCards.css"
 import Corte2 from "./ImgServices/Corte2.jpg"
 import { GiMustache } from "react-icons/gi";
@@ -7,6 +11,25 @@ import { Link } from "react-router-dom";
 
 
 function ServicesCards() {
+
+    const [{ servicios }, dispatch] = useStateValue()
+
+
+    useEffect(() => {
+        axios.get("http://localhost:4000/api/servicios")
+            .then(response => {
+                dispatch({
+                    type: actionType.SERVICIOSDB,
+                    servicios: response.data.response.servicios,
+                });
+
+            });
+    }, []);
+
+
+    const nuestrosServicios = servicios.slice(0, 4)
+
+
     return (
         <>
             <div className="ozy_rreb"></div>
@@ -27,12 +50,16 @@ function ServicesCards() {
                         <p>Nuestros profesionales te ayudarán a lucir elegante y seguro, y lo más importante con estilo.</p>
                     </div>
                     <div className="cards">
-                        <div className="card">
-                            <h2 className="card-title">Titulo</h2>
-                            <img src={Corte2} />
-                            <p className="card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
-                        </div>
-                        <div className="card">
+                        {nuestrosServicios.map((item) => (
+                            <div className="card">
+
+                                <h3 className="card-title">{item.nombre}</h3>
+                                <img src={process.env.PUBLIC_URL + `/imgServicios/${item.imagen}`} />
+                                <p className="card-desc">{item.descripcion}</p>
+
+                            </div>
+                        ))}
+                        {/* <div className="card">
                             <h2 className="card-title">Titulo</h2>
                             <img src={Corte2} />
                             <p className="card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at</p>
@@ -41,18 +68,18 @@ function ServicesCards() {
                             <h2 className="card-title">Titulo</h2>
                             <img src={Corte2} />
                             <p className="card-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
                 <div className="cards-services-ver">
-                 <Link to="/Servicios">
-                <button  className='services-ver'  type="send">VER MÁS SERVICIOS</button>
-                </Link>
+                    <Link to="/Servicios">
+                        <button className='services-ver' type="send">VER MÁS SERVICIOS</button>
+                    </Link>
                 </div>
 
             </div>
 
-          
+
             <div className="ozy_rret"></div>
         </>
     )

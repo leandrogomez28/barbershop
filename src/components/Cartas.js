@@ -4,7 +4,7 @@ import { Link as LinkRouter } from 'react-router-dom';
 import { actionType } from '../reducer';
 import { useStateValue } from '../StateProvider';
 import axios from 'axios';
-
+import { GiMustache } from "react-icons/gi";
 
 
 import Carousel from 'react-multi-carousel';
@@ -52,7 +52,14 @@ console.log(mejoresProductos)
     <div>
       <div className="ozy_rreb"></div>
       <div className="product-mas">
-      <h1 className="titulo m-0"> Productos Destacados </h1>
+      <h1 className="titulo m-0"> PRODUCTOS DESTACADOS </h1>
+      <div className="espacio">
+                        <div className="titulo-promo">
+                            <h2 className="titulo-promo2">
+                                <GiMustache style={{ fontSize: "2.5em", marginBottom: "20px" }} />
+                            </h2>
+                        </div>
+                    </div>
         <Carousel responsive={responsive} draggable={true} className=' '>
         {mejoresProductos?.map(item =>
           <div className="card-carousel ">
