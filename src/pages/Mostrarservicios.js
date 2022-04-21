@@ -12,7 +12,7 @@ import "../components/Mostrarservicios.css";
 
 function Mostrarservicios() {
     const [{ servicios }, dispatch] = useStateValue();
-    
+
     useEffect(() => {
 
         axios.get("http://localhost:4000/api/servicios").then((response) => {
@@ -36,23 +36,25 @@ function Mostrarservicios() {
                         </div>
                     </div>
                 </div>
+                <div className="subtitulo-mostrarS">
 
-                <p className="subtitulo-mostrarS" >Sin dejar de lado el tradicional corte y afeitado con navaja, esta nueva era de la barbería dispone
-                    de una variedad de servicios altamente especializados en cosmetología capilar y belleza masculina.</p>
-               
-                
-                    <div className="cards">
-                    {servicios.map((item)=>(
+                    <p  >Sin dejar de lado el tradicional corte y afeitado con navaja, esta nueva era de la barbería dispone
+                        de una variedad de servicios altamente especializados en cosmetología capilar y belleza masculina.</p>
+
+
+                </div>
+                <div className="cards">
+                    {servicios.map((item) => (
                         <div className="card">
-                            
+
                             <h3 className="card-title">{item.nombre}</h3>
-                            <img src= { process.env.PUBLIC_URL+`/imgServicios/${item.imagen}`}/>
+                            <img src={process.env.PUBLIC_URL + `/imgServicios/${item.imagen}`} />
                             <p className="card-desc">{item.descripcion}</p>
-                            
+
                         </div>
                     ))}
-                    </div>                
                 </div>
+            </div>
         </>
     )
 }

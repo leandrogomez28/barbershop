@@ -16,7 +16,7 @@ function Video() {
           width='100%'
           height='20em'
           controls
-          volume={0.1}/>
+          volume={0}/>
           
           
         

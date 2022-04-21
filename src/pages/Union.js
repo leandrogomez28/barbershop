@@ -5,6 +5,7 @@ import { actionType } from "../reducer";
 import { useStateValue } from "../StateProvider";
 import axios from "axios";
 import { GiMustache } from "react-icons/gi";
+import video from "../components/imagenes/video.mp4"
 
 function Union() {
   const [{ productos }, dispatch] = useStateValue();
@@ -22,7 +23,7 @@ function Union() {
       {/* titulo */}
 
       <div className="encabezado">
-        <h1 className="titulo1">MEN’S PRODUCTS </h1>
+        <h1 className="titulo1">PRODUCTOS PARA HOMBRE</h1>
         <h4 className="subtitulo1">
           Evolucionar el arte del cuidado masculino a través de productos <br />
           de primera calidad totalmente naturales.{" "}
@@ -44,8 +45,8 @@ function Union() {
             <div className="carta">
               <div className="carta-header">
                 <div>
-                  <p> {item.nombre}</p>
-                  <p>{item.precio}</p>
+                  <p > {item.nombre}</p>
+                  <p >{item.price}</p>
                 </div>
               </div>
               <div className="carta-body">
@@ -56,18 +57,7 @@ function Union() {
                 />
               </div>
               <div className="carta-footer">
-                {/* <p>{item.descripción}</p> */}
-                {/* <div class="control1">
-                 
-                  <button class="btn1">
-                    <span class="buy1">
-                      <LinkRouter to={`/producto/${item._id}`}>
-                        Ver Mas
-                      </LinkRouter>
-                    </span>
-                  </button>
-                  
-                </div> */}
+                
                 <div className="cards-producto-ver">
                   <button className="producto-ver" >
                   <LinkRouter to={`/producto/${item._id}`}> VER MAS 
@@ -80,6 +70,17 @@ function Union() {
           </div>
         ))}
       </div>
+
+      <div className="cover-container">
+            <video
+              className="video"
+              src={video}
+              autoPlay
+              loop
+              muted
+            ></video>
+           
+          </div>
     </div>
   );
 }

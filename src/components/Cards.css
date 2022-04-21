@@ -125,74 +125,15 @@ margin-left: 25%;
 
 /*boton*/
 
-.control{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-	
 
-
-.card__description .btn{
-	transform: translateY(0px);
-	transition: 0.3s linear;
-	background: white;
-	border-radius: 5px;
-  position: relative;
-  overflow: hidden;
-	cursor: pointer;
-	outline: none;
-	border: none;
-	color: rgb(2, 2, 2);
-	padding: 0;
-	margin: 0;
-	
-}
-
-.card__description .btn:hover{transform: translateY(-4px);}
-
-.card__description .btn span {
-	font-family: 'Trocchi', serif;
-	transition: transform 0.3s;
-	display: inline-block;
-  padding: 10px 20px;
-	font-size: 1.2em;
-	margin:0;
-  color: white;
-	
-}
-
-.card__description button {
-  font-family: 'Trocchi', serif;
-  font-size: 18px;
-  padding: 15px 25px;
-  background-color: #363636;
-  background: linear-gradient(#404040, transparent 155%);
-  color: #0000008c;
-  border-color: transparent;
-  outline: 0;
-  cursor: pointer;
-  transition: all 1s ease;
-}
-.card__description button:hover {
-    color: #fff;
-  transition: all 1s ease;
-}
-.card__description button:nth-child(1):hover {
- box-shadow:  0px 0px 2px #000;
-   background: #282828;
-  text-shadow: 0 0px 0px transparent, 0 0 1px #d8ce3f, 0 0px 1px transparent, 0 0 0px #d8ce3f, 0 0 25px #d8ce3f, 0 0 0 #d8ce3f, 0 0 5px #d8ce3f, 0 0 6px #d8ce3f;
-  }
-  .card__description button:nth-child(2) {
-  border-left: 1px solid #0000008c;
-  border-right: 1px solid #0000008c;
-}
-.card__description button:nth-child(2):hover {
-  border-left: 1px solid #0000008c;
-  border-right: 1px solid #0000008c;
-  box-shadow:  0px 0px 2px #000;
-   background: #282828;
-  text-shadow: 0 0px 0px transparent, 0 0 1px white, 0 0px 1px transparent, 0 0 0px white, 0 0 25px white, 0 0 0 white, 0 0 5px white, 0 0 6px white;
+ .carousel-ver{
+  border-radius: 30px;
+  color: #d6ae4c;
+  background-color: rgb(0, 0, 0);
+  border-color: #d6ae4c !important;
+  border: solid 5px;
+  width: 260px;
+  height: 60px;
   
 }
 

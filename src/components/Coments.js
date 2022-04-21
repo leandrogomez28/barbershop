@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useStateValue } from "../StateProvider"
 import axios from "axios";
 import swal from "sweetalert";
-
+import "../components/coments.css"
 
 function Coments(props) {
 
@@ -61,35 +61,37 @@ function Coments(props) {
 
     return (
 
-        <div>
+        <div className="dibujo-comentario">
 
 
 
-            <div className="card__footer d-flex" >
-                <div class="accordion accordion-flush" id="accordionFlushExample">
-                    <div class="accordion-item">
+            {/* <div className="card__footer "> */}
+                <div class="accordion accordion-flush" id="accordionExample">
+                    {/* <div class="accordion-item"> */}
                         <h2 class="accordion-header" id="flush-headingOne">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                Comentarios
-                            </button>
+                            {/* boton inicio */}
+                            <div class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                COMENTARIO
+                            </div>
                         </h2>
 
-                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionFlushExample">
 
                             {user ?
 
                                 <form onSubmit={submitComent} className="coments" >
 
 
-                                    <textarea className="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style={{ height: "100px" }}></textarea>
+                                    <textarea className="usuario4" placeholder="Deja su comentario aqui" id="floatingTextarea2" style={{ height: "100px", fontSize:"20px" }}></textarea>
 
-
-                                    <button className="btn btn-success mx-1" type="submit">send</button>
+                                    <div className="botones">
+                                    <button className="btn-enviar" type="submit">ENVIAR</button>
+                                </div>
                                 </form>
 
                                 :
                                 <div>
-                                     <h3 className="mx-5">You must be logged in to comment</h3>
+                                     <h3 className="mx-5">Debes estar logueado </h3>
                                     
                                 </div>
                             }
@@ -102,10 +104,10 @@ function Coments(props) {
                                                 <div className="icon-user">
 
                                                 </div>
-                                                <div className="user-info">
-                                                    <h5>{item.user.firstname} {item.user.lastname} {item.user.name}</h5>
+                                                <div className="usuario1">
+                                                    <h5 className="usuario2">{item.user.firstname} {item.user.lastname} {item.user.name}</h5>
                                                     <div >
-                                                        <input onKeyUp={handelChange} className="coment-user" defaultValue={item.comment}></input>
+                                                        <input onKeyUp={handelChange} className="usuario3" defaultValue={item.comment}></input>
                                                     </div>
                                                     <small>2h ago</small>
 
@@ -114,10 +116,10 @@ function Coments(props) {
                                             </div>
                                             <div className="botones">
                                                 <div>
-                                                    <button className='btn btn-danger mx-2' onClick={() => borrarComentario(item._id)}>borrar</button>
+                                                    <button className='btn-borrar' onClick={() => borrarComentario(item._id)}>BORRAR</button>
                                                 </div>
-                                                <div>
-                                                    <button className='btn btn-primary' onClick={() => modificar(item._id)}>edit</button>
+                                                <div >
+                                                    <button className='btn-editar' onClick={() => modificar(item._id)}>EDITAR</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -152,7 +154,7 @@ function Coments(props) {
 
 
 
-                    </div>
+                    {/* </div> */}
 
 
 
@@ -160,7 +162,7 @@ function Coments(props) {
 
 
                 </div>
-            </div>
+            {/* </div> */}
 
 
 

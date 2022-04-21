@@ -1,0 +1,79 @@
+.dibujo-comentario{
+    background-color: #0000008f;
+    padding: 0 4em 0 4em;
+    margin-bottom: 3em;
+}
+
+.inputBoton{
+    width: 110%;
+    padding-left: 1em;
+    border-radius: 10px;
+    margin-bottom: 2em;
+
+}
+.floating{
+    padding-left: 1em;
+    margin-bottom: 2em;
+}
+.accordion-button {
+    background: rgba(55, 42, 18, 0)!important;
+    color: rgb(255, 255, 255) !important;
+    font-size: 25px !important;
+   
+   
+}
+
+.coment-user{
+    color: black !important;
+}
+  .usuario1{
+      /* background: black!important; */
+      color: rgb(251, 251, 251) !important;
+      width: 100% ;
+      font-size: 20px;
+  }
+  .usuario2{
+   
+    color: rgb(251, 251, 251) !important;
+    width: 100% ;
+    font-size: 35px;
+}
+.usuario3{
+   
+    color: rgb(251, 251, 251) !important;
+    width: 100% ;
+    font-size: 20px;
+}
+
+.accordion-collapse{
+    
+    color: white;
+    font-family: 'Trocchi', serif;
+}
+.usuario4{
+    
+    width: 100% ;
+    font-size: 20px;
+}
+.btn-borrar{
+    width: 130px;
+    color: black;
+border-radius: 20px;
+margin-top: 1em;
+}
+.btn-editar{
+    width: 130px;
+    color: black;
+border-radius: 20px;
+margin-top: 1em;
+}
+.btn-enviar{
+    margin-top: 2em;
+    width: 130px;
+    color: black;
+border-radius: 20px;
+margin-left: 2em;
+}
+.botones{
+    display: flex;
+}
