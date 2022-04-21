@@ -1,8 +1,12 @@
+.nav-link{
+    padding: 0;
+}
 .nav-link-signin{
     position: fixed;
     top: 3%;
     right: 1em;
     font-size: 3em;
+    
 }
 
 .logueado{

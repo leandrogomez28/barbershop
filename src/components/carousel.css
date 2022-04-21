@@ -1,10 +1,10 @@
 
 .carousel-img{
-    height: 20em;
+    height: 30em;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.813);
 }
 
 
@@ -18,13 +18,24 @@
 .carousel-img img{
     filter: saturate(200%);
     filter: grayscale(35%);
-    width: 100%;
-    height: 10em;
+    /* width: 100%; */
+    height: 15em;
     object-fit: cover;
+    padding: 1em;
+    object-position: 10px -60px;
 }
 .carousel-foot{
     display:flex;
     justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.813);
+}
+.carousel-foot img{
+    height: 10em;
+    object-fit: cover;
+    padding: 1em;
+    object-position: 10px -20px;
 }
 .carousel-img img:hover{
     filter: brightness(50%);
@@ -49,6 +60,12 @@ object-fit: cover;
     filter: blur(1px);
     transform: scale(1.1);
     transition: 0.5s;
+}
+#carouselExampleCaptions{
+    padding: 1em;
+    background-color: rgba(0, 0, 0, 0.813);
+    margin-top: 5em;
+
 }
 
 
