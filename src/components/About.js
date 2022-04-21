@@ -2,6 +2,7 @@ import React from "react";
 import './aboutRasgado.css'
 import Silla from '../imagenes/silla-barber.jpeg'
 import { GiMustache } from "react-icons/gi";
+import video2 from "../components/imagenes/video2 .mp4"
 
 function About() {
 
@@ -13,10 +14,19 @@ function About() {
         <div className="about">
             <div className="ozy_rreb"></div>
             <div className="d-flex content-about">
-                <div className='silla'>
+                {/* <div className='silla'>
                     <img src={Silla} alt="..." />
-                </div>
-
+                </div> */}
+                <div className="cover-container1">
+            <video
+              className="video2"
+              src={video2}
+              autoPlay
+              loop
+              muted
+            ></video>
+           
+          </div>
                 <div className="texto-about">
 
                     <h2> SOBRE NOSOTROS</h2>
