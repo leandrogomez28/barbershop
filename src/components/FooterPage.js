@@ -68,7 +68,7 @@ function FooterPage() {
           <section className="widget-area">
             <div className="widget">
               <div className="textwidget">
-                T: 042 800090230&nbsp; &nbsp; &nbsp; &nbsp;INFO@THESHAVER.COM
+                Telefono:  1123229687&nbsp; &nbsp; &nbsp; &nbsp;@ccs.estilos
               </div>
             </div>
           </section>
@@ -88,11 +88,11 @@ function FooterPage() {
       <div id="footer">
         <footer>
           <div className="container">
-            <div id="footer-line-1">Copyright 2022 © Shaver WordPress Theme
+            <div id="footer-line-1">Copyright 2022 © BarberShop React CCS Estilos
             </div>
             <div id="footer-line-2">
-              Design &amp; Development by
-              <a href="http://freevision.me">FreeVision</a>
+              Design &amp; Development by 
+              <a href="https://github.com/leandrogomez28/barbershop">BarberShop</a>
             </div>
             <div id="social-icons">
               <a href="http://www.facebook.com/#" target="_blank" className="bi bi-facebook">

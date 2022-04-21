@@ -169,7 +169,7 @@
 }
 
 .container {
-    width: 75%;
+    /* width: 75%; */
     position: relative;
     padding: 1em;
     margin: 0 auto;
@@ -178,6 +178,7 @@
 
 #footer-widget-bar *:not(input), #footer *:not(input) {
     font-size: 12px;
+    padding-left: 10px;
 }
 
 #footer *, #footer-widget-bar * {
