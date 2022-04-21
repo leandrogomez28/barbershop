@@ -3,9 +3,10 @@
 .titulo1{
   margin-top: 7%;
     color: #d6ae4c;
-    font-size: 90px;
+    font-size: 70px;
     text-align: center;
     font-family: 'Rye', cursive;
+    padding-left: 1.2em;
     /* margin-left: 30px; */
     text-shadow: 2px 8px 7px #1a1a1b;
     /* -webkit-text-stroke: 2px #d6ae4c; */
@@ -65,7 +66,8 @@ text-align: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-   margin-bottom: 7%;
+     margin-bottom: 7%;
+     padding-top: 4em;
    /* margin-top: 18%;   */
 }
 .map-cartas .card-carousel{
@@ -145,6 +147,7 @@ button:nth-child(1):hover {
 .video{
   position: absolute;
   top: 0;
+  
   /* left: 0; */
   /* width: 100%; */
   height: 656px;

@@ -5,6 +5,15 @@
 .product-mas {
 background: white;
 }
+
+.titulo{
+  text-align: center;
+  font-family: 'Rye', cursive;
+  font-size:2em;
+  text-shadow: 3px 1px #2e2e30;
+  color: #d6ae4c;
+}
+
 .card{
   position: relative;
   display: block;

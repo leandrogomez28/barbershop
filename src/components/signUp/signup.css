@@ -171,10 +171,16 @@ opacity: 0.7;
     box-shadow: 0 0 10px #d6ae4c;
 }
 .derecha-signUp .h1{
-    color:#d6ae4c !important;
-    margin-top: 30px;
-    
+    /* color:#d6ae4c !important;
+    margin-top: 30px; */
+    padding-top: 1.8em;
+    text-align: center;
+    font-family: 'Rye', cursive;
+    font-size: 2em;
+    text-shadow: 3px 1px #2e2e30;
+    color: #d6ae4c;
 }
+
 .cabeza-titulo{
 text-shadow: 0 0 10px black;
 }
