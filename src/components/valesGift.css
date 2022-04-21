@@ -11,8 +11,38 @@ background: #DFC2F2;
 	background-size: cover;
 	}
 
+	/* VIDEO */
+	/* .video-tx h1{
+		padding-top: 3em;
+		text-align: center;
+		font-family: 'Rye', cursive;
+		font-size:2em;
+		text-shadow: 3px 1px #2e2e30;
+		color: #d6ae4c;
+	  }
+	  .video-tx{
+	  width: 75%;
+		  position: relative;
+		  left: 10%;
+		  height: 25em;
+		  margin-bottom: 10em;
+	  }
+	  .vid {
+		height: 11em;
+		 position: relative;
+		 padding: 56.25%;
+		 
+		}
+		.reac-player{
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+		} */
+
+		/* hasta aqui video */
+
 #container{
-	box-shadow: 0 0 10px  #ebcb7b;
+	box-shadow: 0 0 10px  #fae3a8;
 	background: #E5E4E2;
 	text-align: center;
 	border-radius: 5px;
@@ -20,6 +50,7 @@ background: #DFC2F2;
 	margin: 5em auto;
 	height: 100%;
 	width: 70%;
+	
 	
 }
 
@@ -30,6 +61,7 @@ background: #DFC2F2;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+	
 
 }
 
@@ -47,14 +79,16 @@ background: #DFC2F2;
 .gift-title h1{
 	text-align: center;
         font-family: 'Rye', cursive;
-        font-size:2em;
+        font-size:3em;
         text-shadow: 3px 1px #2e2e30;
-        color: #d6ae4c;
+        color: #fdfdfb;
+		padding-top: 60px;
+		
 }
 
 .gift-title h3{
 	font-family: 'Trocchi', serif !important;
-        color: rgba(240, 225, 95, 0.829);
+        color: rgba(252, 251, 247, 0.829);
         text-align: center;
 }
 
