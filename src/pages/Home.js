@@ -9,11 +9,13 @@ import Calendario from '../components/Calendario'
 import ServicesCards from "../components/ServicesCards";
 import Deslogueo from '../components/iconLogeo/Deslogueo'
 import { CartProvider, useCart } from "react-use-cart";
-import Cart from '../components/Carrito'
 import Testimonial from "../components/Testimonial";
 import BotonVales from '../components/BotonVales'
 import Video from '../components/video/Video'
 function Home() {
+
+    
+      
 
 
 

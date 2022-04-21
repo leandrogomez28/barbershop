@@ -2,6 +2,8 @@ import React from "react";
 import './carrito.css'
 import { useCart } from "react-use-cart";
 import { BsFillCartDashFill, BsCartPlusFill } from "react-icons/bs";
+import CarritoShop from "./Carritoshop";
+import CantidadCarrito from './CantidadCarrito'
 
 function Cart() {
   const {
@@ -36,8 +38,10 @@ function Cart() {
               <tbody>
                 {items.map((item, index) => {
                   return (
+                    
                     <tr key={index}>
                       <td>
+                       
                         <img className="productog" style={{ height: '10rem', width: '10rem' }} src={
                           process.env.PUBLIC_URL + `/productosGeneral/${item.imagen}`
                         } />
@@ -86,6 +90,7 @@ function Cart() {
             <button className=" btn-danger "
              >Realizar compra</button>
           </div>
+         
 
         </div>
       </section>

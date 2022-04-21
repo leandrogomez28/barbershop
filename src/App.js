@@ -38,12 +38,15 @@ import Mostrarservicios from './pages/Mostrarservicios';
 import Carrito from './components/Carrito'
 import { CartProvider } from "react-use-cart";
 import CarritoShop from './components/Carritoshop';
-
+import CantidadCarrito from './components/CantidadCarrito'
+import { useCart } from "react-use-cart";
 
 
 
 function App() {
   const [{ servicios }, dispatch] = useStateValue()
+
+  
 
 
 
@@ -69,16 +72,14 @@ function App() {
             localStorage.removeItem("token")
           }
         })
-    } if (localStorage.getItem("react-use-cart") !== null) {
-      const carritoLleno = localStorage.getItem("react-use-cart")
-      alert("probando")
-      alert(carritoLleno.length)
-    }else{
-      alert("carrito vacio")
     }
+  
         
 
   }, [])
+
+ 
+
 
   return (
 
@@ -86,7 +87,9 @@ function App() {
 
       <Navbar />
       <Deslogueo />
-      <CarritoShop/>
+      
+      
+      
       <Routes>
 
         <Route path='/' element={<Home />} />

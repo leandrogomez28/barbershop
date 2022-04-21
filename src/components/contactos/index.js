@@ -1,20 +1,33 @@
 import React from "react";
 import './contacto.css'
+import swal from 'sweetalert';
 
 import { FiPhoneCall, FiMail } from "react-icons/fi";
 import { RiMapPin2Line } from "react-icons/ri";
+import { useStateValue } from "../../StateProvider";
 
 
 export default function Contactos(params) {
+    const[{user},dispatch]=useStateValue()
+
+    function mensajeEnviado(){
+       
+        swal("¡Mensaje enviado!, te responderemos a la brevedad");
+    }
+
+    function iniciarSesion(){
+       
+        swal("DEBES INICIAR SESION");
+    }
     return (
         <div className="general">
-           
-           
-          
+
+
+
 
             <div className="titulo">
                 <h1>CONTACTO</h1>
-                
+
                 <hr></hr>
                 <h4 >PONGASE EN CONTACTO CON NOSOTROS</h4>
             </div>
@@ -48,7 +61,7 @@ export default function Contactos(params) {
                 <form>
                     <div className="row">
                         <h5>ESCRIBANOS</h5>
-                        
+
                         <div className="col">
                             <input type="text" className="form-control" placeholder="NOMBRE (REQUERIDO)" aria-label="First name" />
                         </div>
@@ -62,19 +75,26 @@ export default function Contactos(params) {
                             <textarea className="form-control" placeholder="DEJANOS TU MENSAJE"></textarea>
                             {/* <label for="floatingTextarea2">DEJANOS TU MENSAJE</label> */}
                         </div>
-                        <div className="envio">
-                            <button type="send">ENVIAR</button>
-                        </div>
+                        {user ?
+                            <div className="envio">
+                                <button type="button" onClick={()=>mensajeEnviado()}>ENVIAR</button>
+                            </div>
+                            :
+                            <div className="envio">
+                                <button type="button" onClick={()=>iniciarSesion()}>ENVIAR</button>
+                            </div>
+                        }
+
 
                     </div>
 
                 </form>
             </div>
 
-            
-           
-           </div>
 
-       
+
+        </div>
+
+
     )
 }

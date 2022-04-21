@@ -1,10 +1,15 @@
 import React from "react";
 import './titulo.css'
 import Logo from '../imagenes/barbershop3.png' 
+import { useCart } from "react-use-cart";
 
 
 
 function Titulo(){
+   
+    
+      
+      
 
 
     return(
