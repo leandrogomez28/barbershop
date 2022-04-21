@@ -80,8 +80,8 @@ label{
 }
 .iconosText > p , a {
     font-size: 1rem;
-    margin-left: 20px;
-    padding-top: 15px;
+    /* margin-left: 21px;
+    padding-top: 17px; */
 }
 .iconosText >  a {
     color: #d6ae4c;
