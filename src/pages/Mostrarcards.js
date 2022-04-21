@@ -79,19 +79,18 @@ function Mostrarcards() {
                   <p className="subtitulo">{item.descripción}</p>
                 </div>
 
-                {/* boton  */}
-                <div className="control-boton">
-                  <p className="botonC">Categoria:</p>
-                  <button className="btn-boton">
-                    <span className="buy-boton">{item.categoria}</span>
-                  </button>
-                </div>
+               
 
                 {/* carrito */}
                 <div className="mcarrito-ver" key={item.id}>
                   <button className="carrito-ver" onClick={() => carrito(item)}>
-                  Agregar Carrito
+                  AGREGAR CARRITO
                   </button>
+                </div>
+
+                 {/* categoria */}
+                <div >
+                    <span className="categoria">Categoria: {item.categoria}</span>
                 </div>
               </div>
             </div>
