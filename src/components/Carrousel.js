@@ -1,8 +1,24 @@
 import React from 'react'
-import Barber from '../imagenes/barber.jpeg'
-import Barber2 from '../imagenes/barber2.jpg'
-import Barber3 from '../imagenes/barber3.jpg'
-import Barber4 from '../imagenes/barber4.jpg'
+import Barber from '../barbershopimg/uno.jpeg'
+import Barber2 from '../barbershopimg/dos.jpeg'
+import Barber3 from '../barbershopimg/tres.jpeg'
+import Barber4 from '../barbershopimg/cuatro.jpeg'
+import Barber5 from '../barbershopimg/cinco.jpeg'
+import Barber6 from '../barbershopimg/seis.jpeg'
+import Barber7 from '../barbershopimg/siete.jpeg'
+import Barber8 from '../barbershopimg/ocho.jpeg'
+import Barber9 from '../barbershopimg/nueve.jpeg'
+import Barbera from '../barbershopimg/diez.jpeg'
+import Barbere from '../barbershopimg/once.jpeg'
+import Barberiq from '../barbershopimg/clasico.jpeg'
+import Barberi from '../barbershopimg/doce.jpeg'
+import Barberii from '../barbershopimg/trece.jpeg'
+import Barberis from '../barbershopimg/fademedio.jpeg'
+import Barberid from '../barbershopimg/fadeAlto.jpeg'
+import Barbern from '../barbershopimg/fadeBajo.jpeg'
+import Barberix from '../barbershopimg/degradee.jpeg'
+
+
 import './carousel.css' 
 
 function Carrousel() {
@@ -27,29 +43,29 @@ function Carrousel() {
                             </div>
                             
                             <div>
-                                <img src={Barber} className="d-block w-100" alt="..." />
+                                <img src={Barber2} className="d-block w-100" alt="..." />
 
                             </div>
                             <div>
-                                <img src={Barber} className="d-block w-100" alt="..." />
+                                <img src={Barber3} className="d-block w-100" alt="..." />
 
                             </div>
                             <div>
-                                <img src={Barber} className="d-block w-100" alt="..." />
+                                <img src={Barber4} className="d-block w-100" alt="..." />
 
                             </div>
                         </div>
                         <div className='carousel-foot  w-100 '>
                             <div>
-                                <img src={Barber4} className="d-block w-100" alt="..." />
+                                <img src={Barber5} className="d-block w-100" alt="..." />
 
                             </div>
                             <div>
-                                <img src={Barber4} className="d-block w-100" alt="..." />
+                                <img src={Barber6} className="d-block w-100" alt="..." />
 
                             </div>
                             <div>
-                                <img src={Barber4} className="d-block w-100" alt="..." />
+                                <img src={Barber7} className="d-block w-100" alt="..." />
 
                             </div>
                         </div>
@@ -58,33 +74,33 @@ function Carrousel() {
                     <div className="carousel-item" >
                         <div className='carousel-img'>
                             <div>
-                                <img src={Barber2} className="d-block w-100" alt="..." />
+                                <img src={Barber8} className="d-block w-100" alt="..." />
 
                             </div>
                             <div>
-                                <img src={Barber2} className="d-block w-100" alt="..." />
+                                <img src={Barber9} className="d-block w-100" alt="..." />
 
                             </div>
                             <div>
-                                <img src={Barber2} className="d-block w-100" alt="..." />
+                                <img src={Barbera} className="d-block w-100" alt="..." />
 
                             </div>
                             <div>
-                                <img src={Barber2} className="d-block w-100" alt="..." />
+                                <img src={Barbere} className="d-block w-100" alt="..." />
 
                             </div>
                         </div>
                         <div className='carousel-foot  w-100 '>
                             <div>
-                                <img src={Barber4} className="d-block w-100" alt="..." />
+                                <img src={Barberi} className="d-block w-100" alt="..." />
 
                             </div>
                             <div>
-                                <img src={Barber4} className="d-block w-100" alt="..." />
+                                <img src={Barberii} className="d-block w-100" alt="..." />
 
                             </div>
                             <div>
-                                <img src={Barber4} className="d-block w-100" alt="..." />
+                                <img src={Barberis} className="d-block w-100" alt="..." />
 
                             </div>
                         </div>
@@ -92,19 +108,19 @@ function Carrousel() {
                     <div className="carousel-item" >
                         <div className='carousel-img'>
                             <div>
-                                <img src={Barber3} className="d-block w-100" alt="..." />
+                                <img src={Barberid} className="d-block w-100" alt="..." />
 
                             </div>
                             <div>
-                                <img src={Barber3} className="d-block w-100" alt="..." />
+                                <img src={Barberiq} className="d-block w-100" alt="..." />
 
                             </div>
                             <div>
-                                <img src={Barber3} className="d-block w-100" alt="..." />
+                                <img src={Barbern} className="d-block w-100" alt="..." />
 
                             </div>
                             <div>
-                                <img src={Barber3} className="d-block w-100" alt="..." />
+                                <img src={Barberix} className="d-block w-100" alt="..." />
 
                             </div>
 
