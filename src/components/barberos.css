@@ -174,7 +174,7 @@ aside:hover .profile-bio {
 
 .profile-social-links {
   position: relative;
-  margin-top: -440px;
+  margin-top: -480px;
   margin-left: -100px;
   list-style-type: none;
   opacity: 0;
@@ -182,7 +182,7 @@ aside:hover .profile-bio {
 }
 
 aside:hover .profile-social-links {
-  margin-left: -56px;
+  margin-left: -35px;
   opacity: 1;
   
 }

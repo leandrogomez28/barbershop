@@ -17,7 +17,7 @@ function Navbar() {
                 <LinkRouter to='/productos'>Productos</LinkRouter>
                 <LinkRouter to='/servicios'>Servicios</LinkRouter>
                 <LinkRouter to='/signup'>Registro</LinkRouter>
-                <LinkRouter to='/signin'>SignIn</LinkRouter>
+                <LinkRouter to='/signin'>Ingresar</LinkRouter>
                 <LinkRouter to='/galeria'>Galeria</LinkRouter>
                 
                 
