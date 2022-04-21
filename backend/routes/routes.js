@@ -16,7 +16,8 @@ const { cargaComentarios,obtenerComentarios,borrarComentario,modificarComentario
 Router.route("/productos")
 .get(ObtenerProductos) 
 
-
+Router.route("/servicios")
+.get(ObtenerServicios) 
 
 Router.route("/barberos")
 .get(ObtenerDatos)

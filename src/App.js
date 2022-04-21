@@ -32,6 +32,7 @@ import FooterPage from './components/FooterPage.js'
 import Navbar from './components/Navbar'
 import axios from 'axios';
 import Union from './pages/Union';
+import Mostrarservicios from './pages/Mostrarservicios';
 
 
 import Carrito from './components/Carrito'
@@ -92,6 +93,7 @@ function App() {
         < Route path='/producto/:id' element={<CartProvider> <Mostrarcards /> </CartProvider>  } />
         <Route path='/signup' element={<SignUp />} />
         <Route path='/signin' element={<SignIn />} />
+        <Route path='/servicios' element={<Mostrarservicios/>} />
         {/* <Route path='/turnos' element={<Calendario/>} /> */}
         <Route path='/carrito' element={<CartProvider> <Carrito /> </CartProvider> } />
 
