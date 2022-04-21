@@ -24,32 +24,41 @@ function Vales(){
           playing width='100%' height='20em' controls volume={0.1}/>
      </div>     
 </div> */}
-            {/* <video
+
+		{/* video encaezado */}
+           {/* <div className="cover-container">
+            <video
               className="video"
-              src={covervideo}
+              src={minivideo1}
               autoPlay
               loop
               muted
-            ></video> */}
-
-			<img src={minivideo1} width={1200} height={400}/>
-            <div className="nombreciudad">
-              {/* <h1>{data.name}</h1> */}
+            ></video>
+           
+          </div> */}
+			<div className="cover-container">
+			<img className="video" src={minivideo1} width={1250} height={650}/>
             </div>
+			{/* <div className="nombreciudad">
+              {/* <h1>{data.name}</h1> */}
+            {/* </div> */} 
           </div>
 <div className='gift-title'>
-                    <h1>REGALA UN CAMBIO DE LOOK</h1>
-					<div className="espacio">
+                    <h1>REGALA UN NUEVO LOOK</h1>
+					
+                    <h3>Una manera de demostrar un detalle para esa persona especial que se lo merece, es obsequiandole una Gift Card.<br/>
+                    Será atendido por nuestros profesionales y le harán el cambio de look que se mecere lucir.</h3>
+				{/* linea */}
+				<div className="espacio">
                             <div className="titulo-promo">
                                 <h2 className="titulo-promo2">
                                     <GiMustache style={{ fontSize: "1.5em", marginBottom: "20px", color:"#d6ae4c" }} />
                                 </h2>
                             </div>
                         </div>
-                    <h3>Una manera de demostrar un detalle para esa persona especial que se lo merece, es obsequiandole una Gift Card.</h3>
-                    <h3>Será atendido por nuestros profesionales y le harán el cambio de look que se mecere lucir.</h3>
-    </div>
+	</div>
 
+			{/* cartas de vales  */}
 <div id="container">	
 	
 {/* <!-- Start	Product details --> */}

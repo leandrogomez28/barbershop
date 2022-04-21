@@ -53,48 +53,101 @@ background: #DFC2F2;
 	
 	
 }
-
+/* -------video-------- */
 .cover-container{
-    height: 100;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-	
-
-}
-
-.video{
-   position: absolute;
-   top: 120px;
-   left: 0;
-   width: 100%;
-   height: 150px;
-   overflow:hidden;
-   object-fit:cover;
-   z-index: -2;
-}
+	height: 100;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  
+  }
+  
+  .video{
+	position: absolute;
+	top: 0;
+	/* left: 0; */
+	/* width: 100%; */
+	height: 656px;
+	/* overflow: hidden; */
+	/* object-fit: cover; */
+	/* z-index: -2;*/
+  }
 
 .gift-title h1{
-	text-align: center;
+	/* text-align: center;
         font-family: 'Rye', cursive;
         font-size:3em;
         text-shadow: 3px 1px #2e2e30;
         color: #fdfdfb;
-		padding-top: 60px;
-		
+		padding-top: 60px; */
+	position: relative;
+		margin-top: 6%;
+    color: #d6ae4c;
+    font-size: 90px;
+    text-align: center;
+    font-family: 'Rye', cursive;
+    /* margin-left: 30px; */
+    text-shadow: 2px 8px 7px #1a1a1b;
+    /* -webkit-text-stroke: 2px #d6ae4c; */
+    /* margin-left: 2em;*/
 }
+		
+
 
 .gift-title h3{
 	font-family: 'Trocchi', serif !important;
-        color: rgba(252, 251, 247, 0.829);
-        text-align: center;
+        /* color: rgba(252, 251, 247, 0.829);
+        text-align: center; */
+position: relative;
+		margin-top: 120px;
+  text-align: center;
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Trocchi', serif;
+  font-weight: 1000;
+  text-shadow: 4px 2px 5px #000000;
+  -webkit-text-fill-color: #eecb03fb;
+  -webkit-text-stroke: 0.4px #000000;
+  margin-left: 20px;
+
 }
+.espacio{
+	margin-top: 1em;
+	width: 100%;
+	height: 90px;
+  text-align: center;
+}
+.titulo-promo2{
+	display: inline-table;
+	position: relative;
+	font-family: 'Trocchi', serif;
+	font-size: 30px;
+	color: rgb(0, 0, 0);
+   }
+   .titulo-promo2::after, .titulo-promo2::before{
+	 content: "";
+	 position: absolute;
+	 width: 120px;
+	 height: 4px;
+	 background-color:rgb(58, 53, 53) ;
+	 top: 0.4em;
+   
+   }
+   
+   .titulo-promo2::after{
+	 right: -140px;
+   }
+   
+   .titulo-promo2::before{
+	 left: -140px;
+	
+   }
 
 
 
-
+/* -----------Cartas de Vales ----------- */
 /* 	Product details  */
 .product-details {
     /* background-image: url(../components/Imagen1/logo1.jpeg);
