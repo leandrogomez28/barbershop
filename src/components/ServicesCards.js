@@ -27,7 +27,7 @@ function ServicesCards() {
     }, []);
 
 
-    const nuestrosServicios = servicios.slice(0, 4)
+    const nuestrosServicios = servicios.slice(0, 3)
 
 
     return (
