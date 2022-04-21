@@ -32,10 +32,7 @@ function Home() {
             <Contactos />
             
             <Video/>
-            <CartProvider>
-                
-                <Cart />
-            </CartProvider>
+            
 
            
 
