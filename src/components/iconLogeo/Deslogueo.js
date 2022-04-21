@@ -2,7 +2,7 @@ import React from "react";
 import { useStateValue } from "../../StateProvider";
 import axios from "axios";
 import { actionType } from "../../reducer";
-import {FaUserCircle} from 'react-icons/fa'
+import {RiUserShared2Fill} from 'react-icons/ri'
 import {ImUserPlus} from 'react-icons/im'
 import './logo.css'
 import Logo from '../../imagenes/logout.png'
@@ -37,7 +37,7 @@ function Deslogueo(params) {
             {
                 !user ?<div className="nav-link active hover-underline-animation" aria-current="page" >
                     <LinkRouter to='/signin' className="nav-link-signin">
-                    <ImUserPlus></ImUserPlus>
+                     <RiUserShared2Fill></RiUserShared2Fill>
                 </LinkRouter>
                 </div>
                 :
