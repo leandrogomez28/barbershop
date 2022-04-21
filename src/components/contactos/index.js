@@ -8,6 +8,9 @@ import { RiMapPin2Line } from "react-icons/ri";
 export default function Contactos(params) {
     return (
         <div className="general">
+           
+           
+          
 
             <div className="titulo">
                 <h1>CONTACTO</h1>
@@ -68,6 +71,10 @@ export default function Contactos(params) {
                 </form>
             </div>
 
-        </div>
+            
+           
+           </div>
+
+       
     )
 }

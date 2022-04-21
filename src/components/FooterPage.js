@@ -6,7 +6,8 @@ function FooterPage() {
 
     <div id="footer-widget-bar" className="widget">
 
-       <div >
+       <div className="footerStyle">
+         
 
          <div id="back-to-top-wrapped" className="bottomed">
          <div>

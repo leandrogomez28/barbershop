@@ -98,6 +98,7 @@ function App() {
         {/* <Route path='/turnos' element={<Calendario/>} /> */}
         <Route path='/carrito' element={<CartProvider> <Carrito /> </CartProvider> } />
         <Route path='/galeria' element={<Gallery/>}/>
+        <Route path='/valesgifts' element={<ValesGift />} />
 
 
       </Routes>
