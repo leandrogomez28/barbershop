@@ -70,9 +70,9 @@ function Coments(props) {
                     {/* <div class="accordion-item"> */}
                         <h2 class="accordion-header" id="flush-headingOne">
                             {/* boton inicio */}
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <div class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                 COMENTARIO
-                            </button>
+                            </div>
                         </h2>
 
                         <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionFlushExample">

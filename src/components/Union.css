@@ -1,28 +1,28 @@
 
 /* titulo */
 .titulo1{
-  margin-top: 2%;
+  margin-top: 7%;
     color: #d6ae4c;
     font-size: 90px;
     text-align: center;
     font-family: 'Rye', cursive;
-    margin-left: 30px;
+    /* margin-left: 30px; */
     text-shadow: 2px 8px 7px #1a1a1b;
-    /* -webkit-text-stroke: 2px #d6ae4c;  */
-    margin-left: 2em;
+    /* -webkit-text-stroke: 2px #d6ae4c; */
+    /* margin-left: 2em;*/
 }
 .subtitulo1{
 
-margin-top: 16em;
+  margin-top: 230px;
   text-align: center;
-   font-size: 30px;
-   text-align: center;
-   font-family: 'Trocchi', serif;
-   font-weight: 1000;
-    text-shadow:4px 2px 5px  #000000;
-  -webkit-text-fill-color:#eecb03fb;
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Trocchi', serif;
+  font-weight: 1000;
+  text-shadow: 4px 2px 5px #000000;
+  -webkit-text-fill-color: #eecb03fb;
   -webkit-text-stroke: 0.4px #000000;
- margin-left: 20px;
+  margin-left: 20px;
 
 }
 
@@ -143,14 +143,14 @@ button:nth-child(1):hover {
 }
 
 .video{
- position: absolute;
- top: 35%;
- left: 0;
- width: 100%;
- height: 300px;
- overflow:hidden;
- object-fit:cover;
- z-index: -2;
+  position: absolute;
+  top: 0;
+  /* left: 0; */
+  /* width: 100%; */
+  height: 656px;
+  /* overflow: hidden; */
+  /* object-fit: cover; */
+  /* z-index: -2;*/
 }
 
 

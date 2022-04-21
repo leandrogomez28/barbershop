@@ -53,7 +53,7 @@ function Mostrarcards() {
         {productosSelecionado.map((item) => (
           <div>
             {/* cartas */}
-            <div className="contiene-card2">
+            <div className="contiene-card2"> 
               {/* imagen carta descripcion */}
               <div id="wrapper">
                 <img
