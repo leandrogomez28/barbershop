@@ -2,6 +2,7 @@ import React from "react";
 import './carrito.css'
 import { useCart } from "react-use-cart";
 import { BsFillCartDashFill, BsCartPlusFill } from "react-icons/bs";
+import PaypalCheckoutButton from './PaypalCheckoutButton'
 
 function Cart() {
   const {
@@ -83,8 +84,8 @@ function Cart() {
               onClick={emptyCart}>Vaciar Carrito</button>
           </div>
           <div className="pagar">
-            <button className=" btn-danger "
-             >Realizar compra</button>
+            
+             <PaypalCheckoutButton total={cartTotal}></PaypalCheckoutButton>
           </div>
 
         </div>

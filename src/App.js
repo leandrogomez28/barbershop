@@ -38,9 +38,10 @@ import Mostrarservicios from './pages/Mostrarservicios';
 import Carrito from './components/Carrito'
 import { CartProvider } from "react-use-cart";
 import CarritoShop from './components/Carritoshop';
+import { Map } from '@mui/icons-material';
 
 
-
+import { PayPalScriptProvider } from "@paypal/react-paypal-js";
 
 function App() {
   const [{ servicios }, dispatch] = useStateValue()
@@ -70,41 +71,45 @@ function App() {
           }
         })
     } if (localStorage.getItem("react-use-cart") !== null) {
-      const carritoLleno = localStorage.getItem("react-use-cart")
-      alert("probando")
-      alert(carritoLleno.length)
-    }else{
+      const carritoLleno = JSON.parse(localStorage.getItem("react-use-cart"))
+
+      console.log(carritoLleno);
+
+      console.log(carritoLleno.totalItems);
+
+
+    } else {
       alert("carrito vacio")
     }
-        
+
 
   }, [])
 
   return (
 
     <BrowserRouter>
+      <PayPalScriptProvider options={{ "client-id": "AX7R6xNzGWiEYO5VjeERfCiDB40L7x_NhJbtilxNBz97Mc7HFnQOdi2DfhBalcXJN4Wn_7w8WaxvwzCx" }}>
+        <Navbar />
+        <Deslogueo />
+        <CarritoShop />
+        <Routes>
 
-      <Navbar />
-      <Deslogueo />
-      <CarritoShop/>
-      <Routes>
-
-        <Route path='/' element={<Home />} />
-        <Route path='/productos' element={<Union />} />
-        < Route path='/producto/:id' element={<CartProvider> <Mostrarcards /> </CartProvider>  } />
-        <Route path='/signup' element={<SignUp />} />
-        <Route path='/signin' element={<SignIn />} />
-        <Route path='/servicios' element={<Mostrarservicios/>} />
-        {/* <Route path='/turnos' element={<Calendario/>} /> */}
-        <Route path='/carrito' element={<CartProvider> <Carrito /> </CartProvider> } />
-        <Route path='/galeria' element={<Gallery/>}/>
-        <Route path='/valesgifts' element={<ValesGift />} />
+          <Route path='/' element={<Home />} />
+          <Route path='/productos' element={<Union />} />
+          < Route path='/producto/:id' element={<CartProvider> <Mostrarcards /> </CartProvider>} />
+          <Route path='/signup' element={<SignUp />} />
+          <Route path='/signin' element={<SignIn />} />
+          <Route path='/servicios' element={<Mostrarservicios />} />
+          {/* <Route path='/turnos' element={<Calendario/>} /> */}
+          <Route path='/carrito' element={<CartProvider> <Carrito /> </CartProvider>} />
+          <Route path='/galeria' element={<Gallery />} />
+          <Route path='/valesgifts' element={<ValesGift />} />
 
 
-      </Routes>
+        </Routes>
 
-      <FooterPage />
-
+        <FooterPage />
+      </PayPalScriptProvider>
     </BrowserRouter>
 
 
