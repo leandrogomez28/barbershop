@@ -94,10 +94,10 @@ function SignUp() {
 					</div>
 
 					<form onSubmit={newUser}>
-						<input type="text" className="form-control inputSign bg-dark" placeholder="NOMBRE (REQUERIDO)" />
-						<input type="text" className="form-control inputSign bg-dark" placeholder="APELLIDO (REQUERIDO)" />
-						<input type="email" className="form-control inputSign bg-dark " placeholder="EMAIL (REQUERIDO)" />
-						<input type="password" className="form-control inputSign bg-dark" placeholder="PASSWORD (REQUERIDO)" />
+						<input type="text" className="form-control inputSign bg-dark" placeholder="NOMBRE (Requerido)" />
+						<input type="text" className="form-control inputSign bg-dark" placeholder="APELLIDO (Requerido)" />
+						<input type="email" className="form-control inputSign bg-dark " placeholder="EMAIL (Requerido)" />
+						<input type="password" className="form-control inputSign bg-dark" placeholder="PASSWORD (Requerido)" />
 
 						<button className="send" type="send">Registrarse</button>
 					</form>

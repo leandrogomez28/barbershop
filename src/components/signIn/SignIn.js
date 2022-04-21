@@ -71,8 +71,8 @@ export default function SignIn(params) {
                 </div>
                 
                 <form  onSubmit={logiUser}>
-                    <input type="email" className="form-control inputSign bg-dark " placeholder="EMAIL (REQUERIDO)" aria-label="email" />
-                    <input type="password" className="form-control inputSign bg-dark" placeholder="PASSWORD (REQUERIDO)" aria-label="email" />
+                    <input type="email" className="form-control inputSign bg-dark " placeholder="EMAIL (Requerido)" aria-label="email" />
+                    <input type="password" className="form-control inputSign bg-dark" placeholder="PASSWORD (Requerido)" aria-label="email" />
                     <button className="send" type="send">Ingresar</button>
                 </form>
             </div>
