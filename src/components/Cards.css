@@ -125,57 +125,14 @@ margin-left: 25%;
 
 /*boton*/
 
-.control{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+ .carousel-ver{
+  border-radius: 30px;
+  color: #d6ae4c;
+  background-color: rgb(0, 0, 0);
+  border-color: #d6ae4c !important;
+  border: solid 5px;
+  width: 260px;
+  height: 60px;
   
-}
-	
-
-
-.card__description .btn{
-	transform: translateY(0px);
-	transition: 0.3s linear;
-	background: rgb(0, 0, 0);
-	border-radius: 5px;
-  position: relative;
-  overflow: hidden;
-	cursor: pointer;
-	outline: none;
-	border: none;
-	color: rgba(2, 2, 2, 0.633);
-	padding: 0;
-	margin: 0;
-  margin-top: 10%;
-	
-}
-
- .btn:hover{transform: translateY(-4px);}
-  .btn span {
-	font-family: 'Trocchi', serif;
-	transition: transform 0.3s;
-	display: inline-block;
-  padding: 10px 20px;
-	font-size: 1.2em;
-	margin:0;
-  color: white;
-	
-}
-
-.button {
-  font-family: 'Trocchi', serif;
-  font-size: 18px;
-  padding: 15px 25px;
-  background-color: #363636;
-  background: linear-gradient(#404040, transparent 155%);
-  color: #0000008c;
-  border-color: transparent;
-  outline: 0;
-  cursor: pointer;
-  transition: all 1s ease;
-}
-.button:hover {
-    color: #fff;
-  transition: all 1s ease;
-}
+ }

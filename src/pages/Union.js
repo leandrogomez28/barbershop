@@ -23,7 +23,7 @@ function Union() {
       {/* titulo */}
 
       <div className="encabezado">
-        <h1 className="titulo1">MEN’S PRODUCTS </h1>
+        <h1 className="titulo1">PRODUCTOS PARA HOMBRE</h1>
         <h4 className="subtitulo1">
           Evolucionar el arte del cuidado masculino a través de productos <br />
           de primera calidad totalmente naturales.{" "}
@@ -45,8 +45,8 @@ function Union() {
             <div className="carta">
               <div className="carta-header">
                 <div>
-                  <p> {item.nombre}</p>
-                  <p>{item.price}</p>
+                  <p > {item.nombre}</p>
+                  <p >{item.price}</p>
                 </div>
               </div>
               <div className="carta-body">

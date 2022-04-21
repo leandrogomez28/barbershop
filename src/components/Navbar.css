@@ -22,10 +22,10 @@
     text-align: center;
     width: 30px;
     height: 30px;
-    background-color: var(--primColor);
-    border: 2px solid var(--secoColor);
+    background-color: #fffbfb6b;
+    border: 2px solid #090a0a;
     border-radius: var(--cornerRad);
-    color: var(--secoColor);
+    color: #ebeff5;
     cursor: pointer;
     -webkit-user-select: none;
     user-select: none;
@@ -99,12 +99,12 @@
   }
   details::before {
     content: "MENU";
-    color: #040300;
+    color: #0504041c;
     font-family: 'Trocchi', serif;
     font-weight: bold;
     font-size: 150%;
-    /* text-shadow: 2px 8px 7px white; */
-    -webkit-text-stroke: 1px #fffdfd;
+    /* text-shadow: 7px 2px 6px #0d6efd; */
+    -webkit-text-stroke: 1px #ffffffb0;
     position: absolute;
     top: 12px;
     margin-left: 40px;
