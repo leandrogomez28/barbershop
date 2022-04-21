@@ -1,20 +1,26 @@
-
-body{
-   background-image:url( https://us.123rf.com/450wm/naropano/naropano1606/naropano160600509/58727522-textura-de-fondo-oscuro-en-blanco-para-el-dise%C3%B1o-bordes-oscuros.jpg);
+body {
+  background: #DFC2F2;
+  background-image: url(https://t3.ftcdn.net/jpg/03/50/52/20/240_F_350522076_WxRXasOJSbxonsSpGizpjsTGBOuLdmU0.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+.body2{
+  background-image:url( https://us.123rf.com/450wm/naropano/naropano1606/naropano160600509/58727522-textura-de-fondo-oscuro-en-blanco-para-el-dise%C3%B1o-bordes-oscuros.jpg);
 }
 .App {
   text-align: center;
   background-image: url(https://i.pinimg.com/736x/49/05/61/49056152885218d837da69e685a892a5.jpg)
 }
 
-.tags {
+.Galery .tags {
 	text-align: center;
 	padding: 20px 0px;
 	background-color:  #4a070e;
+  
 
 }
 
-.tag {
+.Galery .tag {
 	outline: none;
 	border: none;
   color: rgba(248, 248, 236, 0.829);
@@ -27,11 +33,14 @@ body{
 
 }
 
-.active {
+.Galery .active {
 	font-weight: bold;
 	border-bottom: 1px solid #eee;
 }
-.container {
+.Galery h1{
+  padding-top: 5em;
+}
+.Galery .container2 {
 	width: 80%;
 	margin: auto;
 	display: grid;
@@ -42,7 +51,7 @@ body{
     padding: 120px;
 }
 
-.image-card {
+.Galery .image-card {
 
 	border-radius: 2px;
   background-image: url(https://i.pinimg.com/originals/ff/f2/09/fff209ca62c4f94ee6c683132428d1df.jpg);
@@ -55,12 +64,12 @@ body{
   background-image: url(https://image.shutterstock.com/image-vector/barber-shop-pattern-260nw-1007988013.jpg);
 } */
 
-.image {
+.Galery .image {
 	width: 100%;
 }
 
 
-.main-heading{
+.Galery .main-heading{
 
 background-image: url();
 font-family: 'Trocchi', serif;
@@ -68,7 +77,7 @@ color: rgb(248, 224, 5)
 }
 
 
-.main-head{
+.Galery .main-head{
 
   background-image: url();
   font-family: 'Trocchi', serif;

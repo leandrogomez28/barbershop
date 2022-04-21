@@ -96,6 +96,7 @@ function App() {
         <Route path='/servicios' element={<Mostrarservicios/>} />
         {/* <Route path='/turnos' element={<Calendario/>} /> */}
         <Route path='/carrito' element={<CartProvider> <Carrito /> </CartProvider> } />
+        <Route path='/galeria' element={<Gallery/>}/>
 
 
       </Routes>
