@@ -12,6 +12,9 @@ import { CartProvider, useCart } from "react-use-cart";
 import Coments from "../components/Coments";
 
 function Mostrarcards() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+}, [])
   const { addItem } = useCart();
 
   const [{ productos }, dispatch] = useStateValue();

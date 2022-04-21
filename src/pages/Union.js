@@ -9,6 +9,9 @@ import video from "../components/imagenes/video.mp4"
 
 function Union() {
   const [{ productos }, dispatch] = useStateValue();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [])
 
   useEffect(() => {
     axios.get("http://localhost:4000/api/productos").then((response) => {

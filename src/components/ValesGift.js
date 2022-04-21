@@ -1,5 +1,6 @@
-import React from "react";
-import "./valesGift.css"
+import React,{useEffect} from "react";
+import "./valesGift.css";
+
 import modelo1 from '../components/Imagen1/modelo2.jpg'
 import logo1 from '../components/Imagen1/logo1.jpeg'
 import { GiMustache } from "react-icons/gi";
@@ -13,7 +14,9 @@ import minivideo1 from '../components/Imagen1/minivideo1.gif'
 
 
 function Vales(){
-
+	useEffect(() => {
+        window.scrollTo(0, 0);
+	}, [])
     return(
 
 <div className="gift">

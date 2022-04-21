@@ -12,6 +12,9 @@ import "../components/Mostrarservicios.css";
 
 function Mostrarservicios() {
     const [{ servicios }, dispatch] = useStateValue();
+    useEffect(() => {
+        window.scrollTo(0, 0);
+	}, [])
 
     useEffect(() => {
 
