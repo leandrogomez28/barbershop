@@ -1,0 +1,79 @@
+.ubicacion {
+    display: flex;
+    border: solid red;
+}
+
+
+.Carrito-vacio {
+    margin: 5em;
+    text-align: center;
+    color: #d6ae4c;
+    font-family: 'Rye', cursive;
+    height: auto;
+    padding: 5em;
+}
+
+.Carrito-C {
+    margin-top: 3em;
+    text-align: center;
+    font-family: 'Rye', cursive;
+    color: #d6ae4c;
+}
+
+.Carrito-C h1 {
+    font-size: 4em;
+}
+
+.col-12 h5 {
+    color: #d6ae4c;
+    font-size: 1.5em;
+}
+
+.table {
+    color: #d6ae4c;
+    font-size: 1.5em;
+}
+
+.tdPad {
+    padding-top: 5% !important;
+}
+
+.bg {
+    animation: slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, rgb(130, 131, 129) 50%, rgb(28, 30, 31) 50%);
+    bottom: 0;
+    left: -50%;
+    opacity: .5;
+    position: fixed;
+    right: -50%;
+    top: 0;
+    z-index: -1;
+}
+
+.bg2 {
+    animation-direction: alternate-reverse;
+    animation-duration: 4s;
+}
+
+.bg3 {
+    animation-duration: 5s;
+}
+
+
+@keyframes slide {
+    0% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(25%);
+    }
+}
+
+.withss {
+    width: 90% !important;
+}
+
+.pagar{
+    text-align: right;
+}

@@ -1,6 +1,6 @@
 import React from "react";
 import './titulo.css'
-import Logo from '../imagenes/LogoBarbershop.png'
+import Logo from '../imagenes/barbershop3.png' 
 
 
 
@@ -9,11 +9,11 @@ function Titulo(){
 
     return(
        <div className="contenedor-1">
-           <div className="d-flex justify-content-center">
+           {/* <div className="d-flex justify-content-center">
            <img src={Logo} className='logo' alt="..." />
 
                
-           </div>
+           </div> */}
            
            <div className="title">
                 <h2>
@@ -26,9 +26,12 @@ function Titulo(){
                     <span className="style">T</span>
                     <span className="style">I</span>
                     <span className="style">L</span>
-                    <span className="style">O</span>
-                    <span className="style">S</span>
-                </h2>
+                  </h2>  
+                   <img src={Logo} className='logo' alt="..." />
+                   <h2 className="letra-s">
+                        <span className="style">S</span>
+                   </h2>
+               
            </div>
            
         

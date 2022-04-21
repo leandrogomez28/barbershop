@@ -6,7 +6,8 @@ import Home from './pages/Home.js'
 import Mostrarcards from './pages/Mostrarcards';
 import SignUp from './components/signUp/SignUp.js'
 import SignIn from './components/signIn/SignIn.js';
-import Calendario from './components/Calendario'
+import Calendario from './components/Calendario';
+import Deslogueo from './components/iconLogeo/Deslogueo';
 
 // import './App.css';
 import Contactos from './components/contactos/index'
@@ -31,6 +32,13 @@ import FooterPage from './components/FooterPage.js'
 import Navbar from './components/Navbar'
 import axios from 'axios';
 import Union from './pages/Union';
+import Mostrarservicios from './pages/Mostrarservicios';
+
+
+import Carrito from './components/Carrito'
+import { CartProvider } from "react-use-cart";
+import CarritoShop from './components/Carritoshop';
+
 
 
 
@@ -61,7 +69,14 @@ function App() {
             localStorage.removeItem("token")
           }
         })
+    } if (localStorage.getItem("react-use-cart") !== null) {
+      const carritoLleno = localStorage.getItem("react-use-cart")
+      alert("probando")
+      alert(carritoLleno.length)
+    }else{
+      alert("carrito vacio")
     }
+        
 
   }, [])
 
@@ -70,14 +85,19 @@ function App() {
     <BrowserRouter>
 
       <Navbar />
+      <Deslogueo />
+      <CarritoShop/>
       <Routes>
 
         <Route path='/' element={<Home />} />
         <Route path='/productos' element={<Union />} />
-        < Route path='/producto/:id' element={<Mostrarcards />} />
+        < Route path='/producto/:id' element={<CartProvider> <Mostrarcards /> </CartProvider>  } />
         <Route path='/signup' element={<SignUp />} />
         <Route path='/signin' element={<SignIn />} />
+        <Route path='/servicios' element={<Mostrarservicios/>} />
         {/* <Route path='/turnos' element={<Calendario/>} /> */}
+        <Route path='/carrito' element={<CartProvider> <Carrito /> </CartProvider> } />
+        <Route path='/galeria' element={<Gallery/>}/>
         <Route path='/valesgifts' element={<ValesGift />} />
 
 

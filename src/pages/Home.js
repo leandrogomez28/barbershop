@@ -30,12 +30,10 @@ function Home() {
             
             <Testimonial/>
             <Contactos />
-            <Deslogueo />
+            
             <Video/>
-            <CartProvider>
-                
-                <Cart />
-            </CartProvider>
+            
+
            
 
 
