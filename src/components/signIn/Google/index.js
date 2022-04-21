@@ -4,6 +4,7 @@ import './google.css'
 import axios from "axios";
 import { actionType } from "../../../reducer";
 import { useStateValue } from "../../../StateProvider"
+import swal from 'sweetalert';
 
 export default function LoginGoogle (params) {
 
@@ -22,21 +23,25 @@ export default function LoginGoogle (params) {
                 displayMessages(response.data)
                 
             })
-        function displayMessages(data) {
-            
-
-            if (!data.success) {
-                console.log(data.error)
-            }
-            else {
-                console.log(data.response);
-                localStorage.setItem("token",data.response.token)
-            }
-             dispatch({
-                type: actionType.USER,
-                user: data.response
-            })
-        }  
+            function displayMessages(data) {
+                if (!data.success) {
+                    console.log(alert(data.error))
+                }
+                else {
+                    console.log(data)
+                    localStorage.setItem("token", data.response.token)
+                    swal({
+                        title: "Welcome",
+                        text: data.response.firstname + " " + data.response.lastname,
+                        icon: "success",
+                    });
+                }
+    
+                dispatch({
+                    type: actionType.USER,
+                    user: data.response
+                })
+            }  
     }
     return(
         <div>

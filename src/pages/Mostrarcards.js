@@ -10,6 +10,7 @@ import { useParams } from "react-router-dom";
 
 import { CartProvider, useCart } from "react-use-cart";
 import Coments from "../components/Coments";
+import swal from 'sweetalert'
 
 function Mostrarcards() {
   useEffect(() => {
@@ -43,7 +44,7 @@ function Mostrarcards() {
     },
   ];
   function carritoCargado() {
-    alert("cargado");
+    swal("Producto Agregado!");
   }
   function carrito(item) {
     addItem(item);

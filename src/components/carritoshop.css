@@ -1,8 +1,9 @@
 .carrito-shop{
     position: absolute;
-    top: 10em;
-    right: 0;
+    top: 7em;
+    right: -45px;
     position: fixed;
+    cursor: pointer;
 }
 
 .carrito-shop img{
@@ -23,7 +24,7 @@
 .carrito-user{
     top: 0em;
     right: 95px;
-    background: none;
+   
     width: 2em;
     font-size: 2em;
 }

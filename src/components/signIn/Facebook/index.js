@@ -6,7 +6,7 @@ import { actionType } from "../../../reducer";
 import { useStateValue } from "../../../StateProvider"
 // import {TiSocialFacebookCircular} from 'react-icons/lib/ti/social-facebook-circular';
 import { TiSocialFacebookCircular } from 'react-icons/ti';
-
+import swal from 'sweetalert';
 export default function LoginFacebook(params) {
 
     const [{ user }, dispatch] = useStateValue()
@@ -24,21 +24,26 @@ export default function LoginFacebook(params) {
                 displayMessages(response.data)
                 
             })
-        function displayMessages(data) {
-            
-
-            if (!data.success) {
-                console.log(data.error)
-            }
-            else {
-                console.log(data.response);
-                localStorage.setItem("token",data.response.token)
-            }
-             dispatch({
-                type: actionType.USER,
-                user: data.response
-            })
-        }  
+            function displayMessages(data) {
+                if (!data.success) {
+                    console.log(alert(data.error))
+                }
+                else {
+    
+                    localStorage.setItem("token", data.response.token)
+                    swal({
+                        title: "Welcome",
+                        text: data.response.firstname + " " + data.response.lastname,
+                        icon: "success",
+    
+                    });
+                }
+    
+                dispatch({
+                    type: actionType.USER,
+                    user: data.response
+                })
+            } 
     }
     return (
         <div>

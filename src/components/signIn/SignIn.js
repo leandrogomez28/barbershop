@@ -34,14 +34,16 @@ export default function SignIn(params) {
                     console.log(alert(data.error))
                 }
                 else {
-                    console.log(data.response)
+    
                     localStorage.setItem("token", data.response.token)
                     swal({
                         title: "Welcome",
                         text: data.response.firstname + " " + data.response.lastname,
                         icon: "success",
+    
                     });
                 }
+    
                 dispatch({
                     type: actionType.USER,
                     user: data.response

@@ -7,6 +7,8 @@
     right: 1em;
     font-size: 3em;
     color: #f6f4ef;
+    z-index: 5;
+    cursor: pointer;
 }
 
 .logueado{
@@ -15,7 +17,8 @@
     right: 1.5em;
     height: 5em;
     background-color: #dea515;
-    
+    z-index: 5;
     width: 5em;
     border-radius: 150px;
+    cursor: pointer;
 }
