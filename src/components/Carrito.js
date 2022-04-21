@@ -84,7 +84,7 @@ function Cart() {
           </div>
           <div className="pagar">
             <button className=" btn-danger "
-              onClick={emptyCart}>Realizar compra</button>
+             >Realizar compra</button>
           </div>
 
         </div>
