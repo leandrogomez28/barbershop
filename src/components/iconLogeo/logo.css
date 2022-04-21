@@ -3,13 +3,16 @@
     top: 3%;
     right: 1em;
     font-size: 3em;
+    color: #d6ae4c;
 }
 
 .logueado{
     position: fixed;
-    top: 1em;
-    right: 1em;
+    top: 1.5em;
+    right: 1.5em;
     height: 5em;
-    background-color: white;
-    box-shadow: inset 0 0 5px black;
+    background-color: #dea515;
+    
+    width: 5em;
+    border-radius: 150px;
 }

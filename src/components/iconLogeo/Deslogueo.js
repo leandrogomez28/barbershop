@@ -3,6 +3,7 @@ import { useStateValue } from "../../StateProvider";
 import axios from "axios";
 import { actionType } from "../../reducer";
 import {FaUserCircle} from 'react-icons/fa'
+import {ImUserPlus} from 'react-icons/im'
 import './logo.css'
 import Logo from '../../imagenes/logout.png'
 import { Link as LinkRouter } from 'react-router-dom';
@@ -29,14 +30,14 @@ function Deslogueo(params) {
 
     return (
         <div>
-
+            
             {/* <div className="nav-link active hover-underline-animation" aria-current="page" to="/singIn">Sing In </div>
             <div className="nav-link active hover-underline-animation" aria-current="page" to="/singIn">Sing Out </div> */}
 
             {
                 !user ?<div className="nav-link active hover-underline-animation" aria-current="page" >
                     <LinkRouter to='/signin' className="nav-link-signin">
-                    <FaUserCircle/>
+                    <ImUserPlus></ImUserPlus>
                 </LinkRouter>
                 </div>
                 :
