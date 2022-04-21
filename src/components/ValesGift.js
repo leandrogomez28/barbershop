@@ -3,6 +3,12 @@ import "./valesGift.css"
 import modelo1 from '../components/Imagen1/modelo2.jpg'
 import logo1 from '../components/Imagen1/logo1.jpeg'
 import { GiMustache } from "react-icons/gi";
+import HeadVales from '../components/Imagen1/HeadVale.jpg'
+// import ReactPlayer from 'react-player'
+import minivideo1 from '../components/Imagen1/minivideo1.gif'
+
+
+
 
 
 
@@ -12,6 +18,12 @@ function Vales(){
 
 <div className="gift">
 <div className="cover-container">
+
+{/* <div className='video-tx'>    
+    <div className='vid'><ReactPlayer url='https://youtu.be/FNrq2NE4TaU' className='react-player'
+          playing width='100%' height='20em' controls volume={0.1}/>
+     </div>     
+</div> */}
             {/* <video
               className="video"
               src={covervideo}
@@ -19,6 +31,8 @@ function Vales(){
               loop
               muted
             ></video> */}
+
+			<img src={minivideo1} width={1200} height={400}/>
             <div className="nombreciudad">
               {/* <h1>{data.name}</h1> */}
             </div>
@@ -28,7 +42,7 @@ function Vales(){
 					<div className="espacio">
                             <div className="titulo-promo">
                                 <h2 className="titulo-promo2">
-                                    <GiMustache style={{ fontSize: "1em", marginBottom: "20px" }} />
+                                    <GiMustache style={{ fontSize: "1.5em", marginBottom: "20px", color:"#d6ae4c" }} />
                                 </h2>
                             </div>
                         </div>
