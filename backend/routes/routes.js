@@ -9,6 +9,9 @@ const usersControllers=require("../controllers/usersControllers")
 const {newUser,verifyEmail,accesoUsuario,cerrarSesion,verificarToken}=usersControllers 
 
 const validator=require("../controllers/validator") 
+const comentariosControllers=require("../controllers/comentariosControllers");
+
+const { cargaComentarios,obtenerComentarios,borrarComentario,modificarComentario } = comentariosControllers
 
 Router.route("/productos")
 .get(ObtenerProductos) 
@@ -32,6 +35,14 @@ Router.route("/signin")
 
 Router.route("/signout")
 .post(cerrarSesion)
+
+Router.route("/coments")
+.post(cargaComentarios)
+
+Router.route("/coments/:id")
+.get(obtenerComentarios)
+.delete(borrarComentario)
+.put(modificarComentario)
 
 Router.route("/signintoken")
 .get(passport.authenticate("jwt",{session:false}),verificarToken)

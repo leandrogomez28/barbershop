@@ -6,7 +6,8 @@ import Home from './pages/Home.js'
 import Mostrarcards from './pages/Mostrarcards';
 import SignUp from './components/signUp/SignUp.js'
 import SignIn from './components/signIn/SignIn.js';
-import Calendario from './components/Calendario'
+import Calendario from './components/Calendario';
+import Deslogueo from './components/iconLogeo/Deslogueo';
 
 // import './App.css';
 import Contactos from './components/contactos/index'
@@ -35,6 +36,7 @@ import Union from './pages/Union';
 
 import Carrito from './components/Carrito'
 import { CartProvider } from "react-use-cart";
+import CarritoShop from './components/Carritoshop';
 
 
 
@@ -65,7 +67,14 @@ function App() {
             localStorage.removeItem("token")
           }
         })
+    } if (localStorage.getItem("react-use-cart") !== null) {
+      const carritoLleno = localStorage.getItem("react-use-cart")
+      alert("probando")
+      alert(carritoLleno.length)
+    }else{
+      alert("carrito vacio")
     }
+        
 
   }, [])
 
@@ -74,6 +83,8 @@ function App() {
     <BrowserRouter>
 
       <Navbar />
+      <Deslogueo />
+      <CarritoShop/>
       <Routes>
 
         <Route path='/' element={<Home />} />

@@ -1,0 +1,29 @@
+.carrito-shop{
+    position: absolute;
+    top: 10em;
+    right: 0;
+    position: fixed;
+}
+
+.carrito-shop img{
+    height: 6em;
+}
+.icon-carrito{
+    color: #b2a0a0;
+    font-size: 3em;
+    position: fixed;
+    top: 3.5em;
+    font-weight: 900;
+    text-shadow: 0 0 black;
+    /* box-shadow: 0 0 10px black; */
+    right: 50px;
+    transform: rotatey(180deg);
+}
+
+.carrito-user{
+    top: 0em;
+    right: 95px;
+    background: none;
+    width: 2em;
+    font-size: 2em;
+}
