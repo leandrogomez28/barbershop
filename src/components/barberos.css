@@ -74,24 +74,25 @@ padding-top:10px;
 }
 header img {
   border-radius: 50%;
-  margin:  auto;
+  margin: auto;
   display: block;
-  width: 210px;
+  width: 230px;
   border: 5px solid black;
+  height: 226px;
 }
 
 aside {
   border-top: 0px solid #26A69A;
   border-bottom: 0px solid #00695C;
-  border-radius: 50%;
+  border-radius: 25%;
   margin: 0 auto;
   display: block;
-  height: 250px;
-  width: 250px;
+  height: 387px;
+  width: 348px;
   background: #E5E4E2;
   background-size: cover;
   overflow: hidden;
-  box-shadow: 0 0 10px  #000000;
+  box-shadow: 0 0 10px #000000;
   transition: all ease 0.3s;
 }
 
@@ -99,7 +100,7 @@ aside:hover {
   border-top: 4px solid black;
   border-bottom: 4px solid black;
   border-radius: 5px;
-  height: 520px;
+  height: 547px;
   width: 350px;
   box-shadow: 0 0 10px #ffffff;
 }
@@ -181,10 +182,15 @@ aside:hover .profile-bio {
 }
 
 aside:hover .profile-social-links {
-  margin-left:-45px;
+  margin-left: -56px;
   opacity: 1;
+  
 }
 
+aside:hover .profile-social-links li {
+ padding-top: 10px;
+  
+}
 .profile-social-links li img {
   width: 40px;
   background: rgb(188, 188, 189);

@@ -2,13 +2,13 @@
 /* titulo */
 .titulo1{
   margin-top: 2%;
-    color: black;
+    color: #d6ae4c;
     font-size: 90px;
     text-align: center;
     font-family: 'Rye', cursive;
     margin-left: 30px;
-    text-shadow: 2px 8px 7px white;
-    -webkit-text-stroke: 2px #fffdfd; 
+    text-shadow: 2px 8px 7px #1a1a1b;
+    /* -webkit-text-stroke: 2px #d6ae4c;  */
     margin-left: 2em;
 }
 .subtitulo1{
@@ -144,7 +144,7 @@ button:nth-child(1):hover {
 
 .video{
  position: absolute;
- top: 30%;
+ top: 35%;
  left: 0;
  width: 100%;
  height: 300px;
