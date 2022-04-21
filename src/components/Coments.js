@@ -91,7 +91,7 @@ function Coments(props) {
 
                                 :
                                 <div>
-                                     <h3 className="mx-5">Debes estar logueado </h3>
+                                     <h5 className="mx-5">Debes estar logueado para comentar </h5>
                                     
                                 </div>
                             }
