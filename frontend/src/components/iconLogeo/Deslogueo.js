@@ -17,7 +17,7 @@ function Deslogueo(params) {
         // const email = user.datosUser.email
         // console.log(email)
         
-        await axios.post("http://localhost:4000/api/signout", {email} )
+        await axios.post("https://css-estilos.herokuapp.com/api/signout", {email} )
             .then(response => {
                 console.log(response.data.response);
                 localStorage.removeItem("token")

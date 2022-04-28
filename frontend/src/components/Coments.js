@@ -24,14 +24,14 @@ function Coments(props) {
             message: event.target[0].value,
             user: user.id
         }
-        await axios.post("http://localhost:4000/api/coments", { dataComents })
+        await axios.post("https://css-estilos.herokuapp.com/api/coments", { dataComents })
             .then(response => console.log)
         setReload(!reload)
     }
 
     useEffect(() => {
         let id = props.producto
-        axios.get(`http://localhost:4000/api/coments/${id}`)
+        axios.get(`https://css-estilos.herokuapp.com/api/coments/${id}`)
             .then(response =>
                 setComment(response.data.response.comentario))
 
@@ -40,7 +40,7 @@ function Coments(props) {
 
 
     const borrarComentario = (id) => {
-        axios.delete(`http://localhost:4000/api/coments/${id} `)
+        axios.delete(`https://css-estilos.herokuapp.com/api/coments/${id} `)
         setReload(!reload)
     }
 
@@ -53,7 +53,7 @@ function Coments(props) {
     const modificar = (id) => {
         console.log(id)
         let data = cambio
-        axios.put(`http://localhost:4000/api/coments/${id} `, { data })
+        axios.put(`https://css-estilos.herokuapp.com/api/coments/${id} `, { data })
         setReload(!reload)
     }
 

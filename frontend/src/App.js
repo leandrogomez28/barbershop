@@ -54,11 +54,11 @@ function App() {
 
 
   useEffect(() => {
-    axios.get("http://localhost:4000/api/datos")
+    axios.get("https://css-estilos.herokuapp.com/api/datos")
       .then(response => console.log(response))
     if (localStorage.getItem("token") !== null) {
       const token = localStorage.getItem("token")
-      const user = axios.get("http://localhost:4000/api/signintoken", {
+      const user = axios.get("https://css-estilos.herokuapp.com/api/signintoken", {
         headers: {
           "Authorization": "Bearer " + token
         }

@@ -18,7 +18,7 @@ function Mostrarservicios() {
 
     useEffect(() => {
 
-        axios.get("http://localhost:4000/api/servicios").then((response) => {
+        axios.get("https://css-estilos.herokuapp.com/api/servicios").then((response) => {
             dispatch({
                 type: actionType.SERVICIOSDB,
                 servicios: response.data.response.servicios,

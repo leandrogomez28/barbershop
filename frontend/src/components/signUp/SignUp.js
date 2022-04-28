@@ -30,7 +30,7 @@ function SignUp() {
 		console.log(event);
 
 
-		await axios.post("http://localhost:4000/api/signup", { newUser })
+		await axios.post("https://css-estilos.herokuapp.com/api/signup", { newUser })
 			.then(response => {
 				console.log(response);
 				if (response.data.success === "falseVAL") {

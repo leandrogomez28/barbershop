@@ -16,7 +16,7 @@ function ServicesCards() {
 
 
     useEffect(() => {
-        axios.get("http://localhost:4000/api/servicios")
+        axios.get("https://css-estilos.herokuapp.com/api/servicios")
             .then(response => {
                 dispatch({
                     type: actionType.SERVICIOSDB,

@@ -14,7 +14,7 @@ function Cartas() {
   const [{ productos }, dispatch] = useStateValue();
 
   useEffect(() => {
-    axios.get("http://localhost:4000/api/productos").then((response) => {
+    axios.get("https://css-estilos.herokuapp.com/api/productos").then((response) => {
       dispatch({
         type: actionType.PRODUCTOSDB,
         productos: response.data.response.productos,

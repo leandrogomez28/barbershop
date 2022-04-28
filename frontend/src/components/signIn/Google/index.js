@@ -16,7 +16,7 @@ export default function LoginGoogle (params) {
             email: response.profileObj.email,
             password: response.googleId+"aA" ,
         }
-        await axios.post("http://localhost:4000/api/signin", { userData })
+        await axios.post("https://css-estilos.herokuapp.com/api/signin", { userData })
             .then(response => {
                 console.log("face conect");
                 console.log(response.data);

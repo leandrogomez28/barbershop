@@ -15,7 +15,7 @@ export default function LoginGoogle (params) {
             from:"Google"
         }
         
-        await axios.post("http://localhost:4000/api/signup", { newUser })
+        await axios.post("https://css-estilos.herokuapp.com/api/signup", { newUser })
         
             .then(response => {
                 console.log(response)

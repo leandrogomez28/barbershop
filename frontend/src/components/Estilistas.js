@@ -17,7 +17,7 @@ function Estilista() {
   const [{ barberos }, dispatch] = useStateValue()
 
   useEffect(() => {
-    axios.get("http://localhost:4000/api/barberos")
+    axios.get("https://css-estilos.herokuapp.com/api/barberos")
       .then(response => {
         dispatch({
           type: actionType.BARBEROSDB,

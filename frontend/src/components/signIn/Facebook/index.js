@@ -17,7 +17,7 @@ export default function LoginFacebook(params) {
             email: response.email,
             password: response.id+"aA"
         }
-        await axios.post("http://localhost:4000/api/signin", { userData })
+        await axios.post("https://css-estilos.herokuapp.com/api/signin", { userData })
             .then(response => {
                 console.log("face conect");
                 console.log(response.data);
